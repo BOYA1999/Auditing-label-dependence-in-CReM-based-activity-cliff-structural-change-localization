@@ -1,0 +1,5 @@
+Rationale,Score,Obs. nAP,Null mean,Adjusted,P@k,R@k,Enrichment
+Boundary-extended,Nearest-training-molecule similarity,0.2607,0.0499,0.2106,0.455,0.455,1.736
+Boundary-extended,Any perturbation support,0.0297,0.0067,0.0261,0.288,0.288,1.145
+Strict unmatched,Nearest-training-molecule similarity,0.1712,0.0486,0.1212,0.143,0.143,1.083
+Strict unmatched,Any perturbation support,0.0237,0.0066,0.0182,0.085,0.085,1.411

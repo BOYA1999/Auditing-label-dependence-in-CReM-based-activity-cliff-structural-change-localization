@@ -1,0 +1,8 @@
+{
+  "evaluation_summary": "Ten independent within-target label permutations were scored at fixed model initialization across 27 confirmation targets and the complete 3 x 2 x 2 representation-predictor-explainer crossing.",
+  "claim_update": "Permutation variance and 1/3/5/10 convergence are measured rather than assumed; interpretation must follow the reported stability diagnostics.",
+  "baseline_relation": "Permutation ID 42 is byte-verified reuse of the original fixed-seed randomized arm; IDs 43-51 are new fits under the same data, heads and CReM neighborhoods.",
+  "failure_mode": null,
+  "next_action": "Use the convergence and stability tables in the robustness analysis without changing the original frozen outputs.",
+  "status": "pass"
+}

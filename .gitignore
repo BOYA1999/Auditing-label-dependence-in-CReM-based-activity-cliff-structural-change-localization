@@ -216,3 +216,34 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Reproduction-package generated and private files
+regenerated/
+outputs/
+logs/
+research_v2/paper/
+*.docx
+*.tex
+*.pdf
+*.png
+*.svg
+*.tif
+*.tiff
+.env.*
+*.pem
+*.key
+credentials.json
+token.json
+secrets.*
+*.pt
+*.pth
+*.ckpt
+*.pkl
+*.pickle
+*.npy
+*.npz
+*.sqlite
+*.sqlite3
+*.db
+*.h5
+*.safetensors

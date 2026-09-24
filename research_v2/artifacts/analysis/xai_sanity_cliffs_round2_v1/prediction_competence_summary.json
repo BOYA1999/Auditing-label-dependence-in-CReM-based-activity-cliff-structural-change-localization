@@ -1,0 +1,51 @@
+{
+  "gate": {
+    "minimum_pairs": 5,
+    "minimum_spearman": 0.3,
+    "minimum_direction_accuracy": 0.6666666667
+  },
+  "eligible_target_configuration_cells": 82,
+  "total_target_configuration_cells": 162,
+  "eligible_targets": 26,
+  "eligible_primary": {
+    "estimate": -0.007433400566558312,
+    "ci90": [
+      -0.019307211146940773,
+      -0.0023740723845772495
+    ],
+    "ci95": [
+      -0.022146325383234106,
+      -0.0009078350930107501
+    ],
+    "targets": 26,
+    "components": 606,
+    "configurations": 6
+  },
+  "continuous_within_target_associations": [
+    {
+      "quality_metric": "calibration_spearman",
+      "localization_metric": "median_delta_null_adjusted_nap",
+      "within_target_linear_slope": -0.020224766586269004,
+      "cluster_bootstrap_ci95": [
+        -0.05728852920940571,
+        0.016219005228361526
+      ],
+      "within_target_spearman": -0.13220592541971976,
+      "target_configuration_cells": 162,
+      "targets": 27
+    },
+    {
+      "quality_metric": "calibration_direction_accuracy",
+      "localization_metric": "median_delta_null_adjusted_nap",
+      "within_target_linear_slope": -0.02811535986828885,
+      "cluster_bootstrap_ci95": [
+        -0.12655778550123473,
+        0.07360099437842013
+      ],
+      "within_target_spearman": -0.15117606079057258,
+      "target_configuration_cells": 162,
+      "targets": 27
+    }
+  ],
+  "interpretation": "Post-confirmation diagnostic; calibration outcomes define eligibility without using test localization outcomes, but the thresholds were not prospectively preregistered."
+}

@@ -1,0 +1,3 @@
+explainer_rescore,rows,maximum_ap_abs_difference,median_ap_abs_difference,mean_ap_abs_difference,maximum_nap_abs_difference,median_nap_abs_difference,mean_nap_abs_difference,rows_above_frozen_tolerance
+crem_lime_abs,4968,0.05138461538461536,2.7755575615628914e-17,0.0002581771524091527,0.09249230769230771,4.163336342344337e-17,0.00037896914443989076,212
+crem_mean_abs_exponent_0,4968,1.1102230246251565e-16,0.0,2.3605927107475053e-17,9.974659986866641e-17,3.122502256758253e-17,3.584558593087253e-17,0

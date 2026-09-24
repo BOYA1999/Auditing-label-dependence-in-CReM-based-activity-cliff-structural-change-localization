@@ -1,0 +1,91 @@
+{
+  "run_id": "xai_sanity_cliffs_round2_sentinel_v1",
+  "status": "pass",
+  "alternative_eligible_components": 618,
+  "paired_comparison_components": 617,
+  "unpaired_alternative_components": 1,
+  "alternative_component_configuration_rows": 7416,
+  "paired_component_configuration_rows": 7404,
+  "expected_paired_component_configuration_rows": 7404,
+  "factorial_configurations": 12,
+  "target_balanced_alternative_full_delta_nap": 0.0,
+  "target_balanced_alternative_paired_delta_nap": 0.0,
+  "target_balanced_original_paired_delta_nap": -0.0008356943103851409,
+  "paired_primary_estimate_change": 0.0008356943103851409,
+  "target_balanced_paired_selection_change": 0.0,
+  "alternative_full_delta_nap_ci95": [
+    -0.009837486582078508,
+    0.0
+  ],
+  "alternative_paired_delta_nap_ci95": [
+    -0.009867595828104966,
+    0.0
+  ],
+  "original_paired_delta_nap_ci95": [
+    -0.009595246500139388,
+    0.0
+  ],
+  "paired_primary_estimate_change_ci95": [
+    -0.0065409518073602695,
+    0.006788882704227054
+  ],
+  "paired_selection_change_ci95": [
+    0.0,
+    0.0
+  ],
+  "targets_with_positive_alternative_full_delta": 6,
+  "targets_with_positive_original_paired_delta": 5,
+  "configurations_with_positive_alternative_full_delta": 1,
+  "exact_pair_overlap": 290,
+  "changed_pairs": 329,
+  "shared_endpoints": 809,
+  "same_pair_rationale_exact_endpoints": 578,
+  "same_pair_rationale_endpoints": 578,
+  "changed_pair_shared_endpoint_rationale_jaccard_median": 0.6,
+  "changed_pair_shared_endpoints": 231,
+  "count_validation": {
+    "expected": {
+      "targets": 27,
+      "alternative_eligible_components": 618,
+      "paired_comparison_components": 617,
+      "unpaired_alternative_components": 1,
+      "alternative_component_configuration_rows": 7416,
+      "paired_component_configuration_rows": 7404,
+      "factorial_configurations": 12
+    },
+    "observed": {
+      "targets": 27,
+      "alternative_eligible_components": 618,
+      "paired_comparison_components": 617,
+      "unpaired_alternative_components": 1,
+      "alternative_component_configuration_rows": 7416,
+      "paired_component_configuration_rows": 7404,
+      "factorial_configurations": 12
+    },
+    "checks": {
+      "targets": true,
+      "alternative_eligible_components": true,
+      "paired_comparison_components": true,
+      "unpaired_alternative_components": true,
+      "alternative_component_configuration_rows": true,
+      "paired_component_configuration_rows": true,
+      "factorial_configurations": true
+    }
+  },
+  "input_hashes": {
+    "config": "a6fcb0042024d4bb94d09702e52fdd8688777baff61058907b80566f4648e5b6",
+    "selected_pairs": "15c3e34261beeed256ff322b51bf57fee160e40321eb6369e2a66c7da96fdf11",
+    "alternative_pair_explanations": "9b799fb891d3a53e66eec1e850fea15298b84f1cdb7a51b637052862abf1dcf1",
+    "original_pair_explanations": "22c9e20a7bc2f0f3f4b2dd4de0c851dd87a9187778480d6a0c3072411666c8f0"
+  },
+  "output_hashes": {
+    "alternative_component_configuration_metrics.csv": "3cf1ac857824731e98868009b241890d0a5b0744aa642ee342fa3d625dfb4876",
+    "original_component_configuration_metrics.csv": "9ed247281ea038b1ed69f2abae2f1a685485cf13dcd952efb580565085ce303f",
+    "paired_selection_comparison.csv": "44c6bb2be3dbf86aae8ae09843af2cf343e3e7abdb32ec0751f8494f8f67821c",
+    "target_estimates.csv": "276cff3019acb27901f6e5f02b233045c7adcedcbb40495d3161ef893bfd40be",
+    "configuration_estimates.csv": "fd7379d8642a3478312458ccaa495552ac082efbbb7e80958f6b0104851a2182",
+    "bootstrap.csv": "b46b23d314e19c20a73b8c8acb7d7806b438d16bfbe314ca336a3b8d5ae8ca59",
+    "unpaired_alternative_components.csv": "e60780f099397d896c8fcf2481f95fe4077f32ca0ed8b58b41b04c0dcb7454ac",
+    "rationale_overlap.csv": "d50ad8bad2f85b5e048468f4836ca9f18d34a92246227263dec7514be4059799"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "run_id": "xai_sanity_cliffs_round2_sentinel_v1",
+  "status": "pass",
+  "selected_components": 619,
+  "source_test_components": 627,
+  "source_components_outside_frozen_analysis": 8,
+  "localization_eligible_components": 618,
+  "changed_from_original": 329,
+  "unchanged_from_original": 290,
+  "evaluation_endpoints": 1236,
+  "replacement_library_smiles": 27045,
+  "all_heldout_smiles": 8588,
+  "library_all_heldout_overlap": 0,
+  "library_selected_endpoint_overlap": 0,
+  "seed42_heads": 324,
+  "expected_seed42_heads": 324,
+  "count_validation": {
+    "expected": {
+      "targets": 27,
+      "source_test_components": 627,
+      "selected_components": 619,
+      "source_components_outside_frozen_analysis": 8,
+      "localization_eligible_components": 618,
+      "changed_from_original": 329,
+      "unchanged_from_original": 290,
+      "evaluation_endpoints": 1236,
+      "seed42_heads": 324
+    },
+    "observed": {
+      "targets": 27,
+      "source_test_components": 627,
+      "selected_components": 619,
+      "source_components_outside_frozen_analysis": 8,
+      "localization_eligible_components": 618,
+      "changed_from_original": 329,
+      "unchanged_from_original": 290,
+      "evaluation_endpoints": 1236,
+      "seed42_heads": 324
+    },
+    "checks": {
+      "targets": true,
+      "source_test_components": true,
+      "selected_components": true,
+      "source_components_outside_frozen_analysis": true,
+      "localization_eligible_components": true,
+      "changed_from_original": true,
+      "unchanged_from_original": true,
+      "evaluation_endpoints": true,
+      "seed42_heads": true
+    }
+  },
+  "input_hashes": {
+    "base_config": "b46388fc289ed2ceb540389c36b152f0b0882a1f3872604208433485feb2e198",
+    "rationale_config": "6565a5f61c4856b4256e776584906a26a281084694b09ccf54bfe76116072e25",
+    "pair_cache": "9d9fff7aac066a2a2856948e6cebb2e95088fc46e8ed01c42d7c8086aec65f85",
+    "molecule_splits": "6f709e728709621fb6f395e3f5dbcf92206d42caa616c436b69c426361df7a3e",
+    "source_molecules": "003de70aabc2a1218b76bccfba7263b1e22999481dbddcdf39825ac1b6dba3b4",
+    "model_molecules": "7d645a7eb6b88fa8e909501d92c46174f75000dfc8b01de643a0d78b14432320",
+    "original_sentinel_pairs": "1c8c91381a5c80597a4ffb6a9ffa817b4298b5fc61bf905ebce9c4dc127b32a3",
+    "replacement_library": "7e5552219e6de241ddec4495460b75de0ab88a02d6ec00947ad0b51f389bc043",
+    "crem_database": "e29de7e2891f92fafdcb2121dee8efd3d67ee7b9cc9cbaa5813e43ff18f4d484",
+    "original_representation_manifest": "8f76505a9e3dfb8d756d01a716e904f99eed2dd220d9759fd203a3314ca45e48",
+    "original_unique_mutants": "cdd312e9396a0eb7a2f9af67ad8034b522b62bc7f947241e8ff630140fc52234",
+    "original_mutant_representation_manifest": "05628142b21df4b620b34bb6378de1f8d37943c8ba6408a7ec7dfdb1ef1357fb",
+    "model_manifest": "2b456d8f0da831e41bab54a6d87b4938494fd9c9395fd933af4aa46ce43de498",
+    "original_pair_explanations": "22c9e20a7bc2f0f3f4b2dd4de0c851dd87a9187778480d6a0c3072411666c8f0"
+  },
+  "output_hashes": {
+    "selected_pairs_all.csv": "15c3e34261beeed256ff322b51bf57fee160e40321eb6369e2a66c7da96fdf11",
+    "source_components_outside_frozen_analysis.csv": "0866573703daa9ed3dd2ddaf7e305100e2aa2e78f23beff2277da169e565b35b",
+    "sentinel_pairs.csv": "aafecdd3839b920737a248e07db8b4028188f0ffb4de39f7c3739eac6f54a50e",
+    "evaluation_molecules.csv": "dc3007ea1cc4001dc3422d66ecd0c5b8f9d5b84f57db9527608cb5ad106fe0ee",
+    "molecules.csv": "003de70aabc2a1218b76bccfba7263b1e22999481dbddcdf39825ac1b6dba3b4",
+    "model_molecules.csv": "7d645a7eb6b88fa8e909501d92c46174f75000dfc8b01de643a0d78b14432320",
+    "selection_by_target.csv": "cd0f4724005f9d7bc66794059392c94e306d3caae0f788057f353e4787df75ae"
+  }
+}

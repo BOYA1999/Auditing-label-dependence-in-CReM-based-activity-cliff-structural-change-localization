@@ -1,0 +1,4 @@
+threshold,exact_reselection_candidate_rows,exact_reselection_selected_rows,exact_reselection_missing_representation_rows,exact_reselection_missing_unique_smiles,exact_reselection_affected_masks,exact_reselection_affected_endpoints,fixed_selected_restriction_rows,used_as_rescore_scenario
+0.5,22593,11830,956,956,425,205,11286,False
+0.6,20828,11286,0,0,0,0,11286,True
+0.7,16583,9679,862,859,614,240,8756,True

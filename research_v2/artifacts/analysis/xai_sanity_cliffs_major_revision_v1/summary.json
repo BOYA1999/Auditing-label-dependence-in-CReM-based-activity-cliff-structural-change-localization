@@ -1,0 +1,67 @@
+{
+  "run_id": "xai_sanity_cliffs_major_revision_v1",
+  "status": "success",
+  "confirmation_targets": 27,
+  "eligible_confirmation_test_pairs": 617,
+  "symmetric_primary": {
+    "target_balanced_median_delta_nap": -0.010394140779836608,
+    "ci90": [
+      -0.01905864134879489,
+      -0.005794535581342642
+    ],
+    "ci95": [
+      -0.020685980705197875,
+      -0.004341383447346482
+    ],
+    "frozen_margin": [
+      -0.05,
+      0.05
+    ],
+    "equivalent_at_ci95": true
+  },
+  "generator_mapping": {
+    "status": "pass",
+    "eligible_endpoints": 1234,
+    "mapped_mask_rows": 11990,
+    "mapped_selected_mutant_masks": 11552,
+    "atom_rows": 36979
+  },
+  "empirical_random_atom_baseline": {
+    "replicates_per_pair": 100,
+    "target_balanced_median_ap": 0.25860325087227637,
+    "target_balanced_median_nap": 0.042366390786158156
+  },
+  "pairwise_prediction": {
+    "model_cells": 972,
+    "undefined_spearman_constant_predicted_delta_cells": 8,
+    "undefined_spearman_label_permuted_cells": 8
+  },
+  "generator_support": {
+    "target_balanced_median_changed_support": 0.8395833333333333,
+    "target_balanced_median_unchanged_support": 0.6111111111111112,
+    "target_balanced_median_changed_minus_unchanged": 0.14619883040935666,
+    "target_bootstrap_ci95": [
+      0.032258064516129004,
+      0.2155172413793104
+    ]
+  },
+  "local_fidelity_scope": {
+    "reported_metric": "in-sample distance-weighted R2",
+    "effective_degrees_of_freedom": "not identifiable from saved summary rows",
+    "held-out_or_cross_validated_r2": "not computed by this existing-output reanalysis"
+  },
+  "input_hashes": {
+    "pair_explanations": "22c9e20a7bc2f0f3f4b2dd4de0c851dd87a9187778480d6a0c3072411666c8f0",
+    "pair_predictions": "9ecf37e49802856759abda470d43c31bf3726e60212e4df80abf504e1aaf913e",
+    "local_fidelity": "3db76c42adfff2588cd50f3d1246785a85824fb5fff85dbc75db481916ad5464",
+    "rationale_audit": "b40b2cd3b43b044ae78a786ea547b13b89aed51d2f9f65aca0a314182c3a38b9",
+    "mask_coverage": "7b646b00b3bf3f27d08c3531947fe89af749db16c4689095ed51a583782c2271",
+    "scored_mutants": "62dac7d6a9d729ef82d2a21d91f7acf122ed13fcad0e698fa5511b86d73a076d",
+    "sentinel_pairs": "1c8c91381a5c80597a4ffb6a9ffa817b4298b5fc61bf905ebce9c4dc127b32a3",
+    "molecules": "003de70aabc2a1218b76bccfba7263b1e22999481dbddcdf39825ac1b6dba3b4",
+    "model_molecules": "7d645a7eb6b88fa8e909501d92c46174f75000dfc8b01de643a0d78b14432320",
+    "evaluation_molecules": "d965b17fb1a5dcc587cbb37afbfc310bd5d28d454095dac627dfbf71e454c512"
+  },
+  "source_config_sha256": "b46388fc289ed2ceb540389c36b152f0b0882a1f3872604208433485feb2e198",
+  "analysis_config_sha256": "130ff999163f4db46f4664aadcd4997dfd86d007a37289ea7f3733a2561f111c"
+}

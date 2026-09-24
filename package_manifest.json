@@ -1,0 +1,122 @@
+{
+  "package_name": "xai_sanity_cliffs_v1_github_ready",
+  "package_kind": "code_and_public_data_only",
+  "manuscript_content_included": false,
+  "research_scope": "conditional matched label-randomization audit of CReM-mean activity-cliff structural-change localization",
+  "round2_primary_result": {
+    "eligible_components": 617,
+    "representation_predictor_configurations": 6,
+    "unadjusted_estimate": -0.00523271980315315,
+    "unadjusted_ci95": [
+      -0.013903418315426621,
+      -4.996003610813204e-16
+    ],
+    "empirical_null_adjusted_estimate": -0.008317338515946767,
+    "empirical_null_adjusted_ci95": [
+      -0.01576845069243632,
+      -0.0027686620181753933
+    ],
+    "interval_scope": "conditional on saved model initializations, label permutations, neighborhoods and the observed-label-selected cliff set",
+    "interpretation": "bounded and heterogeneous; no universal molecular-XAI reliability claim",
+    "confirmation_datasets": 27,
+    "distinct_target_ids": 26,
+    "selected_panel_descriptive_normal_model_spread_approx95": [
+      -0.08136786395556424,
+      0.06413892923215271
+    ],
+    "spread_scope": "Descriptive selected-panel cell variation; not validated unseen-configuration coverage. Legacy field names in frozen analysis outputs are retained for provenance."
+  },
+  "round2_sentinel_sensitivity": {
+    "confirmation_targets": 27,
+    "source_test_components": 627,
+    "frozen_comparable_components": 619,
+    "alternative_eligible_components": 618,
+    "paired_components": 617,
+    "unpaired_components": 1,
+    "current_crem_mean_delta_nap": 0.0,
+    "current_crem_mean_ci95": [
+      -0.008450751315270703,
+      0.0
+    ],
+    "paired_selection_change": 0.0,
+    "paired_selection_change_ci95": [
+      0.0,
+      0.0
+    ],
+    "interpretation": "both the full eligible-set estimate and the paired selection-change estimate are CReM-mean-only summaries",
+    "strict_validation": "PASS_49_OF_49"
+  },
+  "excluded_manuscript_paths": [
+    "paper/**",
+    "manuscript_pdfs/**",
+    "**/*.tex",
+    "**/*.docx",
+    "**/*.pdf",
+    "**/*.png",
+    "**/*.svg",
+    "**/*.tif",
+    "**/*.tiff"
+  ],
+  "upstream_data": {
+    "name": "MoleculeACE benchmark",
+    "repository": "https://github.com/molML/MoleculeACE",
+    "commit": "7e6de0bd2968c56589c580f2a397f01c531ede26",
+    "accessed": "2026-09-01",
+    "source_database": "ChEMBL as documented by MoleculeACE; this study did not query ChEMBL directly and the exact historical release/query/snapshot is unavailable upstream",
+    "upstream_license": "external/MoleculeACE/LICENCE"
+  },
+  "figure_source_tables": {
+    "count": 16,
+    "location": "figure_source_data/",
+    "manifest_policy": "explicit source_names allowlist in research_v2/scripts/make_round2_figures.py"
+  },
+  "supplementary_table_data": {
+    "count": 26,
+    "location": "research_v2/artifacts/analysis/xai_sanity_cliffs_supplement_tables_v1/",
+    "manifest": "research_v2/artifacts/analysis/xai_sanity_cliffs_supplement_tables_v1/manifest.json"
+  },
+  "verification": {
+    "compact_sentinel_reanalysis": "PASS_BYTE_IDENTICAL_11_OF_11",
+    "round2_derived_table_contract": "PASS_22_FILES_FULL_REANALYSIS_REQUIRES_EXCLUDED_LARGE_INPUTS",
+    "sentinel_strict_validation": "PASS_49_OF_49",
+    "supplementary_table_exports": "26_TABLES_VALIDATED_BY_VERIFY_PACKAGE",
+    "crem_symmetry_optimization": "PASS_60_RANDOM_PLUS_6_SYMMETRIC_EXACT_SET_AND_ORDER",
+    "privacy_identity_email_credential_scan": "PASS",
+    "unwanted_paths_and_extensions_scan": "PASS",
+    "paper_content_scan": "PASS",
+    "independent_extraction": "PASS",
+    "reporting_reanalysis": "EXECUTION_RECORDED_IN_EXTERNAL_DATED_QA_REPORT",
+    "science_smoke_checks": 29
+  },
+  "public_release_gate": "AUTHOR_REQUESTED_GITHUB_PUBLICATION_WITH_EXISTING_MIT_LICENSE",
+  "file_count_excluding_hash_manifest": 367,
+  "total_bytes_excluding_hash_manifest": 267961079,
+  "reporting_revision_date": "2026-09-24",
+  "reporting_sensitivities": {
+    "location": "research_v2/artifacts/analysis/xai_sanity_cliffs_reporting_v1/",
+    "files": 6,
+    "map_rows": 7,
+    "sentinel_rows": 21,
+    "assay_rows": 4,
+    "replay_script": "research_v2/scripts/analyze_reporting_sensitivities.py"
+  },
+  "minor_revision": "2026-09-24: generator-definition reporting and fixed-seed/implementation figure labels; numerical results unchanged",
+  "distribution": "GitHub code/data repository; not a journal additional-file archive",
+  "repository_url": "https://github.com/BOYA1999/Auditing-label-dependence-in-CReM-based-activity-cliff-structural-change-localization",
+  "software_license": {
+    "spdx": "MIT",
+    "path": "LICENSE",
+    "source": "existing author-provided repository at 2dec19095e0ad5ce50820d1d7af85d847f543ef1",
+    "third_party_scope": "upstream MoleculeACE licence and dependency/model terms remain separate"
+  },
+  "github_publication_preparation": {
+    "date": "2026-09-24",
+    "changes": [
+      "preserve existing repository licence and ignore rules",
+      "exclude .git metadata from payload inventory",
+      "preserve exact tracked bytes across operating systems"
+    ],
+    "scientific_data_changed": false,
+    "verification": "external dated QA record; exact version is the checked-out commit SHA"
+  }
+}

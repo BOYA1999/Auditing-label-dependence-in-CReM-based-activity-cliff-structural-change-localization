@@ -1,0 +1,11 @@
+{
+  "status": "pass",
+  "random_molecules": 60,
+  "symmetric_molecules": 6,
+  "checks": [
+    "exact tuple-set equality",
+    "exact returned-list order equality"
+  ],
+  "molecules_sha256": "2bef7f795b7d4fbcdbfb8cb196be124ec87be26465a0b7b2a7989f1bbe8af402",
+  "generator_script_sha256": "87dbf0b4ac497fa75edddf5793d6577937260b9a7913d8c6770212d531d9ea88"
+}

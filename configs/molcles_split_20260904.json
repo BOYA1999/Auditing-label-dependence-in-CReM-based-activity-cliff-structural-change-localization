@@ -1,0 +1,17 @@
+{
+  "run_id": "molcles_split_20260904",
+  "source_commit": "7e6de0bd2968c56589c580f2a397f01c531ede26",
+  "seed": 42,
+  "split_seed": 20260904,
+  "component_split": {"train": 0.50, "calibration": 0.25, "test": 0.25},
+  "activity_cliff": {"similarity": 0.90, "potency_fold": 10},
+  "mcs": {
+    "algorithm": "RASCAL_MCES",
+    "similarity_threshold": 0.10,
+    "ring_matches_ring_only": true,
+    "complete_aromatic_rings": true,
+    "complete_smallest_rings": false,
+    "timeout_seconds": 20,
+    "include_boundary_atoms": true
+  }
+}

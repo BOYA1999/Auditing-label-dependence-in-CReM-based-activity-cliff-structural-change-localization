@@ -1,0 +1,7 @@
+Representation,Predictor,Strict accuracy,Non-tie accuracy,Tie fraction,Sign-flipped,Median |\widehatDelta |
+MoLFormer,MLP,0.515,0.515,0.000,0.485,0.0636
+MoLFormer,XGBoost,0.455,0.522,0.100,0.389,0.0393
+Morgan,MLP,0.500,0.500,0.000,0.500,0.0884
+Morgan,XGBoost,0.182,0.500,0.615,0.182,0.0000
+Uni-Mol,MLP,0.500,0.500,0.000,0.500,0.1130
+Uni-Mol,XGBoost,0.423,0.500,0.059,0.400,0.0344

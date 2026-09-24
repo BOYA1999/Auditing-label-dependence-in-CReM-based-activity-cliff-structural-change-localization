@@ -1,0 +1,15 @@
+{
+  "status": "pass",
+  "interpretation": "heterogeneous_construct_sensitivity",
+  "eligible_tasks": 34,
+  "passing_tasks": 23,
+  "minimum_configuration_median_calibrated_nap": -0.0456432419521514,
+  "inputs": {
+    "gate_sha256": "32fb1c4ed7e7107a780fece3f467adff297b4420732344cbfd981f0b21edb2b8",
+    "rows_sha256": "7e30a0bbac018f2216be2f628e3f9ff737a66754c3127c643e0a497ee89c6017"
+  },
+  "outputs": {
+    "configuration_sha256": "370a36b69f0033ea3bca10c3e65c86d432f82a8d6a1fa29eaffcb1391c97e200",
+    "concept_sha256": "59351a52b37d914caf79c13862673ef368030e0a945bd94d7ac7674d9eb7a4ba"
+  }
+}

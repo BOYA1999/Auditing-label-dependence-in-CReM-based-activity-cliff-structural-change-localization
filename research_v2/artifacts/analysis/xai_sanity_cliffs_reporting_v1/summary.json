@@ -1,0 +1,55 @@
+{
+  "scope": "retrospective reporting sensitivities on frozen records; no retraining",
+  "map_aggregation": "median of row correlations within each dataset, then median across datasets; matched seeds; undefined values excluded, not zero-filled",
+  "map_limit": "descriptive cross-label comparison, without within-observed-label seed-stability reference; no causal map-response claim",
+  "sentinel_aggregation": "signed target-balanced median plus unweighted component-configuration row absolute quantiles; changed-pair subset explicit",
+  "assay_sensitivity": "drop either CHEMBL237 assay; two-stage dataset/component bootstrap, 5000 draws, seed 20260924; a changed analysis population, not a clustering correction",
+  "datasets": 27,
+  "distinct_target_ids": 26,
+  "eligible_endpoints": 1234,
+  "distinct_structures": 1215,
+  "cross_dataset_test_overlap": [
+    {
+      "dataset_a": "CHEMBL204_Ki",
+      "dataset_b": "CHEMBL244_Ki",
+      "shared_structures": 2
+    },
+    {
+      "dataset_a": "CHEMBL2147_Ki",
+      "dataset_b": "CHEMBL4203_Ki",
+      "shared_structures": 1
+    },
+    {
+      "dataset_a": "CHEMBL228_Ki",
+      "dataset_b": "CHEMBL238_Ki",
+      "shared_structures": 4
+    },
+    {
+      "dataset_a": "CHEMBL233_Ki",
+      "dataset_b": "CHEMBL236_Ki",
+      "shared_structures": 2
+    },
+    {
+      "dataset_a": "CHEMBL233_Ki",
+      "dataset_b": "CHEMBL237_Ki",
+      "shared_structures": 3
+    },
+    {
+      "dataset_a": "CHEMBL236_Ki",
+      "dataset_b": "CHEMBL237_Ki",
+      "shared_structures": 2
+    },
+    {
+      "dataset_a": "CHEMBL237_EC50",
+      "dataset_b": "CHEMBL237_Ki",
+      "shared_structures": 2
+    },
+    {
+      "dataset_a": "CHEMBL239_EC50",
+      "dataset_b": "CHEMBL3979_EC50",
+      "shared_structures": 3
+    }
+  ],
+  "primary_unadjusted_unchanged": -0.00523271980315315,
+  "primary_adjusted_unchanged": -0.008317338515946699
+}

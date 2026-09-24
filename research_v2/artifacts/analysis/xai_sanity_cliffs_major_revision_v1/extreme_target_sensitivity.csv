@@ -1,0 +1,4 @@
+excluded_target,reason,retained_targets,target_balanced_median_delta,ci95_low,ci95_high
+CHEMBL231_Ki,lowest_target_delta,26,-0.01033397659714453,-0.01941936748232384,-0.0038821841590648584
+CHEMBL244_Ki,most_components,26,-0.01033397659714453,-0.020590497740282356,-0.003986826573518848
+CHEMBL2835_Ki,fewest_components;highest_target_delta,26,-0.010550367130436097,-0.021065531081349374,-0.005019271477291967

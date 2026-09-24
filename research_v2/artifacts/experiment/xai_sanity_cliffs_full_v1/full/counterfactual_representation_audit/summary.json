@@ -1,0 +1,11 @@
+{
+  "status": "pass",
+  "unique_mutants": 105459,
+  "fallback_unique_mutants": 514,
+  "fallback_unique_mutant_fraction": 0.00487393204942205,
+  "scored_rows": 108384,
+  "fallback_scored_rows": 532,
+  "masks": 28265,
+  "affected_masks": 159,
+  "affected_mask_fraction": 0.005625331682292588
+}

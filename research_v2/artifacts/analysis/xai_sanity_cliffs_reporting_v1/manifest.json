@@ -1,0 +1,19 @@
+{
+  "input_sha256": {
+    "research_v2/artifacts/analysis/xai_sanity_cliffs_round2_v1/crem_mean_unadjusted_component_deltas.csv": "5d053376529709ba721dcb53f1c29ea47966408fa06fb6ef4e4fb2da7ac7bca0",
+    "research_v2/artifacts/analysis/xai_sanity_cliffs_round2_v1/crem_mean_empirical_null_component_deltas.csv": "de278d87114254318b9e0af7349583d310d1b9cd6e3b6f18c3e2c59116275243",
+    "research_v2/artifacts/experiment/xai_sanity_cliffs_full_v1/full/sanity_explanations/atom_rank_similarity.csv": "562852e7669d440ecd120976c4bf6b60366ec45144eccca6e8be01655256f6fc",
+    "research_v2/artifacts/experiment/xai_sanity_cliffs_full_v1/prepared/evaluation_molecules.csv": "d965b17fb1a5dcc587cbb37afbfc310bd5d28d454095dac627dfbf71e454c512",
+    "research_v2/artifacts/analysis/xai_sanity_cliffs_round2_sentinel_v1/paired_selection_comparison.csv": "44c6bb2be3dbf86aae8ae09843af2cf343e3e7abdb32ec0751f8494f8f67821c"
+  },
+  "script_sha256": "9a120057d53fd25bd86558afff8067d3052e67eb416d39c1fdd5cc8adb8e7d54",
+  "output_sha256": {
+    "assay_leave_one_out.csv": "16a4903b5c5ef7fd7cc2db9360ffc5c9b9edaa01ed5950a9ba3da92bbc6ee495",
+    "assay_leave_one_out_bootstrap.csv": "eb64a8fc3cee4a12e0355faf0c96b8e511ec09d65ff08df641600ebea4e997bf",
+    "map_similarity_summary.csv": "eed40da9fb24b4f9c5f225b01ab1309b907ebc32d82be5d600ebb0bbe3d46392",
+    "sentinel_selection_distribution.csv": "1a9f5d7384ed4bcd4901b57ac405eed6d3fba67a8951f310bd695201fc68c0c6",
+    "summary.json": "170a55ee5688bc12bccbe820d318b6280d3203a07465b5c076161fd56e0f9bc1"
+  },
+  "bootstrap_draws": 5000,
+  "seed": 20260924
+}

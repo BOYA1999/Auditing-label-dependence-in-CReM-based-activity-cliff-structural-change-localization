@@ -1,0 +1,2 @@
+reference_target_balanced_median_delta_nap,reference_ci95_low,reference_ci95_high,reference_conclusion,rescore_target_balanced_median_delta_nap,rescore_ci95_low,rescore_ci95_high,rescore_conclusion,rescore_minus_reference_target_balanced_median_delta_nap,difference_ci95_low,difference_ci95_high,conclusion_changed
+-0.011125196049288412,-0.040652755830221855,0.00393511346055378,includes_zero,-0.011125196049288393,-0.04241292989731857,0.0056877537276331805,includes_zero,0.0,0.0,0.0,False

@@ -1,0 +1,18 @@
+representation,predictor,explainer,control,median_trained_nap,median_randomized_nap,median_calibrated_nap,mean_calibrated_nap,molecules,minimum_randomization_replicates,passes,configuration
+molformer,mlp,crem_mean,aromatic_atom_count,0.3452680652680653,0.1084419879062736,0.1592811213554247,0.1864522857289071,308,3,True,MoLFormer · MLP
+molformer,xgboost,crem_mean,aromatic_atom_count,0.2112271062271062,0.0985442195526229,0.0196027501909853,0.1310765177376722,308,3,True,MoLFormer · XGB
+morgan,mlp,crem_mean,aromatic_atom_count,0.1621753246753245,0.0854836263762992,0.0,0.0959572583953606,308,3,False,Morgan · MLP
+morgan,xgboost,crem_mean,aromatic_atom_count,0.3567267486704826,0.0,0.2489684095860567,0.2791347732618737,308,3,True,Morgan · XGB
+unimol,mlp,crem_mean,aromatic_atom_count,0.259453781512605,0.1212972334682861,0.04767316017316,0.1345198605246915,308,3,True,Uni-Mol · MLP
+molformer,mlp,crem_mean,halogen_count,1.0,0.2458171799185624,0.6183373709844298,0.5320100427188503,134,3,True,MoLFormer · MLP
+molformer,xgboost,crem_mean,halogen_count,1.0,0.208884479717813,0.5299534645362847,0.4483456843291104,134,3,True,MoLFormer · XGB
+morgan,mlp,crem_mean,halogen_count,1.0,0.0885950981888481,0.7560727039514918,0.612821152274584,134,3,True,Morgan · MLP
+morgan,xgboost,crem_mean,halogen_count,1.0,0.0669186699720213,0.6666666666666667,0.5509849149675703,134,3,True,Morgan · XGB
+unimol,mlp,crem_mean,halogen_count,1.0,0.3068906927433831,0.5832708420611646,0.4909782846705035,134,3,True,Uni-Mol · MLP
+unimol,xgboost,crem_mean,halogen_count,1.0,0.2511409784984346,0.5018516150421521,0.3816422362590146,134,3,True,Uni-Mol · XGB
+molformer,mlp,crem_mean,heteroatom_count,0.0170177648438517,0.0887789823745201,-0.0456432419521514,-0.0476578718307049,308,3,False,MoLFormer · MLP
+molformer,xgboost,crem_mean,heteroatom_count,0.0259763581818719,0.076386214236097,-0.0238285713469537,-0.0085819591014898,308,3,False,MoLFormer · XGB
+morgan,mlp,crem_mean,heteroatom_count,0.0446587055874981,0.105332036635471,-0.0224791988990646,-0.0116495681909375,308,3,False,Morgan · MLP
+morgan,xgboost,crem_mean,heteroatom_count,0.090963215658956,0.0458754208754208,0.0441318153961831,0.0876153084243335,308,3,True,Morgan · XGB
+unimol,mlp,crem_mean,heteroatom_count,0.01647899946943,0.089422102320653,-0.0382749935573949,-0.0285014546096103,308,3,False,Uni-Mol · MLP
+unimol,xgboost,crem_mean,heteroatom_count,0.0337140637140637,0.0767858806081841,-0.0236740403254728,-0.0018004733199171,308,3,False,Uni-Mol · XGB

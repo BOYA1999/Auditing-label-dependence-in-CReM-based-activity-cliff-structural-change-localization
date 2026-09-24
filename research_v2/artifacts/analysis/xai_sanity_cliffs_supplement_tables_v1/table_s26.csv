@@ -1,0 +1,5 @@
+Omitted dataset,Estimand,Datasets,Components,Contrast,Conditional 95% CI
+CHEMBL237_EC50,Unadjusted,26,599,-0.007635,"[-0.014230, -0.000507]"
+CHEMBL237_EC50,Null-adjusted,26,599,-0.009009,"[-0.015938, -0.003152]"
+CHEMBL237_Ki,Unadjusted,26,577,-0.004595,"[-0.014480, -0.000190]"
+CHEMBL237_Ki,Null-adjusted,26,577,-0.007385,"[-0.015703, -0.002409]"

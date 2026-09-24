@@ -1,0 +1,10 @@
+{
+  "pairs": 617,
+  "pairs_with_multiple_valid_matched_atom_sets": 62,
+  "fraction_with_multiple_valid_matched_atom_sets": 0.10048622366288493,
+  "pairs_with_truncated_enumeration": 0,
+  "chosen_mapping_recovered_all": true,
+  "median_nap_range_when_ambiguous": 0.012813337104389545,
+  "q95_nap_range_when_ambiguous": 0.18566604733291164,
+  "scope": "Automorphic/substructure alternatives to the stored matched atom subgraph; this does not enumerate chemically distinct maximum common subgraphs absent from the stored match."
+}

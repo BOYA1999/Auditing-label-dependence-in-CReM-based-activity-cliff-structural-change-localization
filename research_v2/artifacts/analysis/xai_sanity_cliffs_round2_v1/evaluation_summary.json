@@ -1,0 +1,12 @@
+{
+  "status": "pass",
+  "question": "Do the estimator, empirical-null, heterogeneity, predictor-competence and structural-proxy audits change the evidence boundary?",
+  "comparison_baselines": [
+    "label-permuted CReM mean",
+    "pair-specific tie-preserving empirical null",
+    "generator-only scores"
+  ],
+  "claim_update": "CReM-LIME is excluded from primary inference; the remaining claim is conditional, post-confirmation and limited to unsigned CReM-mean structural-change localization.",
+  "comparability": "Model/data/neighborhood caches are fixed. Rationale and empirical-null variations are explicit sensitivity estimands rather than replacements for the historical analysis.",
+  "next_action": "Revise the manuscript and supplement using these outputs; retain any contradictory or wide-interval result."
+}

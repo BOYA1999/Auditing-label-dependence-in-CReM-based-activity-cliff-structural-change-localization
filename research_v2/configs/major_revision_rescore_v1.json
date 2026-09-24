@@ -1,0 +1,68 @@
+{
+  "run_id": "xai_sanity_cliffs_major_revision_rescore_v1",
+  "source_config": "research_v2/configs/sanity_full_v1.json",
+  "targets": [
+    "CHEMBL4616_EC50",
+    "CHEMBL239_EC50",
+    "CHEMBL2835_Ki",
+    "CHEMBL2147_Ki",
+    "CHEMBL287_Ki",
+    "CHEMBL244_Ki"
+  ],
+  "target_selection": "Outcome-independent six-target panel fixed before this rescore; no target is added, removed, or replaced after inspecting rescore results.",
+  "inputs": {
+    "model_molecules": "research_v2/artifacts/experiment/xai_sanity_cliffs_full_v1/prepared/model_molecules.csv",
+    "evaluation_molecules": "research_v2/artifacts/experiment/xai_sanity_cliffs_full_v1/prepared/evaluation_molecules.csv",
+    "sentinel_pairs": "research_v2/artifacts/experiment/xai_sanity_cliffs_full_v1/prepared/sentinel_pairs.csv",
+    "scored_mutants": "research_v2/artifacts/experiment/xai_sanity_cliffs_full_v1/full/counterfactuals/scored_mutants_model.csv",
+    "raw_mutants": "research_v2/artifacts/experiment/xai_sanity_cliffs_full_v1/full/counterfactuals/mutants.csv",
+    "unique_mutants": "research_v2/artifacts/experiment/xai_sanity_cliffs_full_v1/full/counterfactuals/unique_scored_mutants_model.csv",
+    "original_representations": "research_v2/artifacts/experiment/xai_sanity_cliffs_full_v1/full/representations",
+    "mutant_representations": "research_v2/artifacts/experiment/xai_sanity_cliffs_full_v1/full/counterfactual_representations",
+    "model_manifest": "research_v2/artifacts/experiment/xai_sanity_cliffs_full_v1/full/sanity_heads/model_manifest.csv",
+    "reference_predictions": "research_v2/artifacts/experiment/xai_sanity_cliffs_full_v1/full/sanity_heads/predictions.csv",
+    "reference_pair_explanations": "research_v2/artifacts/experiment/xai_sanity_cliffs_full_v1/full/sanity_explanations/pair_explanations.csv",
+    "reference_local_fidelity": "research_v2/artifacts/experiment/xai_sanity_cliffs_full_v1/full/sanity_explanations/local_fidelity.csv"
+  },
+  "output": "research_v2/artifacts/analysis/xai_sanity_cliffs_major_revision_v1/rescore_controls",
+  "neighborhood_scenarios": [
+    {
+      "name": "fixed_selected_support_0_60",
+      "minimum_parent_tanimoto": 0.60,
+      "absolute_domain_only": false
+    },
+    {
+      "name": "fixed_selected_support_0_70_restriction",
+      "minimum_parent_tanimoto": 0.70,
+      "absolute_domain_only": false
+    },
+    {
+      "name": "fixed_selected_absolute_domain_only",
+      "minimum_parent_tanimoto": 0.60,
+      "absolute_domain_only": true
+    }
+  ],
+  "unsupported_broader_sensitivity": {
+    "minimum_parent_tanimoto": 0.50,
+    "status": "requires_new_mutant_selection_and_missing_representations"
+  },
+  "mask_size_exponents": [0.0, 0.5],
+  "rationales": ["boundary_extended", "strict_unmatched"],
+  "ridge_diagnostics": {
+    "alpha": 1.0,
+    "kernel_width": 0.25,
+    "fingerprint_radius": 2,
+    "fingerprint_bits": 2048,
+    "cv_folds": 5,
+    "cv_seed": 20260903
+  },
+  "bootstrap": {
+    "draws": 5000,
+    "seed": 20260903
+  },
+  "reference_reproduction_tolerances": {
+    "parent_prediction_absolute": 0.00002,
+    "pair_ap_or_nap_absolute": 0.002,
+    "local_r2_absolute": 0.00001
+  }
+}

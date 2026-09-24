@@ -1,0 +1,22 @@
+Scope,Configuration,Components,Rows,Negative,Zero,Positive,Signed median,Absolute median,Absolute P95
+All paired,All configurations,617,3702,993,1776,933,0.0000,0.0051,0.4328
+All paired,molformer/mlp,617,617,168,297,152,0.0000,0.0035,0.4274
+All paired,molformer/xgboost,617,617,153,297,167,0.0000,0.0036,0.4430
+All paired,morgan/mlp,617,617,175,296,146,0.0000,0.0035,0.4172
+All paired,morgan/xgboost,617,617,168,296,153,0.0000,0.0059,0.4770
+All paired,unimol/mlp,617,617,167,295,155,0.0000,0.0074,0.3701
+All paired,unimol/xgboost,617,617,162,295,160,0.0000,0.0084,0.4557
+Changed pair,All configurations,328,1968,993,42,933,0.0000,0.1184,0.5200
+Changed pair,molformer/mlp,328,328,168,8,152,0.0000,0.1066,0.4822
+Changed pair,molformer/xgboost,328,328,153,8,167,-0.0025,0.1118,0.4992
+Changed pair,morgan/mlp,328,328,175,7,146,0.0000,0.1232,0.5108
+Changed pair,morgan/xgboost,328,328,168,7,153,0.0068,0.1093,0.5911
+Changed pair,unimol/mlp,328,328,167,6,155,0.0000,0.1179,0.4533
+Changed pair,unimol/xgboost,328,328,162,6,160,-0.0071,0.1348,0.5181
+Unchanged pair,All configurations,289,1734,0,1734,0,0.0000,0.0000,0.0000
+Unchanged pair,molformer/mlp,289,289,0,289,0,0.0000,0.0000,0.0000
+Unchanged pair,molformer/xgboost,289,289,0,289,0,0.0000,0.0000,0.0000
+Unchanged pair,morgan/mlp,289,289,0,289,0,0.0000,0.0000,0.0000
+Unchanged pair,morgan/xgboost,289,289,0,289,0,0.0000,0.0000,0.0000
+Unchanged pair,unimol/mlp,289,289,0,289,0,0.0000,0.0000,0.0000
+Unchanged pair,unimol/xgboost,289,289,0,289,0,0.0000,0.0000,0.0000

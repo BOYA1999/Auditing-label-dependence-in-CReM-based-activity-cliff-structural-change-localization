@@ -1,0 +1,27 @@
+{
+  "run_id": "xai_sanity_cliffs_major_revision_v1",
+  "source_config": "research_v2/configs/sanity_full_v1.json",
+  "inputs": {
+    "pair_explanations": "research_v2/artifacts/experiment/xai_sanity_cliffs_full_v1/full/sanity_explanations/pair_explanations.csv",
+    "pair_predictions": "research_v2/artifacts/experiment/xai_sanity_cliffs_full_v1/full/sanity_heads/pair_predictions.csv",
+    "local_fidelity": "research_v2/artifacts/experiment/xai_sanity_cliffs_full_v1/full/sanity_explanations/local_fidelity.csv",
+    "rationale_audit": "research_v2/artifacts/experiment/xai_sanity_cliffs_full_v1/full/sanity_explanations/rationale_prevalence_audit.csv",
+    "mask_coverage": "research_v2/artifacts/experiment/xai_sanity_cliffs_full_v1/full/counterfactuals/mask_coverage.csv",
+    "scored_mutants": "research_v2/artifacts/experiment/xai_sanity_cliffs_full_v1/full/counterfactuals/scored_mutants.csv",
+    "sentinel_pairs": "research_v2/artifacts/experiment/xai_sanity_cliffs_full_v1/prepared/sentinel_pairs.csv",
+    "molecules": "research_v2/artifacts/experiment/xai_sanity_cliffs_full_v1/prepared/molecules.csv",
+    "model_molecules": "research_v2/artifacts/experiment/xai_sanity_cliffs_full_v1/prepared/model_molecules.csv",
+    "evaluation_molecules": "research_v2/artifacts/experiment/xai_sanity_cliffs_full_v1/prepared/evaluation_molecules.csv"
+  },
+  "output": "research_v2/artifacts/analysis/xai_sanity_cliffs_major_revision_v1",
+  "bootstrap": {
+    "draws": 5000,
+    "seed": 20260903,
+    "confidence_levels": [0.90, 0.95]
+  },
+  "equivalence_margins": [0.025, 0.05, 0.075, 0.10],
+  "prediction_alignment": {
+    "absolute_predicted_delta_thresholds": [0.0, 0.25, 0.5, 1.0]
+  },
+  "random_atom_baseline_replicates": 100
+}

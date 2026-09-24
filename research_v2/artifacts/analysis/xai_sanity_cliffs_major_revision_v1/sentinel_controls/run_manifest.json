@@ -1,0 +1,13 @@
+{
+  "run_id": "xai_sanity_cliffs_major_revision_sentinel_v1",
+  "status": "pass",
+  "config_sha256": "7d91be45e28a61061c3246ed0395c3de4b05898e9e967f2d82e41468c99fb405",
+  "stage_summary_sha256": {
+    "preparation": "84cbf46265df8ed32cd9a287ba3fba8ec02ff23c8cad4f204f1a64e9f9e76f3a",
+    "counterfactuals": "3d38f0d0ef62cb3778735ca92c22ac0187f5c33a4ed650805eda5389a9d0efce",
+    "representations": "6969b291cfa66a55c9a9267d31b49a022bff68d14e06a9cca9d4793f16a4a7b0",
+    "explanations": "1c84e57ed6d78fe5a6f97bb4770e9efd575991a2b45fd2faeff4399e8ef9b877",
+    "analysis": "f337ace22e478b44963b3317b1c6a4a004d207221efabd490369b4a749901d7d",
+    "validation": "059ff9b24f9463a124792606c3e1bc96cf90caab6ef06878856e5f277bc419ae"
+  }
+}

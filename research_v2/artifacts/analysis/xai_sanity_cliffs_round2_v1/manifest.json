@@ -1,0 +1,52 @@
+{
+  "run_id": "xai_sanity_cliffs_round2_v1",
+  "status": "pass",
+  "config_sha256": "9135fc4b3c955cae78cbacf1240a15d8d438cb88e9f649ae9b4349c25796e1ab",
+  "script_sha256": "34ecbe7436786aeba27ba4ddcade4c38b46570f7015300e8690826861052b3e6",
+  "input_sha256": {
+    "atom_scores": "e716901d40a00fc90062c6529c5d8013b58e796260a65814f82813203a17344a",
+    "pair_explanations": "22c9e20a7bc2f0f3f4b2dd4de0c851dd87a9187778480d6a0c3072411666c8f0",
+    "pair_predictions": "9ecf37e49802856759abda470d43c31bf3726e60212e4df80abf504e1aaf913e",
+    "predictions": "5bf36f7f3f789f954c52d68dd2d196b1537e0f56697d91a0f834defcb2068f56",
+    "sentinel_pairs": "1c8c91381a5c80597a4ffb6a9ffa817b4298b5fc61bf905ebce9c4dc127b32a3",
+    "model_molecules": "7d645a7eb6b88fa8e909501d92c46174f75000dfc8b01de643a0d78b14432320",
+    "symmetric_component_metrics": "debe27dcf98150886db880c743589a6945479d5fb76329e14f87746b25ce2344",
+    "generator_atom_geometry": "75253bbb9d2dbf677aa147c28819289bb9c11988f61ac8addd766afaf5649ce8"
+  },
+  "output_sha256": {
+    "calibration_prediction_quality.csv": "500e36b07c56ea1729d4c8a30bac5579fae4e4c3f1b588297eb5242a9dde7470",
+    "crem_mean_configuration_summary.csv": "8431546ac422a9978a8bd8e3a26c6da4943894a4ce311cba853e23e27f2a22e6",
+    "crem_mean_empirical_null_component_deltas.csv": "de278d87114254318b9e0af7349583d310d1b9cd6e3b6f18c3e2c59116275243",
+    "crem_mean_primary_bootstrap.csv": "66fd3cccd56213efb40d6b7cf8795d9573f4281a7d5e01e96e3d1249515466a5",
+    "crem_mean_primary_summary.json": "84091fc4b4c7fcfbf18649acf03138bb7850f3b7272d595211ec524676cea480",
+    "crem_mean_target_configuration_effects.csv": "6f17d88e32ba93fbc29856b6f95c985ddbac4541421332a97fbc2c0533e5af22",
+    "crem_mean_unadjusted_component_deltas.csv": "5d053376529709ba721dcb53f1c29ea47966408fa06fb6ef4e4fb2da7ac7bca0",
+    "empirical_null_summary.csv": "bdd5c824ddcbf1eb70486ef903d08aad31b20e5353cb03dd2a946989687c74a3",
+    "generator_empirical_null_pair_metrics.csv": "672810072a05ccbbf479e87e784e894e29fba83e96ac54fc878286e77651ee4d",
+    "hierarchical_heterogeneity.json": "f4dc0373659227e9779529c31d60696b984cd125bfd7e8fd5435f63c29345bcf",
+    "mcs_mapping_ambiguity.csv": "2e37924f5259dfaab3575368bf3b3e4cc080d20cc0efbee676b4e2a1a47a4ca7",
+    "mcs_mapping_nap_sensitivity.csv": "58c45a9e00f175295797d87072b27b7e2f345bb1d099c7ede85a002b4ee96017",
+    "mcs_mapping_summary.json": "243222d4721c2d226f1ee09aa01df6ce6623ff96f41fab6ebd3f9f4679471ea0",
+    "model_empirical_null_pair_metrics.csv": "1b57d561d36cb917b8c94bde83edb34f5dc95c1059681af2668b47d16667c4bc",
+    "permuted_direction_tie_audit_by_model.csv": "580535521154e9f3eb9e37ad7a6a2b3ae2b6990a7d651901dfe0d147c5400d24",
+    "permuted_direction_tie_summary.csv": "db4367c40788e14e513a66445cf1f37dc6f414bdee097dbafc00ff89422e4141",
+    "prediction_competence_bootstrap.csv": "b0f8fce5538fd26e45c5bbd941e1d9cb03bef35975849a319507990e9267582f",
+    "prediction_competence_localization_cells.csv": "3d32da71a12aef24d1a300faa6cff747f5664593b6b8eb8bd528264d2840a1fd",
+    "prediction_competence_summary.json": "372493981f21d7783c30c8e1b9d009f55b9dfb9395ae1dc1b5a8bab24a739f1c"
+  },
+  "software": {
+    "python": "3.12.0",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "scipy": "1.17.1",
+    "rdkit": "2026.03.3"
+  },
+  "validation": {
+    "confirmation_pairs": 617,
+    "model_pair_null_rows": 43128,
+    "generator_pair_null_rows": 2396,
+    "target_configuration_cells": 162,
+    "all_primary_values_finite": true,
+    "all_chosen_mappings_recovered": true
+  }
+}

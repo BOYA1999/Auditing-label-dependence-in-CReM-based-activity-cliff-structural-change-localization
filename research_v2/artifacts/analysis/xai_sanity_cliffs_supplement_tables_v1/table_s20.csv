@@ -1,0 +1,14 @@
+Stage,Count,Unit
+all targets,30,targets
+Originally held-out targets,27,targets
+source molecules,"48,714",molecules
+shared model molecules,"48,588",molecules
+all sentinel pairs,"1,507",pairs
+all test sentinel pairs,773,pairs
+Post-confirmation test sentinel pairs,619,pairs
+Post-confirmation test nAP-eligible pairs,617,pairs
+Post-confirmation test evaluation endpoints,"1,234",molecules
+Post-confirmation test explanation rows,"44,424",model_explainer_pair_rows
+Pair-specific model empirical-null rows,"43,128",rows
+Pair-specific generator empirical-null rows,"2,396",rows
+CReM-mean target-configuration cells,162,cells

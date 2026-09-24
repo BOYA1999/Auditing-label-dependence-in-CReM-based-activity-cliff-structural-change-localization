@@ -1,0 +1,11 @@
+{
+  "status": "pass",
+  "model_rows": 48588,
+  "unimol_2d_fallback_rows": 335,
+  "evaluation_rows": 3014,
+  "evaluation_2d_fallback_rows": 14,
+  "sentinel_pairs": 1507,
+  "sentinel_pairs_with_2d_fallback": 8,
+  "primary_policy": "retain documented Uni-Mol 2D fallback behavior",
+  "sensitivity_policy": "exclude sentinel pairs touching a fallback endpoint"
+}

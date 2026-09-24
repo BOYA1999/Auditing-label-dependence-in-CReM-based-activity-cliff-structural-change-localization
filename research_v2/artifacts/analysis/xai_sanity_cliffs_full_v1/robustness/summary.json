@@ -1,0 +1,40 @@
+{
+  "status": "success",
+  "confirmation_targets": 27,
+  "prediction_randomization": {
+    "target_balanced_median_permuted_minus_trained_rmse": 0.36032148882263876,
+    "target_bootstrap_ci": [
+      0.29803187318597546,
+      0.42423695192048094
+    ],
+    "positive_target_medians": 27,
+    "targets": 27,
+    "positive_model_cells": 473,
+    "model_cells": 486
+  },
+  "matched_seed_explanation": {
+    "target_balanced_median_delta": -0.0016102311766161993,
+    "two_stage_bootstrap_ci": [
+      -0.008516471423458846,
+      0.0
+    ]
+  },
+  "local_fidelity_randomization": {
+    "target_balanced_permuted_median_r2": 0.9464574040139713,
+    "target_bootstrap_ci": [
+      0.937616244471703,
+      0.9476407255372283
+    ],
+    "pooled_permuted_fraction_ge_08": 0.9538682462753545,
+    "pooled_trained_fraction_ge_08": 0.980479267635972,
+    "pooled_median_trained_minus_permuted_r2": 0.0046561281257123666
+  },
+  "atom_similarity_support_bias": {
+    "target_balanced_median_all_minus_supported_spearman": 0.40348333639285616,
+    "target_bootstrap_ci": [
+      0.32131088934345553,
+      0.4527381218094113
+    ],
+    "targets": 27
+  }
+}

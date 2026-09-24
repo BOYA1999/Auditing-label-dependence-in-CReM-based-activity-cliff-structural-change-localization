@@ -1,0 +1,4 @@
+Analysis,Targets,Components,Delta nAP,95% CI
+Original component split,6,138,-0.00295,"[-0.02383, 0.00177]"
+Independent component split A,6,139,-0.00705,"[-0.02321, 0.00461]"
+Independent component split B,6,139,0.00000,"[-0.00965, 0.00493]"

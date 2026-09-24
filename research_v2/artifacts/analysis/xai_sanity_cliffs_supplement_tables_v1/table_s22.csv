@@ -1,0 +1,10 @@
+Lineage item,Evidence or boundary
+Benchmark collection,"MoleculeACE, 30 public target-assay tables"
+Public repository,https://github.com/molML/MoleculeACE
+Pinned upstream commit,7e6de0bd2968c56589c580f2a397f01c531ede26
+Study access date,1 September 2026
+Original bioactivity source documented by MoleculeACE,ChEMBL
+Direct ChEMBL query in this study,None
+Historical ChEMBL release/query/access snapshot in redistributed tables,Not recorded; no release is inferred
+Privacy boundary,"Molecular structures and assay measurements only; no patient, clinical, contact or institutional records"
+Pretrained assets,Public MoLFormer and Uni-Mol weights are referenced but not redistributed

@@ -1,0 +1,10 @@
+{
+  "campaign_id": "randomized_degeneracy_full_v1",
+  "decision": "REVISE_GATE_EVALUATION_DOMAIN",
+  "endpoint_constant_randomized_models": 3,
+  "randomized_models": 540,
+  "retraining_allowed": false,
+  "final_nonconstant_domain": "target evaluation parents plus valid scored CReM mutants",
+  "threshold": 1e-8,
+  "explanation_results_opened": false
+}

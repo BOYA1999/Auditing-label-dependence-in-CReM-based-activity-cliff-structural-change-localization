@@ -1,0 +1,25 @@
+{
+  "status": "pass",
+  "validation_scope": "compact row-level reanalysis; model binaries and per-unit directories intentionally excluded",
+  "checks": {
+    "root_summary_pass": true,
+    "expected_model_count": true,
+    "ten_permutations_per_nap_target_configuration": true,
+    "ten_permutations_per_pairwise_target_configuration": true,
+    "both_explainers_present": true,
+    "finite_nap": true,
+    "finite_pairwise_errors": true,
+    "convergence_counts_present": true,
+    "duplicate_pair_explanations": true,
+    "fixed_model_initialization_seed": true,
+    "permutation_seed_formula_valid": true,
+    "ten_distinct_label_sequences_per_target": true,
+    "pair_explanation_rows_complete": true,
+    "pair_prediction_rows_complete": true
+  },
+  "expected_models": 1620,
+  "models": 1620,
+  "pair_explanation_rows": 144120,
+  "undefined_pairwise_spearman_rows": 24,
+  "duplicate_pair_explanation_rows": 0
+}

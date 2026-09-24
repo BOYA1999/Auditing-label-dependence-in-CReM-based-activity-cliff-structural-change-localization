@@ -1,0 +1,7 @@
+Representation,Predictor,Permutation SD,Permutation range,10-permutation Delta
+MoLFormer,MLP,0.0086,"[0.0889, 0.1106]",-0.0087
+MoLFormer,XGBoost,0.0154,"[0.0595, 0.1023]",-0.0124
+Morgan,MLP,0.0137,"[0.1030, 0.1428]",-0.0189
+Morgan,XGBoost,0.0232,"[0.0164, 0.0790]",-0.0186
+Uni-Mol,MLP,0.0133,"[0.0769, 0.1137]",-0.0029
+Uni-Mol,XGBoost,0.0159,"[0.0734, 0.1214]",-0.0030

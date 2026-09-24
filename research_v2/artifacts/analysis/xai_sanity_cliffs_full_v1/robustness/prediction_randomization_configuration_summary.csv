@@ -1,0 +1,7 @@
+representation,predictor,median_rmse_increase,positive_models,models
+molformer,mlp,0.41236305144764906,81,81
+molformer,xgboost,0.3679160585879232,81,81
+morgan,mlp,0.40466949706971256,78,81
+morgan,xgboost,0.4033231340659845,81,81
+unimol,mlp,0.27623626055022976,74,81
+unimol,xgboost,0.19181578181465642,78,81

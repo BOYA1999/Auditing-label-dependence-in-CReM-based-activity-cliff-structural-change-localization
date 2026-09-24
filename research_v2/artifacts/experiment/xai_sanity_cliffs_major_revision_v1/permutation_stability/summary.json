@@ -1,0 +1,30 @@
+{
+  "run_id": "xai_sanity_cliffs_major_revision_v1",
+  "analysis_id": "permutation_stability",
+  "smoke": false,
+  "status": "pass",
+  "models": 1620,
+  "expected_models": 1620,
+  "reused_models": 162,
+  "new_models": 1458,
+  "targets": 27,
+  "representations": 3,
+  "predictors": 2,
+  "permutations": 10,
+  "pair_explanation_rows": 144120,
+  "finite_normalized_ap_lift": true,
+  "nonconstant_local_domain_gate": true,
+  "complete_crossing": true,
+  "minimum_configuration_permutation_sd": 0.008593545233597618,
+  "median_configuration_permutation_sd": 0.014143127232807815,
+  "maximum_configuration_permutation_sd": 0.023184559612751263,
+  "input_hashes": {
+    "config": "9dcbab6376995052d0e2ae464ab4b1b1198bd9013dfbf39e8c9d8c4323bbcb87",
+    "model_molecules": "7d645a7eb6b88fa8e909501d92c46174f75000dfc8b01de643a0d78b14432320",
+    "sentinel_pairs": "1c8c91381a5c80597a4ffb6a9ffa817b4298b5fc61bf905ebce9c4dc127b32a3",
+    "evaluation_molecules": "d965b17fb1a5dcc587cbb37afbfc310bd5d28d454095dac627dfbf71e454c512",
+    "scored_mutants_model": "62dac7d6a9d729ef82d2a21d91f7acf122ed13fcad0e698fa5511b86d73a076d",
+    "source_model_manifest": "2b456d8f0da831e41bab54a6d87b4938494fd9c9395fd933af4aa46ce43de498",
+    "source_pair_explanations": "22c9e20a7bc2f0f3f4b2dd4de0c851dd87a9187778480d6a0c3072411666c8f0"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "run_id": "xai_sanity_cliffs_major_revision_v1",
+  "analysis_id": "permutation_stability",
+  "source_run_id": "xai_sanity_cliffs_full_v1",
+  "confirmation_targets": [
+    "CHEMBL1862_Ki", "CHEMBL1871_Ki", "CHEMBL2034_Ki", "CHEMBL204_Ki", "CHEMBL2047_EC50",
+    "CHEMBL2147_Ki", "CHEMBL218_EC50", "CHEMBL219_Ki", "CHEMBL228_Ki", "CHEMBL231_Ki",
+    "CHEMBL233_Ki", "CHEMBL236_Ki", "CHEMBL237_EC50", "CHEMBL237_Ki", "CHEMBL238_Ki",
+    "CHEMBL239_EC50", "CHEMBL244_Ki", "CHEMBL262_Ki", "CHEMBL264_Ki", "CHEMBL2835_Ki",
+    "CHEMBL287_Ki", "CHEMBL2971_Ki", "CHEMBL3979_EC50", "CHEMBL4005_Ki", "CHEMBL4203_Ki",
+    "CHEMBL4616_EC50", "CHEMBL4792_Ki"
+  ],
+  "representations": ["morgan", "molformer", "unimol"],
+  "predictors": ["xgboost", "mlp"],
+  "explainers": ["crem_mean", "crem_lime"],
+  "model_initialization_seed": 42,
+  "permutation_ids": [42, 43, 44, 45, 46, 47, 48, 49, 50, 51],
+  "randomization": {
+    "base_seed": 20260902,
+    "permutation_seed_formula": "base_seed + 1000 * source_target_index + permutation_id",
+    "permutation_scope": "within target across component-train, isolated and calibration rows",
+    "source_target_order": [
+      "CHEMBL1862_Ki", "CHEMBL1871_Ki", "CHEMBL2034_Ki", "CHEMBL204_Ki", "CHEMBL2047_EC50",
+      "CHEMBL214_Ki", "CHEMBL2147_Ki", "CHEMBL218_EC50", "CHEMBL219_Ki", "CHEMBL228_Ki",
+      "CHEMBL231_Ki", "CHEMBL233_Ki", "CHEMBL234_Ki", "CHEMBL235_EC50", "CHEMBL236_Ki",
+      "CHEMBL237_EC50", "CHEMBL237_Ki", "CHEMBL238_Ki", "CHEMBL239_EC50", "CHEMBL244_Ki",
+      "CHEMBL262_Ki", "CHEMBL264_Ki", "CHEMBL2835_Ki", "CHEMBL287_Ki", "CHEMBL2971_Ki",
+      "CHEMBL3979_EC50", "CHEMBL4005_Ki", "CHEMBL4203_Ki", "CHEMBL4616_EC50", "CHEMBL4792_Ki"
+    ],
+    "reused_permutation_id": 42
+  },
+  "common_head": {
+    "name": "XGBRegressor", "objective": "reg:squarederror", "n_estimators": 1000,
+    "early_stopping_rounds": 50, "max_depth": 5, "learning_rate": 0.05, "subsample": 0.9,
+    "colsample_bytree": 0.8, "reg_lambda": 1.0, "n_jobs": 8, "tree_method": "hist", "device": "cuda"
+  },
+  "mlp_head": {
+    "hidden_dimensions": [256, 64], "learning_rate": 0.001, "weight_decay": 0.0001,
+    "batch_size": 256, "maximum_epochs": 300, "early_stopping_patience": 30,
+    "minimum_improvement": 1e-7
+  },
+  "mask_size_exponent": 0.0,
+  "crem_lime": {
+    "fingerprint_radius": 2, "fingerprint_bits": 2048, "ridge_alpha": 1.0,
+    "kernel_width": 0.25
+  },
+  "inputs": {
+    "prepared": "research_v2/artifacts/experiment/xai_sanity_cliffs_full_v1/prepared",
+    "representations": "research_v2/artifacts/experiment/xai_sanity_cliffs_full_v1/full/representations",
+    "counterfactuals": "research_v2/artifacts/experiment/xai_sanity_cliffs_full_v1/full/counterfactuals",
+    "mutant_representations": "research_v2/artifacts/experiment/xai_sanity_cliffs_full_v1/full/counterfactual_representations",
+    "source_heads": "research_v2/artifacts/experiment/xai_sanity_cliffs_full_v1/full/sanity_heads",
+    "source_explanations": "research_v2/artifacts/experiment/xai_sanity_cliffs_full_v1/full/sanity_explanations"
+  },
+  "output": "research_v2/artifacts/experiment/xai_sanity_cliffs_major_revision_v1/permutation_stability",
+  "smoke_contract": {
+    "target": "CHEMBL1862_Ki",
+    "representation": "morgan",
+    "predictor": "xgboost",
+    "permutation_ids": [42, 43]
+  }
+}

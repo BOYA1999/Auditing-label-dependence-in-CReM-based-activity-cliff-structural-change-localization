@@ -1,0 +1,9 @@
+source,rationale,representation,predictor,variant,targets,pairs,target_balanced_median_observed_nap,target_balanced_median_null_mean_nap,target_balanced_median_null_adjusted_nap,target_balanced_median_null_z,target_balanced_median_precision_at_changed_count,target_balanced_median_recall_at_changed_count,target_balanced_median_changed_atom_enrichment_at_changed_count,baseline,label,aggregation
+generator,boundary_extended,,,generator_only,27,617,0.2606909430438842,0.0499262501007669,0.2106232832566203,2.767670821643698,0.4545454545454545,0.4545454545454545,1.735841081994928,selected_mean_nearest_train_tanimoto,"Nearest-training similarity
+Boundary extended",row-level pair-specific null; median within target; median across targets
+generator,strict_unmatched,,,generator_only,27,581,0.1712374568992216,0.0486275493448554,0.1211825456701867,1.725291395300945,0.1428571428571428,0.1428571428571428,1.0834722222222222,selected_mean_nearest_train_tanimoto,"Nearest-training similarity
+Strict unmatched",row-level pair-specific null; median within target; median across targets
+generator,boundary_extended,,,generator_only,27,617,0.0296821712769988,0.0066533897545434,0.0261366690338838,1.350856574885141,0.2876838235294118,0.2876838235294118,1.1454545454545455,support_any,"Any perturbation support
+Boundary extended",row-level pair-specific null; median within target; median across targets
+generator,strict_unmatched,,,generator_only,27,581,0.0237329165900594,0.0065555198406988,0.0182369047619047,1.3812462653023667,0.0851449275362318,0.0851449275362318,1.4114285714285717,support_any,"Any perturbation support
+Strict unmatched",row-level pair-specific null; median within target; median across targets

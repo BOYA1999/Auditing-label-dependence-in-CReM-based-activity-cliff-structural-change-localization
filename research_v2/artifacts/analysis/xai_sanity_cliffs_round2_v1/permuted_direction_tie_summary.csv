@@ -1,0 +1,7 @@
+representation,predictor,target_balanced_median_strict_accuracy,target_balanced_median_non_tie_accuracy,target_balanced_median_tie_fraction,target_balanced_median_sign_flipped_accuracy,target_balanced_median_absolute_predicted_delta,targets
+molformer,mlp,0.5151515151515151,0.5151515151515151,0.0,0.48484848484848486,0.06362068653106685,27
+molformer,xgboost,0.45454545454545453,0.5217391304347826,0.1,0.3888888888888889,0.0393128395080566,27
+morgan,mlp,0.5,0.5,0.0,0.5,0.0883851051330566,27
+morgan,xgboost,0.18181818181818182,0.5,0.6153846153846154,0.18181818181818182,0.0,27
+unimol,mlp,0.5,0.5,0.0,0.5,0.11300474405288691,27
+unimol,xgboost,0.4230769230769231,0.5,0.058823529411764705,0.4,0.0344228744506835,27

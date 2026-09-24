@@ -1,0 +1,2 @@
+dataset,component_id,pair_index,original_pair_index,potency_difference,original_potency_difference,component_median_potency_difference,component_pair_count,same_as_original,reason
+CHEMBL2147_Ki,5,51,24,1.799999969383821,1.899999004230352,1.799999969383821,3,False,original_maximum-difference sentinel has undefined normalized AP

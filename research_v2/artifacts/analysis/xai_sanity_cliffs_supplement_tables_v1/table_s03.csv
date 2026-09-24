@@ -1,0 +1,13 @@
+Representation,Predictor,Variant,Obs. nAP,Null mean,Adjusted,Null z,P@k,R@k,Enrichment
+MoLFormer,MLP,Label-permuted,0.1098,0.0474,0.0569,0.627,0.273,0.273,1.000
+MoLFormer,MLP,Trained,0.0715,0.0423,0.0262,0.349,0.250,0.250,0.984
+MoLFormer,XGBoost,Label-permuted,0.0877,0.0466,0.0478,0.679,0.264,0.264,1.000
+MoLFormer,XGBoost,Trained,0.0858,0.0458,0.0417,0.672,0.250,0.250,0.985
+Morgan,MLP,Label-permuted,0.1255,0.0446,0.0757,0.852,0.306,0.306,1.073
+Morgan,MLP,Trained,0.0789,0.0440,0.0402,0.507,0.286,0.286,1.000
+Morgan,XGBoost,Label-permuted,0.0423,0.0384,0.0085,0.511,0.294,0.294,1.000
+Morgan,XGBoost,Trained,0.0568,0.0449,0.0148,0.229,0.250,0.250,0.967
+Uni-Mol,MLP,Label-permuted,0.1098,0.0470,0.0645,0.742,0.256,0.256,1.000
+Uni-Mol,MLP,Trained,0.0907,0.0464,0.0487,0.576,0.252,0.252,0.983
+Uni-Mol,XGBoost,Label-permuted,0.1144,0.0463,0.0672,0.934,0.304,0.304,1.044
+Uni-Mol,XGBoost,Trained,0.1012,0.0465,0.0587,0.747,0.283,0.283,1.008

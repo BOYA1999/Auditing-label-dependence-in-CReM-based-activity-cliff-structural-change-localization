@@ -1,0 +1,59 @@
+{
+  "run_id": "xai_sanity_cliffs_full_v1",
+  "targets": [
+    "CHEMBL1862_Ki", "CHEMBL1871_Ki", "CHEMBL2034_Ki", "CHEMBL204_Ki", "CHEMBL2047_EC50",
+    "CHEMBL214_Ki", "CHEMBL2147_Ki", "CHEMBL218_EC50", "CHEMBL219_Ki", "CHEMBL228_Ki",
+    "CHEMBL231_Ki", "CHEMBL233_Ki", "CHEMBL234_Ki", "CHEMBL235_EC50", "CHEMBL236_Ki",
+    "CHEMBL237_EC50", "CHEMBL237_Ki", "CHEMBL238_Ki", "CHEMBL239_EC50", "CHEMBL244_Ki",
+    "CHEMBL262_Ki", "CHEMBL264_Ki", "CHEMBL2835_Ki", "CHEMBL287_Ki", "CHEMBL2971_Ki",
+    "CHEMBL3979_EC50", "CHEMBL4005_Ki", "CHEMBL4203_Ki", "CHEMBL4616_EC50", "CHEMBL4792_Ki"
+  ],
+  "development_targets": ["CHEMBL214_Ki", "CHEMBL234_Ki", "CHEMBL235_EC50"],
+  "confirmation_targets": [
+    "CHEMBL1862_Ki", "CHEMBL1871_Ki", "CHEMBL2034_Ki", "CHEMBL204_Ki", "CHEMBL2047_EC50",
+    "CHEMBL2147_Ki", "CHEMBL218_EC50", "CHEMBL219_Ki", "CHEMBL228_Ki", "CHEMBL231_Ki",
+    "CHEMBL233_Ki", "CHEMBL236_Ki", "CHEMBL237_EC50", "CHEMBL237_Ki", "CHEMBL238_Ki",
+    "CHEMBL239_EC50", "CHEMBL244_Ki", "CHEMBL262_Ki", "CHEMBL264_Ki", "CHEMBL2835_Ki",
+    "CHEMBL287_Ki", "CHEMBL2971_Ki", "CHEMBL3979_EC50", "CHEMBL4005_Ki", "CHEMBL4203_Ki",
+    "CHEMBL4616_EC50", "CHEMBL4792_Ki"
+  ],
+  "seeds": [11, 23, 42],
+  "representations": {
+    "morgan": {"radius": 2, "bits": 2048},
+    "molformer": {"model_id": "ibm-research/MoLFormer-XL-both-10pct", "revision": "361063d0ad524ef77cf39b08469f6be770dc550f", "dimension": 768, "batch_size": 128},
+    "unimol": {"package": "unimol_tools", "package_version": "0.1.6", "weights": "mol_pre_all_h_220816.pt", "dimension": 512, "batch_size": 64, "seed": 42, "remove_hs": false}
+  },
+  "crem": {
+    "package_version": "0.2.14", "radius": 1, "max_core_heavy_atoms": 12, "max_replaced_atoms": 8,
+    "max_explainer_heavy_atoms": 60, "mask_selection": "deduplicated smallest CReM-fragment mask containing each atom",
+    "min_inc": -2, "max_inc": 2, "max_replacements_per_mask": 8, "pilot_scored_replacements_per_mask": 4,
+    "min_fragment_frequency": 2, "local_parent_tanimoto_threshold": 0.6,
+    "local_parent_tanimoto_sensitivities": [0.5, 0.7],
+    "absolute_domain_threshold": "target calibration fifth percentile of nearest-training Morgan similarity"
+  },
+  "common_head": {
+    "name": "XGBRegressor", "objective": "reg:squarederror", "n_estimators": 1000,
+    "early_stopping_rounds": 50, "max_depth": 5, "learning_rate": 0.05, "subsample": 0.9,
+    "colsample_bytree": 0.8, "reg_lambda": 1.0, "n_jobs": 8, "tree_method": "hist", "device": "cuda"
+  },
+  "mlp_head": {
+    "hidden_dimensions": [256, 64], "learning_rate": 0.001, "weight_decay": 0.0001,
+    "batch_size": 256, "maximum_epochs": 300, "early_stopping_patience": 30, "minimum_improvement": 1e-7
+  },
+  "explainers": ["crem_mean", "crem_lime"],
+  "mask_size_exponent": 0.0,
+  "crem_lime": {"fingerprint_radius": 2, "fingerprint_bits": 2048, "ridge_alpha": 1.0, "kernel_width": 0.25},
+  "randomization": {
+    "label_permutation_seed": 20260902,
+    "replicates": [11, 23, 42],
+    "permutation_seed_formula": "label_permutation_seed + 1000 * target_index + replicate",
+    "permutation_scope": "within target across component-train, isolated and calibration rows"
+  },
+  "inference": {
+    "equivalence_margin": 0.05,
+    "bootstrap_draws": 5000,
+    "bootstrap_seed": 20260902,
+    "target_weighting": "equal",
+    "minimum_equivalent_target_configuration_fraction": 0.6666666667
+  }
+}

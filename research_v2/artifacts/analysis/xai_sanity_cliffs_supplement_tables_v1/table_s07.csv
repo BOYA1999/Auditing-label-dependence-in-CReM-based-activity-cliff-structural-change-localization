@@ -1,0 +1,7 @@
+Representation,Predictor,Pairs,Spearman,Direction,Tie fraction,Eligible targets
+MoLFormer,MLP,17.0,0.525,0.739,0.000,20/27
+MoLFormer,XGBoost,17.0,0.465,0.706,0.000,14/27
+Morgan,MLP,17.0,0.538,0.767,0.000,20/27
+Morgan,XGBoost,17.0,0.534,0.719,0.000,16/27
+Uni-Mol,MLP,17.0,0.340,0.647,0.000,10/27
+Uni-Mol,XGBoost,17.0,0.166,0.538,0.000,2/27

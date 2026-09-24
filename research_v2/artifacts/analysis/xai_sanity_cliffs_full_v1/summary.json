@@ -1,0 +1,45 @@
+{
+  "run_id": "xai_sanity_cliffs_full_v1",
+  "status": "success",
+  "decision": "HETEROGENEOUS_OR_INCONCLUSIVE",
+  "confirmation_targets": 27,
+  "primary_target_balanced_median_delta": -0.018700440012929552,
+  "primary_bootstrap_ci": [
+    -0.026725765401752203,
+    -0.009538866713681456
+  ],
+  "equivalence_margin": [
+    -0.05,
+    0.05
+  ],
+  "primary_equivalent": true,
+  "equivalent_target_configuration_cells": 40,
+  "target_configuration_cells": 324,
+  "equivalent_cell_fraction": 0.12345679012345678,
+  "secondary_two_thirds_pass": false,
+  "atom_similarity": {
+    "target_balanced_median_supported_spearman": 0.21393527548452634,
+    "target_bootstrap_ci": [
+      0.2011225444340505,
+      0.2346389150166011
+    ],
+    "target_balanced_median_all_atom_spearman": 0.6426492304504763,
+    "targets_with_finite_supported_spearman": 27
+  },
+  "prediction_association": {
+    "target_demeaned_spearman": 0.18216651458555835,
+    "target_cluster_bootstrap_ci": [
+      0.05270022988698387,
+      0.29509549241135935
+    ],
+    "median_within_target_spearman": 0.2053177743673887,
+    "naive_cell_p": 0.0009879791406988802,
+    "cells": 324
+  },
+  "input_hashes": {
+    "config": "b46388fc289ed2ceb540389c36b152f0b0882a1f3872604208433485feb2e198",
+    "pair_explanations": "22c9e20a7bc2f0f3f4b2dd4de0c851dd87a9187778480d6a0c3072411666c8f0",
+    "atom_rank_similarity": "562852e7669d440ecd120976c4bf6b60366ec45144eccca6e8be01655256f6fc",
+    "prediction_metrics": "5be9c30d3d896567851fec417202ab61732827dc5fa926e06b532095dcd9ddc7"
+  }
+}

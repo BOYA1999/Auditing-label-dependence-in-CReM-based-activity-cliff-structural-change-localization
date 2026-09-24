@@ -1,0 +1,3 @@
+Rationale,Delta nAP,90% CI,95% CI,Targets,Components
+"Boundary-extended, null-adjusted",-0.008317,"[-0.014837, -0.003784]","[-0.015768, -0.002769]",27,617
+"Strict unmatched, null-adjusted",-0.010521,"[-0.016674, -0.006803]","[-0.017690, -0.005922]",27,581

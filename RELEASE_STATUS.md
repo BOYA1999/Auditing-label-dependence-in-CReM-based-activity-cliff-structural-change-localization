@@ -1,0 +1,21 @@
+# GitHub code/data package status
+
+- Code/public-data-only scope: PASS.
+- Manuscript, supplementary manuscript, editorial correspondence, Word, LaTeX, PDF and manuscript-figure exclusion: PASS.
+- MoleculeACE commit, access date, upstream licence and ChEMBL provenance boundary: PASS.
+- Current round-2 statistical analysis: PASS; all 22 analysis files included and hash-checked. Full reanalysis requires two explicitly documented large row-level inputs that are outside this compact package.
+- Full 27-dataset component-median sentinel analysis: the saved pooled results are unchanged. Of the 617 paired components, 328 changed sentinel pair and 289 did not. Among changed components, the absolute row-change median is 0.118386 and its 95th percentile is 0.520038; a zero pooled median does not establish local invariance.
+- Independent full-output sentinel validator: PASS, 49/49 checks.
+- Compact sentinel evidence: PASS; 11 analysis files plus nine execution-evidence/reanalysis files included, with arrays, weights, caches and logs excluded.
+- Ten-permutation and rebuilt-split analyses: PASS; their large model/per-unit intermediates remain outside this package.
+- CReM-LIME failure-case evidence retained; CReM-LIME excluded from primary inference: PASS.
+- Exact 16-table round-2 figure-source allowlist and isolated regeneration: PASS.
+- Machine-readable exports cover supplementary Tables S1-S26, with row, column and SHA-256 checks in the package validator.
+- Reporting revision (2026-09-24): direct map agreement, changed-sentinel distributions and leave-one-assay-out analyses are included with input/output hashes and a reproducible script. No retraining was performed. The normal-model cell-spread interval is descriptive, not a validated prediction interval for unseen configurations. The five-to-ten permutation comparison does not establish convergence.
+- CReM fragment-enumerator optimization validation: PASS on 60 seed-fixed random molecules plus six symmetric molecules, with exact tuple-set and returned-list order equality.
+- Standard-library package hash/privacy/structure/science smoke test now contains 29 science checks. Historical compact sentinel reanalysis was byte-identical for 11/11 outputs; the reporting replay and final extracted-package checks are recorded in the external QA report.
+- Privacy, identity, email, credential, manuscript-content and unwanted-extension scans: PASS.
+- Complete SHA-256 manifest: PASS; final count is recorded in `package_manifest.json`.
+- Final ZIP and clean-directory extraction verification must be run against the matching manifest; the external dated QA report records the execution result.
+- Distribution: the code/data package is designated for `BOYA1999/Auditing-label-dependence-in-CReM-based-activity-cliff-structural-change-localization`, not a journal additional-file upload. The repository's pre-existing MIT licence is preserved; upstream data and third-party asset terms remain separate.
+- Version identity: the checked-out Git commit and payload manifest identify the exact package. Remote publication is verified in the external dated QA record; this file does not claim a DOI, journal submission or full historical model retraining.

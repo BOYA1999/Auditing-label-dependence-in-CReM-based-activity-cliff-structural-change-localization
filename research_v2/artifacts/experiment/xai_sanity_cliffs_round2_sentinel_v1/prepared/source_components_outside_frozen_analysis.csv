@@ -1,0 +1,9 @@
+dataset,pair_index,left_index,right_index,component_id,component_split,is_sentinel,potency_difference,mcs_atoms,match,rationale_left,rationale_right,rationale_valid,rationale_failure_reason,distance_to_component_median,component_pair_count,component_median_potency_difference,original_pair_index,original_rationale_failure_reason,exclusion_reason
+CHEMBL204_Ki,98,159,235,22,test,False,1.0115818725498134,,,,,False,not_evaluated,0.2110368441943793,2,1.2226187167441926,189,empty_mces,outside frozen original MCS-valid sentinel population
+CHEMBL233_Ki,1099,1502,1503,116,test,True,1.0483046795745548,,,,,False,empty_mces,0.0057909362749075655,2,1.0425137432996472,1099,empty_mces,outside frozen original MCS-valid sentinel population
+CHEMBL236_Ki,1271,1975,1978,75,test,False,1.3399480616943509,,,,,False,not_evaluated,0.0,37,1.3399480616943509,1153,empty_mces,outside frozen original MCS-valid sentinel population
+CHEMBL236_Ki,1224,1804,1806,123,test,True,1.247784483710756,,,,,False,empty_mces,0.0,1,1.247784483710756,1224,empty_mces,outside frozen original MCS-valid sentinel population
+CHEMBL236_Ki,1262,1961,1966,131,test,False,2.0395085412836726,,,,,False,not_evaluated,0.14127329498498398,10,1.8982352462986887,1259,empty_mces,outside frozen original MCS-valid sentinel population
+CHEMBL237_Ki,9,21,26,2,test,True,1.4559319556497243,,,,,False,empty_mces,0.0,1,1.4559319556497243,9,empty_mces,outside frozen original MCS-valid sentinel population
+CHEMBL4203_Ki,13,110,247,9,test,True,4.300007803430596,,,,,False,empty_mces,0.0,1,4.300007803430596,13,empty_mces,outside frozen original MCS-valid sentinel population
+CHEMBL4616_EC50,544,363,366,29,test,False,1.4709827146162322,,,,,False,not_evaluated,0.009611601449881046,30,1.4613711131663512,529,empty_mces,outside frozen original MCS-valid sentinel population

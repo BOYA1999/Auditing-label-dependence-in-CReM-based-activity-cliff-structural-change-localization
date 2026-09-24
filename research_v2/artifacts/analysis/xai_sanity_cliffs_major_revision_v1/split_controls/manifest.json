@@ -1,0 +1,19 @@
+{
+  "status": "pass",
+  "config": "research_v2/configs/major_revision_split_v1.json",
+  "config_sha256": "5cca380e0eb51df5b18c927a72b343085d80e953828b2522e414f21ca6a562d7",
+  "bootstrap_draws": 5000,
+  "selection_rule": "Before new results, choose the lowest- and highest-information confirmation EC50 targets and the lowest, lower-middle, upper-middle and highest-information confirmation Ki targets using only the original number of held-out sentinel components.",
+  "input_hashes": {
+    "original_seed42": "22c9e20a7bc2f0f3f4b2dd4de0c851dd87a9187778480d6a0c3072411666c8f0",
+    "split_seed_20260903": "06324dbab59aebe2b38eba03e0b79a94bbf336c44cc80a3a34a5b7b909c17da1",
+    "split_seed_20260904": "0755408102abe89d4dc6383d3ecc8df20a847e0e3a6b4aaae435aa70efb7751d"
+  },
+  "output_hashes": {
+    "original_seed42_bootstrap.csv": "585bcffcd327d74d27dc176acef33554c183948f8c4a6579a7118bd7dbadea75",
+    "split_seed_20260903_bootstrap.csv": "b62f373b10bf1861dffab0a58de0cccaacc4ea7fe27ceb696a24b4042206a5bc",
+    "split_seed_20260904_bootstrap.csv": "4081a8e414b662e051d7f962d30d934dd084c2162193265d77302076aa5035b1",
+    "split_sensitivity_summary.csv": "32e1f22ddf956c189e98de9075d4eb2347d1619868a31d993e1c719c531ba071",
+    "split_target_estimates.csv": "566faec2ff8812b1cb37b2057df79b9f64dcf6d065ff87636a2e5958e3e47b8d"
+  }
+}

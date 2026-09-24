@@ -1,0 +1,4 @@
+control,eligible_tasks,expected_tasks,passing_tasks,passing_fraction,median_configuration_calibrated_nap,minimum_configuration_calibrated_nap,maximum_configuration_calibrated_nap,molecule_rows
+aromatic_atom_count,10,10,9,0.9,0.09348719800441996,0.0,0.2489684095860567,3080
+halogen_count,12,12,12,1.0,0.5566121532987247,0.312375700280112,0.7560727039514918,1608
+heteroatom_count,12,12,2,0.16666666666666666,-0.02012647086245565,-0.0456432419521514,0.0618998692627056,3696

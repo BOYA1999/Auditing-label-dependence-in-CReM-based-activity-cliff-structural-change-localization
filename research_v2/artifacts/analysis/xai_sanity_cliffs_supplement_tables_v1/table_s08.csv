@@ -1,0 +1,4 @@
+Analysis,Quality metric,Estimate/slope,95% CI,Within-target rho
+Calibration-qualified localization contrast,-,-0.007433,"[-0.022146, -0.000908]",-
+Within-target competence association,Calibration Spearman,-0.02022,"[-0.05729, 0.01622]",-0.132
+Within-target competence association,Calibration direction accuracy,-0.02812,"[-0.12656, 0.07360]",-0.151

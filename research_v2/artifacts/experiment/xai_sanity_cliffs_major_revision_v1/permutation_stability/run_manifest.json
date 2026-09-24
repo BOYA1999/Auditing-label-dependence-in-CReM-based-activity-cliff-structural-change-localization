@@ -1,0 +1,74 @@
+{
+  "created_utc": "2026-09-03T12:25:46.918538+00:00",
+  "command": [
+    "python",
+    "research_v2/scripts/run_permutation_stability.py",
+    "--config",
+    "research_v2/configs/major_revision_permutations_v1.json"
+  ],
+  "config": "research_v2/configs/major_revision_permutations_v1.json",
+  "config_sha256": "9dcbab6376995052d0e2ae464ab4b1b1198bd9013dfbf39e8c9d8c4323bbcb87",
+  "selected_design": {
+    "targets": [
+      "CHEMBL1862_Ki",
+      "CHEMBL1871_Ki",
+      "CHEMBL2034_Ki",
+      "CHEMBL204_Ki",
+      "CHEMBL2047_EC50",
+      "CHEMBL2147_Ki",
+      "CHEMBL218_EC50",
+      "CHEMBL219_Ki",
+      "CHEMBL228_Ki",
+      "CHEMBL231_Ki",
+      "CHEMBL233_Ki",
+      "CHEMBL236_Ki",
+      "CHEMBL237_EC50",
+      "CHEMBL237_Ki",
+      "CHEMBL238_Ki",
+      "CHEMBL239_EC50",
+      "CHEMBL244_Ki",
+      "CHEMBL262_Ki",
+      "CHEMBL264_Ki",
+      "CHEMBL2835_Ki",
+      "CHEMBL287_Ki",
+      "CHEMBL2971_Ki",
+      "CHEMBL3979_EC50",
+      "CHEMBL4005_Ki",
+      "CHEMBL4203_Ki",
+      "CHEMBL4616_EC50",
+      "CHEMBL4792_Ki"
+    ],
+    "representations": [
+      "morgan",
+      "molformer",
+      "unimol"
+    ],
+    "predictors": [
+      "xgboost",
+      "mlp"
+    ],
+    "permutation_ids": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ]
+  },
+  "summary_sha256": "5e253381c0694cf6465da16a285069dc1d25b0b33410cda09da1a0904367769e",
+  "environment": {
+    "python": "3.12.0",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "rdkit": "2026.03.3",
+    "scikit_learn": "1.8.0",
+    "torch": "2.11.0+cu128",
+    "xgboost": "3.3.0",
+    "device": "cuda"
+  }
+}

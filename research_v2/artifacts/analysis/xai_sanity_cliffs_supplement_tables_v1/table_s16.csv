@@ -1,0 +1,6 @@
+Estimator,Chronological role,Delta nAP,95% CI
+Original asymmetric seed weighting; 12 configurations,Before 27-dataset inspection,-0.018700,"[-0.026726, -0.009539]"
+Matched-seed sensitivity; 12 configurations,Chronological sensitivity,-0.001610,"[-0.008516, 0.000000]"
+Symmetric seed weighting; 12 configurations,Post-confirmation seed-weight correction,-0.010394,"[-0.020686, -0.004341]"
+Symmetric CReM-mean only,Post-confirmation principal analysis,-0.005233,"[-0.013903, 0.000000]"
+Null-adjusted symmetric CReM-mean,Post-confirmation empirical-null audit,-0.008317,"[-0.015768, -0.002769]"

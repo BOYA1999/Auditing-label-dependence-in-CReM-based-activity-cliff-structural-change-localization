@@ -1,0 +1,11 @@
+Audit item,Count,Interpretation
+Model rows common to all representations,"48,588",Finite and identifier-aligned
+Original Uni-Mol rows using documented two-dimensional fallback,335,Retained and audited
+Unique scored mutants,"105,459",Finite and representation-aligned
+Unique mutants using Uni-Mol fallback,514,Exclusion sensitivity available
+Expected counterfactual generation failures,16,Declared size/no-mask cases
+Unexpected counterfactual generation failures,0,None observed
+Saved trained and label-permuted heads,"1,080",Complete fitted panel
+Pair explanation rows,"108,288",Finite localization outputs
+Atom explanation rows,"6,529,536",Finite atom scores
+Label-permuted heads nonconstant on explanation domain,540/540,Passed local-domain audit

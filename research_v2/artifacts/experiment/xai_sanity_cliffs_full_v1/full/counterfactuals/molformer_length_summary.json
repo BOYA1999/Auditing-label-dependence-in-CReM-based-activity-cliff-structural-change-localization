@@ -1,0 +1,12 @@
+{
+  "status": "pass",
+  "unique_mutants": 105459,
+  "retained_unique_mutants": 105459,
+  "excluded_unique_mutants": 0,
+  "maximum_observed_tokens": 107,
+  "scored_rows": 108384,
+  "retained_scored_rows": 108384,
+  "mask_coverage_after_length": 0.9616235158030824,
+  "test_mask_coverage_after_length": 0.9635055764535075,
+  "policy": "exclude overlength mutants from every representation and explainer; no truncation"
+}

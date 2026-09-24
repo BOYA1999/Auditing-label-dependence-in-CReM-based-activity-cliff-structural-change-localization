@@ -1,0 +1,60 @@
+{
+  "unadjusted_boundary_extended": {
+    "estimate": -0.00523271980315315,
+    "ci90": [
+      -0.012815318325239976,
+      -0.00081635947043765
+    ],
+    "ci95": [
+      -0.013903418315426621,
+      -4.996003610813204e-16
+    ],
+    "targets": 27,
+    "components": 617,
+    "configurations": 6
+  },
+  "empirical_null_adjusted_boundary_extended": {
+    "estimate": -0.008317338515946767,
+    "ci90": [
+      -0.014837111113336462,
+      -0.0037840779753747435
+    ],
+    "ci95": [
+      -0.01576845069243632,
+      -0.0027686620181753933
+    ],
+    "targets": 27,
+    "components": 617,
+    "configurations": 6
+  },
+  "empirical_null_adjusted_strict_unmatched": {
+    "estimate": -0.01052106439240727,
+    "ci90": [
+      -0.016674418146156132,
+      -0.006802544759207684
+    ],
+    "ci95": [
+      -0.017689896756032965,
+      -0.005922321710873854
+    ],
+    "targets": 27,
+    "components": 581,
+    "configurations": 6
+  },
+  "empirical_null_adjusted_boundary_prevalence_le_0_8": {
+    "estimate": -0.006452554752578251,
+    "ci90": [
+      -0.014647596454086653,
+      -0.0035520624454784544
+    ],
+    "ci95": [
+      -0.015657035795203847,
+      -0.0025472681483899155
+    ],
+    "targets": 27,
+    "components": 609,
+    "configurations": 6
+  },
+  "interval_scope": "All reported bootstrap intervals resample targets and components conditional on the saved model initializations, label permutations, neighborhoods and observed-label-selected cliff set.",
+  "crem_lime_status": "excluded from primary inference; retained only as a numerical and held-out-fidelity failure-case sensitivity"
+}

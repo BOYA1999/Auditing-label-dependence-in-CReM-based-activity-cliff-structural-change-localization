@@ -1,0 +1,11 @@
+stage,count,unit
+all_targets,30,targets
+confirmation_targets,27,targets
+source_molecules,48714,molecules
+shared_model_molecules,48588,molecules
+all_sentinel_pairs,1507,pairs
+all_test_sentinel_pairs,773,pairs
+confirmation_test_sentinel_pairs,619,pairs
+confirmation_test_normalized_ap_eligible_pairs,617,pairs
+confirmation_test_evaluation_endpoints,1234,molecules
+confirmation_test_explanation_rows,44424,model_explainer_pair_rows

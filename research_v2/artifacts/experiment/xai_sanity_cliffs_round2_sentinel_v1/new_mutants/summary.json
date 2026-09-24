@@ -1,0 +1,24 @@
+{
+  "run_id": "xai_sanity_cliffs_round2_sentinel_v1",
+  "status": "pass",
+  "alternate_unique_mutants": 43120,
+  "reused_unique_mutants": 27962,
+  "new_unique_mutants": 15158,
+  "scored_mutant_rows": 44143,
+  "unimol_conformer_fallback_rows": 359,
+  "input_hashes": {
+    "config": "a6fcb0042024d4bb94d09702e52fdd8688777baff61058907b80566f4648e5b6",
+    "scored_mutants": "b363f43b1300a9125cc1260290a1a365317e46ab847bab90af0c6beb4a7ab7cc",
+    "unique_mutants": "40356d09c62b944abb5b2f74bc526b9f3c76a02c3a6e00af0abc19ea266c5f66",
+    "original_unique_mutants": "cdd312e9396a0eb7a2f9af67ad8034b522b62bc7f947241e8ff630140fc52234",
+    "original_manifest": "05628142b21df4b620b34bb6378de1f8d37943c8ba6408a7ec7dfdb1ef1357fb"
+  },
+  "output_hashes": {
+    "reuse_audit": "c0a5b2e99d017fa5bdeaf800487e9909ea9d5b704d895f22a6bc754162c4fbb5",
+    "missing_unique_mutants": "b20605764e746a863ae69cd15cdd8f4bc79bb96b0b695bcd9db8f3bd53818f21",
+    "manifest": "ec2b797eee4a3124edae975b066075be556c5af7451c71bfa1e2c0b7938872ca",
+    "morgan": "feff9e67c1f6a0101f00dbb8ce293032ece9b473cdbe1d365f7d89cd91900fc4",
+    "molformer": "078c3f9cf7bd9de70dc883168bb07366bcbda19a115d115ecbfe983490e2d08a",
+    "unimol": "de91581cba613e8d38ec0bfb8561c120f5b28835c6728b3e0949b3b7f3c46f7c"
+  }
+}

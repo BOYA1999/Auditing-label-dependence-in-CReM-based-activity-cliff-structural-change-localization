@@ -1,0 +1,4 @@
+dataset,component_id,component_split,left_index,right_index,positive_atoms,total_atoms,valid_normalized_ap_prevalence
+CHEMBL2147_Ki,9,calibration,508,1094,54,54,False
+CHEMBL219_Ki,9,test,70,100,50,50,False
+CHEMBL264_Ki,123,test,1471,2417,45,45,False

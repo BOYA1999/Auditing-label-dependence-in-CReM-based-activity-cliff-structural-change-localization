@@ -1,0 +1,31 @@
+{
+  "run_id": "xai_sanity_cliffs_round2_v1",
+  "source_config": "research_v2/configs/sanity_full_v1.json",
+  "inputs": {
+    "atom_scores": "research_v2/artifacts/experiment/xai_sanity_cliffs_full_v1/full/sanity_explanations/atom_scores.csv.gz",
+    "pair_explanations": "research_v2/artifacts/experiment/xai_sanity_cliffs_full_v1/full/sanity_explanations/pair_explanations.csv",
+    "pair_predictions": "research_v2/artifacts/experiment/xai_sanity_cliffs_full_v1/full/sanity_heads/pair_predictions.csv",
+    "predictions": "research_v2/artifacts/experiment/xai_sanity_cliffs_full_v1/full/sanity_heads/predictions.csv",
+    "sentinel_pairs": "research_v2/artifacts/experiment/xai_sanity_cliffs_full_v1/prepared/sentinel_pairs.csv",
+    "model_molecules": "research_v2/artifacts/experiment/xai_sanity_cliffs_full_v1/prepared/model_molecules.csv",
+    "symmetric_component_metrics": "research_v2/artifacts/analysis/xai_sanity_cliffs_major_revision_v1/symmetric_component_metrics.csv",
+    "generator_atom_geometry": "research_v2/artifacts/analysis/xai_sanity_cliffs_major_revision_v1/generator_atom_geometry.csv"
+  },
+  "output": "research_v2/artifacts/analysis/xai_sanity_cliffs_round2_v1",
+  "explainer": "crem_mean",
+  "rationales": ["boundary_extended", "strict_unmatched"],
+  "generator_baselines": ["support_any", "selected_mean_nearest_train_tanimoto"],
+  "empirical_null_replicates": 500,
+  "bootstrap_draws": 5000,
+  "bootstrap_seed": 20260904,
+  "heterogeneity_bootstrap_draws": 2000,
+  "equivalence_margin": 0.05,
+  "prevalence_exclusion_threshold": 0.8,
+  "calibration_gate": {
+    "minimum_pairs": 5,
+    "minimum_spearman": 0.30,
+    "minimum_direction_accuracy": 0.6666666667
+  },
+  "mcs_mapping_max_matches_per_endpoint": 256,
+  "mcs_mapping_max_combinations": 4096
+}

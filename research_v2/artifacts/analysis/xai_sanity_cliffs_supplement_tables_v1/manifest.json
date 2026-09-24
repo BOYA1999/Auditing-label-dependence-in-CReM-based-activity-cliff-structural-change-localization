@@ -1,0 +1,187 @@
+{
+  "status": "pass",
+  "tables": [
+    {
+      "table": "S1",
+      "file": "table_s01.csv",
+      "columns": 4,
+      "rows": 27,
+      "sha256": "3c46808db23d77c85f51e76764fd5a2476373ca2245d4a70d536f65f6d588bdf"
+    },
+    {
+      "table": "S2",
+      "file": "table_s02.csv",
+      "columns": 9,
+      "rows": 6,
+      "sha256": "dff5b6649e8d83be956c310c7e8e1d66b27b4f0de5c4198a671a1298b505c4f9"
+    },
+    {
+      "table": "S3",
+      "file": "table_s03.csv",
+      "columns": 10,
+      "rows": 12,
+      "sha256": "bf1599dbe1ceae98c4fa161aa870b807536c9322433c44d269525edf702387b1"
+    },
+    {
+      "table": "S4",
+      "file": "table_s04.csv",
+      "columns": 7,
+      "rows": 3,
+      "sha256": "9148cfbb9536ba6fb416c2c54fd1e8a457de9338c79f9b9e5e792acb44f7266b"
+    },
+    {
+      "table": "S5",
+      "file": "table_s05.csv",
+      "columns": 7,
+      "rows": 8,
+      "sha256": "a082f1396845a1197f0c5a34d8a8bcf8841ee19a95d59a6e2a008a8e0b1bfb56"
+    },
+    {
+      "table": "S6",
+      "file": "table_s06.csv",
+      "columns": 4,
+      "rows": 6,
+      "sha256": "0d8604827244dce7ec893a577dc8cd832090b1997d880c8229426d8402aca9a3"
+    },
+    {
+      "table": "S7",
+      "file": "table_s07.csv",
+      "columns": 7,
+      "rows": 6,
+      "sha256": "eaae01630d55397416764eff46a0ad770a3ae3d3eb8107892995b3c99f8f7f37"
+    },
+    {
+      "table": "S8",
+      "file": "table_s08.csv",
+      "columns": 5,
+      "rows": 3,
+      "sha256": "d935a97a5f13c4422a7756709a9a2f50007636a96805047f69a07eabb99b4772"
+    },
+    {
+      "table": "S9",
+      "file": "table_s09.csv",
+      "columns": 7,
+      "rows": 6,
+      "sha256": "704c4e4618df7483e573a74763c51b9bfe888e4ff1993d24fbb4e8175c02b05b"
+    },
+    {
+      "table": "S10",
+      "file": "table_s10.csv",
+      "columns": 6,
+      "rows": 2,
+      "sha256": "c42660c2130fe1b7e9377f7df8c89fc93d0f18ad8571cfe19a93034dae577688"
+    },
+    {
+      "table": "S11",
+      "file": "table_s11.csv",
+      "columns": 6,
+      "rows": 27,
+      "sha256": "b7e250eee8d9439e004d2f09d459b290cf7e8d76c8b9fb6889f5fca18ec02c70"
+    },
+    {
+      "table": "S12",
+      "file": "table_s12.csv",
+      "columns": 8,
+      "rows": 4,
+      "sha256": "07df766156bcf0d0cb5aa961047ee0b328877453fc6f5456d6d78fd9736ffdc0"
+    },
+    {
+      "table": "S13",
+      "file": "table_s13.csv",
+      "columns": 8,
+      "rows": 17,
+      "sha256": "fb84ccd215170c2c11ce24209be644964bcde669baf0ac0fcb5f9f645768d957"
+    },
+    {
+      "table": "S14",
+      "file": "table_s14.csv",
+      "columns": 6,
+      "rows": 6,
+      "sha256": "f19cd98df389664d2e43ddb36da3805c3f00501fab44372c1ed99aa9040c79f9"
+    },
+    {
+      "table": "S15",
+      "file": "table_s15.csv",
+      "columns": 9,
+      "rows": 6,
+      "sha256": "1fce27f6900bcfa3f7bb712c4f281e0bea51b8699b7a087fea1617ae7be33e78"
+    },
+    {
+      "table": "S16",
+      "file": "table_s16.csv",
+      "columns": 4,
+      "rows": 5,
+      "sha256": "79dc15f71b280b8328f06ecd4f9a69ff0a1a8385da27c3e488fce187e3e282a6"
+    },
+    {
+      "table": "S17",
+      "file": "table_s17.csv",
+      "columns": 5,
+      "rows": 4,
+      "sha256": "9879a45e6d34a8b268aeddec9349acc7bd8d56c5ab32366602651866c3d18256"
+    },
+    {
+      "table": "S18",
+      "file": "table_s18.csv",
+      "columns": 5,
+      "rows": 6,
+      "sha256": "a728785a7a01d0ee2578485b2f60055be97e151b5885d6b73aaaaf1ab9ae7ce3"
+    },
+    {
+      "table": "S19",
+      "file": "table_s19.csv",
+      "columns": 5,
+      "rows": 3,
+      "sha256": "454413f61b8bac0f540813ec8ffc79488eed11777587810c7b45f5ce0f36980f"
+    },
+    {
+      "table": "S20",
+      "file": "table_s20.csv",
+      "columns": 3,
+      "rows": 13,
+      "sha256": "fb95b81dd7d56fa734f863df99d3aaa5f5c10fc17a6fa57a7cb3122f85663931"
+    },
+    {
+      "table": "S21",
+      "file": "table_s21.csv",
+      "columns": 3,
+      "rows": 10,
+      "sha256": "141557a00d389b58c46e0c4823c4ca6e558523fd46d73a07e7097a64fd5c038b"
+    },
+    {
+      "table": "S22",
+      "file": "table_s22.csv",
+      "columns": 2,
+      "rows": 9,
+      "sha256": "29681f59a66269e65fb818dc7470dc9f9efd18947edb2ce8487010b7c6a20930"
+    },
+    {
+      "table": "S23",
+      "file": "table_s23.csv",
+      "columns": 5,
+      "rows": 4,
+      "sha256": "51ea37c98058d5d6309fa0ace5d008aef343afa6b1a0d71ab97d1e9da286e4e9"
+    },
+    {
+      "table": "S24",
+      "file": "table_s24.csv",
+      "columns": 6,
+      "rows": 7,
+      "sha256": "9351e469938f6d3699cb28ba909c069fcf8bffcddb8aa8e216027045a13feb92"
+    },
+    {
+      "table": "S25",
+      "file": "table_s25.csv",
+      "columns": 10,
+      "rows": 21,
+      "sha256": "29b93b55a4c7348d6f63f43d7a288b687cef37760c33ae2d7a5c6d21e1b112ff"
+    },
+    {
+      "table": "S26",
+      "file": "table_s26.csv",
+      "columns": 6,
+      "rows": 4,
+      "sha256": "39c18a414f7d03782a40a0dd877c94011dccd09254d1ff5c42e4619cf452f726"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "run_id": "xai_sanity_cliffs_full_v1",
+  "smoke": false,
+  "status": "pass",
+  "pair_rows": 6576,
+  "expected_pair_rows": 6576,
+  "atom_rows": 411888,
+  "fidelity_rows": 6600,
+  "rank_similarity_rows": 6672,
+  "finite_pair_metrics": true,
+  "localization_pairs": 1501,
+  "excluded_rationale_pairs": 3,
+  "exclude_unimol_fallback_mutants": false,
+  "excluded_unimol_fallback_scored_rows": 0,
+  "nonconstant_randomized_local_models": 36,
+  "randomized_local_models": 36,
+  "randomized_local_nonconstant_gate": true,
+  "input_hashes": {
+    "config": "b46388fc289ed2ceb540389c36b152f0b0882a1f3872604208433485feb2e198",
+    "model_manifest": "75055e515f88cd08745cedf40392a7c0e03bc0f6325bbcd9ea3f9b37cf9f66e3",
+    "scored_mutants": "53faf6a1aeff2664dedcd8c5e01176e2b7b2afe9f515b64ea31e4350d29f86a4",
+    "original_representation_manifest": "8f76505a9e3dfb8d756d01a716e904f99eed2dd220d9759fd203a3314ca45e48",
+    "mutant_representation_manifest": "b17e0109fcc6d3ec974a99f5e0ea80f173dfcd61569957cc408f68a9e08bd6dd"
+  }
+}

@@ -1,0 +1,7 @@
+Analysis,Variance source,Estimate,95% bootstrap CI
+Unadjusted,Target,0.0000000,"[0.0000000, 0.0007439]"
+Unadjusted,Configuration,0.0000678,"[0.0000000, 0.0003826]"
+Unadjusted,Target x configuration plus sampling,0.0014269,"[0.0003847, 0.0025959]"
+Null-adjusted,Target,0.0000000,"[0.0000000, 0.0007182]"
+Null-adjusted,Configuration,0.0000621,"[0.0000000, 0.0004230]"
+Null-adjusted,Target x configuration plus sampling,0.0013158,"[0.0003497, 0.0025281]"

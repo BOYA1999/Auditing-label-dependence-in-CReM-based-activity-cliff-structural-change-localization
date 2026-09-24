@@ -1,0 +1,5 @@
+Analysis,Targets,Components,Delta nAP,95% CI
+"Alternative sentinel, full eligible set",27,618,0.00000,"[-0.00845, 0.00000]"
+"Alternative sentinel, paired set",27,617,0.00000,"[-0.00879, 0.00000]"
+"Original sentinel, paired set",27,617,0.00000,"[-0.00771, 0.00000]"
+Paired change from sentinel selection,27,617,0.00000,"[0.00000, 0.00000]"

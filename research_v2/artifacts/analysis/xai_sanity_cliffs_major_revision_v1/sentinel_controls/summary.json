@@ -1,0 +1,62 @@
+{
+  "run_id": "xai_sanity_cliffs_major_revision_sentinel_v1",
+  "status": "pass",
+  "alternative_eligible_components": 139,
+  "paired_comparison_components": 138,
+  "unpaired_alternative_components": 1,
+  "alternative_component_configuration_rows": 1668,
+  "paired_component_configuration_rows": 1656,
+  "expected_paired_component_configuration_rows": 1656,
+  "factorial_configurations": 12,
+  "target_balanced_alternative_full_delta_nap": -0.0006574383649238739,
+  "target_balanced_alternative_paired_delta_nap": -0.0006574383649238739,
+  "target_balanced_original_paired_delta_nap": -0.003585013611395531,
+  "paired_primary_estimate_change": 0.0029275752464716573,
+  "target_balanced_paired_selection_change": 0.0,
+  "alternative_full_delta_nap_ci95": [
+    -0.021456444470861955,
+    0.0027486767934924903
+  ],
+  "alternative_paired_delta_nap_ci95": [
+    -0.021389621980191228,
+    0.0029207433413909606
+  ],
+  "original_paired_delta_nap_ci95": [
+    -0.02297721997899936,
+    0.0020649858245784564
+  ],
+  "paired_primary_estimate_change_ci95": [
+    -0.010984125145740027,
+    0.013833400799552005
+  ],
+  "paired_selection_change_ci95": [
+    0.0,
+    0.0
+  ],
+  "targets_with_positive_alternative_full_delta": 1,
+  "targets_with_positive_original_paired_delta": 0,
+  "configurations_with_positive_alternative_full_delta": 3,
+  "exact_pair_overlap": 63,
+  "changed_pairs": 76,
+  "shared_endpoints": 184,
+  "same_pair_rationale_exact_endpoints": 126,
+  "same_pair_rationale_endpoints": 126,
+  "changed_pair_shared_endpoint_rationale_jaccard_median": 0.5714285714285714,
+  "changed_pair_shared_endpoints": 58,
+  "input_hashes": {
+    "config": "7d91be45e28a61061c3246ed0395c3de4b05898e9e967f2d82e41468c99fb405",
+    "selected_pairs": "2139a262616eda912fd529a1ffa40259cbe0a61f9bbb6f6c02091c1ac6377023",
+    "alternative_pair_explanations": "4795fffa4437241571a0b63fd3f79f289e928ced6a017feae5bdbae05d58a62d",
+    "original_pair_explanations": "22c9e20a7bc2f0f3f4b2dd4de0c851dd87a9187778480d6a0c3072411666c8f0"
+  },
+  "output_hashes": {
+    "alternative_component_configuration_metrics.csv": "2e763bdfd23f77848bb9a8d42db7b71751103e24040be2b59f92d5cb190ea6d2",
+    "original_component_configuration_metrics.csv": "2dfab6d6f913f61501505430bbd807b8dcc60d91a9c0ee13c44b63f517665a7b",
+    "paired_selection_comparison.csv": "265e15807765f7bf592d664a7569a6091458f758dbd08c66877c6eef611e6736",
+    "target_estimates.csv": "857dc4e2afb0d0294b2132abc575b2092977f728226e71e385b767684077777d",
+    "configuration_estimates.csv": "7d0939ae47a0a9d3775bcad5b0880c5a0493f6cb2f10f78c096877700c7aab8f",
+    "bootstrap.csv": "6ecb37b650dd167a66e0578851c285ef6dc2b2306d53c74c6bad513245c828f2",
+    "unpaired_alternative_components.csv": "e60780f099397d896c8fcf2481f95fe4077f32ca0ed8b58b41b04c0dcb7454ac",
+    "rationale_overlap.csv": "2972f9000f6ac66dc26c8c51800cf041b3ddc59ef7c312253897a42c0d90d92f"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "status": "revise_local_domain_gate",
+  "models": 1080,
+  "expected_models": 1080,
+  "randomized_models": 540,
+  "endpoint_constant_randomized_models": 3,
+  "confirmation_endpoint_constant_models": 2,
+  "finite_predictions": true,
+  "retraining_allowed": false
+}

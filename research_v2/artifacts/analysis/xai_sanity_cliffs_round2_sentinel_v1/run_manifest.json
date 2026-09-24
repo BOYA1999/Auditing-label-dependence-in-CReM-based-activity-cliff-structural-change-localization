@@ -1,0 +1,13 @@
+{
+  "run_id": "xai_sanity_cliffs_round2_sentinel_v1",
+  "status": "pass",
+  "config_sha256": "a6fcb0042024d4bb94d09702e52fdd8688777baff61058907b80566f4648e5b6",
+  "stage_summary_sha256": {
+    "preparation": "4d16701dda386f8280c2adec6418387cc5ec105693ac359495e802147deae46e",
+    "counterfactuals": "9b9d8c661c90f854b28e59eb09999db70be12efe6282f74864518a32a78e89fa",
+    "representations": "6bfd7b06564e3af78ec5db509dc18ab57cf5c77253eed587b05aed8c4fe4426c",
+    "explanations": "93b387bd69b3b9bbcc178db8ce0e6fa0d4f8e7764db8ded7e0019dfb9a382f18",
+    "analysis": "520f2dce2aa380c780376355ae91b6b78504d6f2d1d0e37c8549eaf5c4d7361e",
+    "validation": "6ac296fa0edaaab949c6041757d11169237f99b108d0315f9405b33b0e0fdbb8"
+  }
+}

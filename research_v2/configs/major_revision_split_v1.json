@@ -1,0 +1,36 @@
+{
+  "run_id": "xai_sanity_cliffs_major_revision_split_v1",
+  "status": "frozen_before_execution",
+  "frozen_on": "2026-09-03",
+  "source_config": "research_v2/configs/sanity_full_v1.json",
+  "split_seeds": [20260903, 20260904],
+  "model_initialization_seed": 42,
+  "representative_targets": [
+    "CHEMBL4616_EC50",
+    "CHEMBL239_EC50",
+    "CHEMBL2835_Ki",
+    "CHEMBL2147_Ki",
+    "CHEMBL287_Ki",
+    "CHEMBL244_Ki"
+  ],
+  "selection_rule": "Before new results, choose the lowest- and highest-information confirmation EC50 targets and the lowest, lower-middle, upper-middle and highest-information confirmation Ki targets using only the original number of held-out sentinel components.",
+  "original_test_component_counts": {
+    "CHEMBL4616_EC50": 9,
+    "CHEMBL239_EC50": 33,
+    "CHEMBL2835_Ki": 5,
+    "CHEMBL2147_Ki": 14,
+    "CHEMBL287_Ki": 26,
+    "CHEMBL244_Ki": 52
+  },
+  "component_split": {"train": 0.50, "calibration": 0.25, "test": 0.25},
+  "primary_summary": "median component-level trained-minus-label-permuted nAP, then equal-weight median across the six targets",
+  "scope": "additional split robustness analysis; it does not replace the untouched 27-target confirmation result",
+  "rebuild_requirements": [
+    "component assignment",
+    "global training-only CReM replacement library across all 30 targets",
+    "representative-target evaluation neighborhoods",
+    "mutant representations",
+    "trained and label-permuted heads",
+    "explanations"
+  ]
+}

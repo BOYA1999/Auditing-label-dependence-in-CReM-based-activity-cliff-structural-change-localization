@@ -1,0 +1,33 @@
+{
+  "status": "pass",
+  "max_tokens": 202,
+  "molecules": 48714,
+  "eligible_shared_model_rows": 48588,
+  "excluded_shared_model_rows": 126,
+  "excluded_evaluation_rows": 0,
+  "maximum_observed_tokens": 570,
+  "excluded_by_target_split": {
+    "CHEMBL1871_Ki|calibration": 9,
+    "CHEMBL1871_Ki|isolated": 3,
+    "CHEMBL1871_Ki|train": 16,
+    "CHEMBL204_Ki|calibration": 5,
+    "CHEMBL204_Ki|isolated": 6,
+    "CHEMBL204_Ki|test": 3,
+    "CHEMBL204_Ki|train": 2,
+    "CHEMBL233_Ki|isolated": 7,
+    "CHEMBL233_Ki|train": 14,
+    "CHEMBL236_Ki|calibration": 8,
+    "CHEMBL236_Ki|isolated": 8,
+    "CHEMBL236_Ki|test": 9,
+    "CHEMBL236_Ki|train": 1,
+    "CHEMBL237_EC50|isolated": 3,
+    "CHEMBL237_Ki|calibration": 10,
+    "CHEMBL237_Ki|isolated": 5,
+    "CHEMBL237_Ki|train": 3,
+    "CHEMBL244_Ki|isolated": 3,
+    "CHEMBL244_Ki|train": 2,
+    "CHEMBL4616_EC50|isolated": 9
+  },
+  "policy": "exclude overlength rows from every representation and predictor; no truncation",
+  "input_sha256": "003de70aabc2a1218b76bccfba7263b1e22999481dbddcdf39825ac1b6dba3b4"
+}

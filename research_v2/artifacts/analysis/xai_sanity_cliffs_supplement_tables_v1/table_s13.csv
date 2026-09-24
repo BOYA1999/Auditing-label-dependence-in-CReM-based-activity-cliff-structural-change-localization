@@ -1,0 +1,18 @@
+Concept,Representation,Predictor,Tr. nAP,Rand. nAP,Calibrated,Molecules,Gate
+Aromatic atom count,MoLFormer,MLP,0.345,0.108,0.159,308,Pass
+Aromatic atom count,MoLFormer,XGBoost,0.211,0.099,0.020,308,Pass
+Aromatic atom count,Morgan,MLP,0.162,0.085,0.000,308,Fail
+Aromatic atom count,Morgan,XGBoost,0.357,0.000,0.249,308,Pass
+Aromatic atom count,Uni-Mol,MLP,0.259,0.121,0.048,308,Pass
+Halogen count,MoLFormer,MLP,1.000,0.246,0.618,134,Pass
+Halogen count,MoLFormer,XGBoost,1.000,0.209,0.530,134,Pass
+Halogen count,Morgan,MLP,1.000,0.089,0.756,134,Pass
+Halogen count,Morgan,XGBoost,1.000,0.067,0.667,134,Pass
+Halogen count,Uni-Mol,MLP,1.000,0.307,0.583,134,Pass
+Halogen count,Uni-Mol,XGBoost,1.000,0.251,0.502,134,Pass
+Heteroatom count,MoLFormer,MLP,0.017,0.089,-0.046,308,Fail
+Heteroatom count,MoLFormer,XGBoost,0.026,0.076,-0.024,308,Fail
+Heteroatom count,Morgan,MLP,0.045,0.105,-0.022,308,Fail
+Heteroatom count,Morgan,XGBoost,0.091,0.046,0.044,308,Pass
+Heteroatom count,Uni-Mol,MLP,0.016,0.089,-0.038,308,Fail
+Heteroatom count,Uni-Mol,XGBoost,0.034,0.077,-0.024,308,Fail
