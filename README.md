@@ -1,10 +1,10 @@
 # Activity-cliff localization rereview revision 2026-10-08
 
-Code and frozen statistical records corresponding to the 2026-10-08 rereview manuscript and Tables S1-S36, published on 9 October 2026. The fixed snapshot is release tag `rereview-20261008`. Commit `3322b470e5537bd14bbaf661f148683f53bf78e9` remains in the history and predates these revisions. No DOI or journal submission is claimed.
+Code and frozen statistical records corresponding to the 2026-10-08 rereview manuscript and Tables S1-S36, published on 9 October 2026. The fixed code snapshot is release tag `rereview-20261009`; its unchanged frozen-input archive is attached to `rereview-20261008`. Commit `3322b470e5537bd14bbaf661f148683f53bf78e9` remains in the history and predates these revisions. No DOI or journal submission is claimed.
 
 ## Restore and replay
 
-Clone this repository at tag `rereview-20261008`, or download the source archive for that release. Use Python 3.12 and the pinned requirements. Run the following commands from the repository root. The first command downloads the companion frozen inputs from the release, verifies its SHA-256 and restores the four original input paths:
+Clone this repository at tag `rereview-20261009`, or download the source archive for that release. Use Python 3.12 and the pinned requirements. Run the following commands from the repository root. The first command downloads the companion frozen inputs, verifies its SHA-256 and restores the four original input paths:
 
 ```
 python -B fetch_core_inputs.py
@@ -12,6 +12,7 @@ python -B verify_package.py
 python -B research_v2/scripts/replay_review_core.py
 python -B research_v2/scripts/replay_rereview.py
 python -B research_v2/scripts/analyze_count_oracle_revision.py --oracle-only
+python -B verify_package.py
 ```
 
 The validator checks inventory, file hashes, path boundaries, 16 figure-source CSVs, 36 supplementary-table CSVs and the four restored inputs. The core replay recomputes exact-null statistics, generator controls and mapping assessment from restored atom scores, pairs, masks and scored mutants. The rereview replay filters the six unreproduced mapping keys, recomputes 5000-draw intervals and matched model/generator summaries, and compares every rereview output hash. Exact-count localization is replayed on the original development mutants without training. Learned-model mutant errors are supplied as frozen outputs; redoing those requires the omitted saved models and representation arrays.
