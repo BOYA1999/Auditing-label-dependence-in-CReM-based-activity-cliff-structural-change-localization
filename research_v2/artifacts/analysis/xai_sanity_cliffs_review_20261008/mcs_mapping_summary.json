@@ -1,0 +1,10 @@
+{
+  "pairs": 617,
+  "assessed_pairs": 611,
+  "pairs_with_multiple_valid_matched_atom_sets": 77,
+  "fraction_with_multiple_valid_matched_atom_sets": 0.1260229132569558,
+  "median_nap_range_when_ambiguous": 0.003886787045749589,
+  "q95_nap_range_when_ambiguous": 0.1850492394672331,
+  "fallback_pairs": 0,
+  "truncated_pairs": 0
+}

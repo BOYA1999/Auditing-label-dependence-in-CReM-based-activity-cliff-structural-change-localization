@@ -1,0 +1,30 @@
+{
+  "endpoint_null_exact_expectation": {
+    "comparisons": 111,
+    "max_absolute_error": 2.220446049250313e-16
+  },
+  "mapping": {
+    "pairs": 617,
+    "native_left_misses": 6,
+    "native_right_misses": 6,
+    "eligible_pairs": 611,
+    "ambiguous_pairs": 77,
+    "query_failures": 6,
+    "truncated_pairs": 0
+  },
+  "denominator_identity_max_error": 1.1102230246251565e-16,
+  "monte_carlo_error": {
+    "max_absolute_ap": 0.022764042731130613,
+    "rms_ap": 0.003165501489164832
+  },
+  "fixed_configuration_grand_mean": {
+    "estimate": -0.008311620954613987,
+    "ci95": [
+      -0.01256247559859529,
+      -0.004290855154952778
+    ],
+    "scope": "Fixed six configurations; datasets resampled; descriptive panel uncertainty."
+  },
+  "main_labels_changed": false,
+  "scope": "Post-confirmation sensitivity of frozen scores; exact null means, no model refit."
+}

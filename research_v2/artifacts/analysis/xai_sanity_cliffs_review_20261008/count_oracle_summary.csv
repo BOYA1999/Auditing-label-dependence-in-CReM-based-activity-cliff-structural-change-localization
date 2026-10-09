@@ -1,0 +1,4 @@
+control,molecules,median_oracle_nap,median_rationale_support
+aromatic_atom_count,308,0.28571428571428586,0.5
+halogen_count,134,1.0,1.0
+heteroatom_count,308,0.0038308252593966903,0.6666666666666666

@@ -1,0 +1,1 @@
+Four frozen inputs for the rereview revision. Run `python -B fetch_core_inputs.py` to download the public release asset, verify its archive hash and restore the paths in CORE_INPUTS_MANIFEST.json. These records contain molecular computational outputs and caches; no new model fit is represented. Large inputs are not Git-tracked.

@@ -1,0 +1,4 @@
+Comparison,Rows,Finite supported,All-atom rho,Supported rho
+matched_label,22212,21364,0.7521,0.0857
+observed_cross_seed,22212,21834,0.9493,0.7475
+permuted_cross_seed,22212,20960,0.7832,0.1035

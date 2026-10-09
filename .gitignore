@@ -247,3 +247,11 @@ secrets.*
 *.db
 *.h5
 *.safetensors
+
+# Restored frozen inputs and generated replay summaries
+/research_v2/artifacts/experiment/xai_sanity_cliffs_full_v1/full/sanity_explanations/atom_scores.csv.gz
+/research_v2/artifacts/experiment/xai_sanity_cliffs_full_v1/full/sanity_heads/predictions.csv
+/artifacts/experiment/molcles_v1_main/cache/molecule_splits.csv
+/artifacts/experiment/molcles_v1_main/cache/pairs.csv
+/core_replay_result.json
+/rereview_replay_result.json

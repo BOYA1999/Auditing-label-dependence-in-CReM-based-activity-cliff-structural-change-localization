@@ -1,0 +1,6 @@
+Study,Existing contribution,Relation
+Hartog et al. 2024,Explanation consistency and randomized models,Motivates intervention checks; our outcome is unsigned edit localization.
+Amara et al. 2023,Substructure-aware GNN loss on 350 targets; directional attribution evaluation,Joint prediction and attribution objectives differ from frozen-model label intervention.
+MolCE 2025,Chemically plausible fact-foil contrasts and randomized selectivity labels,Existing randomization precedent; our contribution is the matched audit and control sequence.
+WISP I 2026,Model-agnostic atom mutations and matched-pair explanation evaluation,Direction and consistency against prediction/property differences complement unsigned localization.
+WISP II 2026,"Applications to yields, Factor Xa and Ames",Supports qualifying prediction and explanation together; no head-to-head performance claim is made.

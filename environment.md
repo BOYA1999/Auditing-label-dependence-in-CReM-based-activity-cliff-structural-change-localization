@@ -30,7 +30,7 @@
 
 Third-party pretrained weights are not redistributed.
 
-## Randomization and resampling
+## Historical randomization and resampling
 
 - observed-label model seeds: 11, 23 and 42
 - revised main bootstrap seed: 20260903; 5,000 draws
@@ -54,3 +54,7 @@ Third-party pretrained weights are not redistributed.
 This is the environment in which the reported run was executed, not a tested minimum specification. A fresh end-to-end refit requires additional time and storage for the unbundled pretrained weights, representations, model binaries, CReM database and mutant caches; that fresh-install resource envelope was not benchmarked.
 
 GPU kernels and third-party conformer generation may not be bitwise identical across hardware, drivers and library builds. Row-level statistical inputs and exact executed hashes are therefore distributed alongside full-rerun code.
+
+## Rereview statistical replay
+
+The 8 October revision uses exact pooled and endpoint null means and 5,000 dataset/component bootstrap draws with base seed 20261008. The six-case exclusion uses the same base seed with its recorded analysis-label offsets. These analyses reuse frozen scores and neighborhoods; the historical seeds above describe the earlier study stages.

@@ -1,0 +1,19 @@
+{
+  "status": "completed",
+  "model_refit": false,
+  "known_function": "Exact atom count queried on the original retained mutants; original mask-to-atom mean and support rules.",
+  "heteroatom_atomic_numbers": [
+    7,
+    8,
+    15,
+    16
+  ],
+  "halogen_atomic_numbers": [
+    9,
+    17,
+    35,
+    53
+  ],
+  "qualified_tasks": 17,
+  "scope": "Development-target positive controls; not biological validation."
+}

@@ -1,0 +1,13 @@
+Rationale,Denominator,Metric,Estimate,95% CI,Datasets,Pairs
+boundary_extended,all_masks,raw_nap,-0.00523,"[-0.01416, -0.00035]",27,617
+boundary_extended,all_masks,pooled_exact_nap,-0.00879,"[-0.01573, -0.00224]",27,617
+boundary_extended,all_masks,endpoint_exact_nap,-0.00699,"[-0.01550, -0.00221]",27,617
+boundary_extended,supported,raw_nap,-0.00523,"[-0.01416, -0.00035]",27,617
+boundary_extended,supported,pooled_exact_nap,-0.00879,"[-0.01573, -0.00224]",27,617
+boundary_extended,supported,endpoint_exact_nap,-0.00699,"[-0.01550, -0.00221]",27,617
+strict_unmatched,all_masks,raw_nap,-0.00789,"[-0.01525, -0.00162]",27,581
+strict_unmatched,all_masks,pooled_exact_nap,-0.01034,"[-0.01726, -0.00550]",27,581
+strict_unmatched,all_masks,endpoint_exact_nap,-0.01038,"[-0.01737, -0.00534]",27,581
+strict_unmatched,supported,raw_nap,-0.00789,"[-0.01525, -0.00162]",27,581
+strict_unmatched,supported,pooled_exact_nap,-0.01034,"[-0.01726, -0.00550]",27,581
+strict_unmatched,supported,endpoint_exact_nap,-0.01038,"[-0.01737, -0.00534]",27,581

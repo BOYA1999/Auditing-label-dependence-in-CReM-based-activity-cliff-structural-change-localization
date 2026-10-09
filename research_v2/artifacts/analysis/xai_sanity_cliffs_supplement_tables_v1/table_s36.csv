@@ -1,0 +1,17 @@
+Representation,Predictor,Source,nAP,Paired difference from similarity
+molformer,mlp,trained,0.03330,-0.13512
+molformer,mlp,permuted,0.06676,-
+molformer,xgboost,trained,0.05060,-0.13333
+molformer,xgboost,permuted,0.07910,-
+morgan,mlp,trained,0.05560,-0.10314
+morgan,mlp,permuted,0.10878,-
+morgan,xgboost,trained,0.03277,-0.13665
+morgan,xgboost,permuted,0.06794,-
+unimol,mlp,trained,0.05254,-0.14159
+unimol,mlp,permuted,0.08607,-
+unimol,xgboost,trained,0.07698,-0.09754
+unimol,xgboost,permuted,0.07357,-
+,,support_any,0.02512,-
+,,support_fraction,0.02512,-
+,,support_weighted_similarity,0.23299,-
+,,supported_similarity,0.23299,-

@@ -9,6 +9,7 @@ import numpy as np
 import pandas as pd
 import scipy
 from rdkit import Chem, rdBase
+from rdkit.Chem import rdRascalMCES
 from scipy import stats
 
 
@@ -341,18 +342,79 @@ def clustered_slope(frame, x, y, draws, seed, label):
     }
 
 
-def enumerate_mapping_sets(mol, matched_atoms, maximum):
-    smarts = Chem.MolFragmentToSmarts(mol, atomsToUse=sorted(matched_atoms), isomericSmarts=True)
+def shared_mapping_sets(left, right, stored, maximum):
+    atom_map = {int(a): int(b) for a, b in stored}
+    options = rdRascalMCES.RascalOptions()
+    options.similarityThreshold = 0.10
+    options.ringMatchesRingOnly = True
+    options.completeAromaticRings = True
+    options.completeSmallestRings = False
+    options.ignoreAtomAromaticity = False
+    options.ignoreBondOrders = False
+    options.timeout = 20
+    results = rdRascalMCES.FindMCES(left, right, options)
+    reproduced = next((r for r in results if set(r.atomMatches()) == set(map(tuple, stored))), None)
+    if reproduced is None:
+        reproduced = next((r for r in results if {a for a,b in r.atomMatches()} == set(atom_map)
+            and {b for a,b in r.atomMatches()} == set(atom_map.values())), None)
+    evidence = {"rascal_atom_mapping_exact": reproduced is not None and set(reproduced.atomMatches()) == set(map(tuple, stored)),
+        "rascal_atom_sets_reproduced": reproduced is not None,
+        "rascal_timed_out": any(r.timedOut for r in results)}
+    if reproduced is None or evidence['rascal_timed_out']:
+        return [], [], False, False, {**evidence,"shared_bonds":0,"query_smarts":"","query_failure":True}
+    common_bond_ids = {a for a,b in reproduced.bondMatches()}
+    for side,molecule in enumerate([left,right]):
+        matched_atoms={v[side] for v in reproduced.atomMatches()}
+        matched_bonds={v[side] for v in reproduced.bondMatches()}
+        changed=set(range(molecule.GetNumAtoms()))-matched_atoms
+        for bond in molecule.GetBonds():
+            if bond.GetIdx() not in matched_bonds:
+                changed.update([bond.GetBeginAtomIdx(),bond.GetEndAtomIdx()])
+        changed|={n.GetIdx() for i in list(changed) for n in molecule.GetAtomWithIdx(i).GetNeighbors() if n.GetIdx() in matched_atoms}
+        evidence['reconstructed_boundary_'+['left','right'][side]]=json.dumps(sorted(changed))
+    reference = sorted(atom_map)
+    graph = Chem.RWMol()
+    positions = {}
+    for index in reference:
+        source = left.GetAtomWithIdx(index)
+        atom = Chem.AtomFromSmarts(f'[#%d;%s]' % (source.GetAtomicNum(), 'a' if source.GetIsAromatic() else 'A'))
+        if source.GetFormalCharge():
+            atom.ExpandQuery(Chem.AtomFromSmarts(f'[{source.GetFormalCharge():+d}]'))
+        atom.SetAtomMapNum(index + 1)
+        positions[index] = graph.AddAtom(atom)
+    common_bonds = []
+    for bond in left.GetBonds():
+        if bond.GetIdx() not in common_bond_ids:
+            continue
+        a, b = bond.GetBeginAtomIdx(), bond.GetEndAtomIdx()
+        if a not in atom_map or b not in atom_map:
+            continue
+        graph.AddBond(positions[a], positions[b], bond.GetBondType())
+        symbol = {Chem.BondType.SINGLE: '-', Chem.BondType.DOUBLE: '=', Chem.BondType.TRIPLE: '#', Chem.BondType.AROMATIC: ':'}[bond.GetBondType()]
+        graph.ReplaceBond(graph.GetNumBonds() - 1, Chem.BondFromSmarts(symbol + (';@' if bond.IsInRing() else ';!@')))
+        common_bonds.append(bond.GetIdx())
+    smarts = Chem.MolToSmarts(graph.GetMol(), isomericSmiles=True)
     query = Chem.MolFromSmarts(smarts)
+    metadata = {**evidence,"shared_bonds": len(common_bonds), "query_smarts": smarts, "query_failure": query is None}
     if query is None:
-        return [frozenset(matched_atoms)], False
-    matches = mol.GetSubstructMatches(query, uniquify=True, maxMatches=maximum + 1)
-    truncated = len(matches) > maximum
-    sets = sorted({frozenset(map(int, item)) for item in matches[:maximum]}, key=lambda item: tuple(sorted(item)))
-    chosen = frozenset(matched_atoms)
-    if chosen not in sets:
-        sets.append(chosen)
-    return sets, truncated
+        return [], [], False, False, metadata
+    source_indices = [atom.GetAtomMapNum() - 1 for atom in query.GetAtoms()]
+    sets, truncated = [], []
+    for molecule in [left, right]:
+        matches = molecule.GetSubstructMatches(query, uniquify=True, maxMatches=maximum + 1)
+        accepted = []
+        for match in matches[:maximum]:
+            atoms_valid = all(left.GetAtomWithIdx(a).GetAtomicNum() == molecule.GetAtomWithIdx(b).GetAtomicNum()
+                and left.GetAtomWithIdx(a).GetIsAromatic() == molecule.GetAtomWithIdx(b).GetIsAromatic()
+                for a, b in zip(source_indices, match))
+            bonds_valid = all(left.GetBondBetweenAtoms(source_indices[bond.GetBeginAtomIdx()], source_indices[bond.GetEndAtomIdx()]).IsInRing()
+                == molecule.GetBondBetweenAtoms(match[bond.GetBeginAtomIdx()], match[bond.GetEndAtomIdx()]).IsInRing()
+                for bond in query.GetBonds())
+            if atoms_valid and bonds_valid:
+                accepted.append(frozenset(map(int, match)))
+        sets.append(sorted(set(accepted), key=lambda value: tuple(sorted(value))))
+        truncated.append(len(matches) > maximum)
+    return sets[0], sets[1], truncated[0], truncated[1], metadata
 
 
 def main():
@@ -580,7 +642,7 @@ def main():
         "eligible_targets": int(competence.loc[competence.eligible, "dataset"].nunique()),
         "eligible_primary": eligible_result,
         "continuous_within_target_associations": associations,
-        "interpretation": "Post-confirmation diagnostic; calibration outcomes define eligibility without using test localization outcomes, but the thresholds were not prospectively preregistered.",
+        "interpretation": "Reviewer-motivated post-confirmation diagnostic; calibration outcomes define eligibility without using test localization outcomes, but the thresholds were not prospectively preregistered.",
     }
     (output / "prediction_competence_summary.json").write_text(json.dumps(competence_summary, indent=2) + "\n", encoding="utf-8")
     pd.DataFrame({"draw": np.arange(draws), "calibration_qualified_estimate": eligible_boot}).to_csv(output / "prediction_competence_bootstrap.csv", index=False)
@@ -627,26 +689,12 @@ def main():
         stored = json.loads(pair.match)
         chosen_left = frozenset(int(left) for left, _ in stored)
         chosen_right = frozenset(int(right) for _, right in stored)
-        smarts = Chem.MolFragmentToSmarts(left_mol, atomsToUse=sorted(chosen_left), isomericSmarts=True)
-        query = Chem.MolFromSmarts(smarts)
-        if query is None:
-            left_sets, right_sets, left_truncated, right_truncated = [chosen_left], [chosen_right], False, False
-        else:
-            left_matches = left_mol.GetSubstructMatches(query, uniquify=True, maxMatches=max_matches + 1)
-            right_matches = right_mol.GetSubstructMatches(query, uniquify=True, maxMatches=max_matches + 1)
-            left_truncated = len(left_matches) > max_matches
-            right_truncated = len(right_matches) > max_matches
-            left_sets = sorted({frozenset(map(int, value)) for value in left_matches[:max_matches]}, key=lambda value: tuple(sorted(value)))
-            right_sets = sorted({frozenset(map(int, value)) for value in right_matches[:max_matches]}, key=lambda value: tuple(sorted(value)))
-            if chosen_left not in left_sets:
-                left_sets.append(chosen_left)
-            if chosen_right not in right_sets:
-                right_sets.append(chosen_right)
+        left_sets, right_sets, left_truncated, right_truncated, mapping_metadata = shared_mapping_sets(left_mol, right_mol, stored, max_matches)
         combinations = [(left, right) for left in left_sets for right in right_sets]
         combination_truncated = len(combinations) > max_combinations
         if combination_truncated:
             combinations = combinations[:max_combinations]
-            if (chosen_left, chosen_right) not in combinations:
+            if chosen_left in left_sets and chosen_right in right_sets and (chosen_left, chosen_right) not in combinations:
                 combinations[-1] = (chosen_left, chosen_right)
         positive_counts = [
             (left_mol.GetNumAtoms() - len(left)) + (right_mol.GetNumAtoms() - len(right))
@@ -659,10 +707,12 @@ def main():
             "left_matches_truncated": left_truncated, "right_matches_truncated": right_truncated,
             "combination_truncated": combination_truncated,
             "chosen_left_recovered": chosen_left in left_sets, "chosen_right_recovered": chosen_right in right_sets,
-            "positive_atom_count_min": int(min(positive_counts)), "positive_atom_count_max": int(max(positive_counts)),
+            "positive_atom_count_min": int(min(positive_counts)) if positive_counts else np.nan,
+            "positive_atom_count_max": int(max(positive_counts)) if positive_counts else np.nan,
             "positive_atom_set_ambiguous": len(left_sets) > 1 or len(right_sets) > 1,
+            "fallback_inclusion": False, **mapping_metadata,
         })
-        if len(left_sets) > 1 or len(right_sets) > 1:
+        if chosen_left in left_sets and chosen_right in right_sets and (len(left_sets) > 1 or len(right_sets) > 1):
             original_labels = np.concatenate([
                 ~np.isin(np.arange(left_mol.GetNumAtoms()), list(chosen_left)),
                 ~np.isin(np.arange(right_mol.GetNumAtoms()), list(chosen_right)),
@@ -733,7 +783,7 @@ def main():
     (output / "manifest.json").write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
     evaluation = {
         "status": "pass",
-        "question": "Do the estimator, empirical-null, heterogeneity, predictor-competence and structural-proxy audits change the evidence boundary?",
+        "question": "Do the reviewer-mandated estimator, empirical-null, heterogeneity, predictor-competence and structural-proxy audits change the evidence boundary?",
         "comparison_baselines": ["label-permuted CReM mean", "pair-specific tie-preserving empirical null", "generator-only scores"],
         "claim_update": "CReM-LIME is excluded from primary inference; the remaining claim is conditional, post-confirmation and limited to unsigned CReM-mean structural-change localization.",
         "comparability": "Model/data/neighborhood caches are fixed. Rationale and empirical-null variations are explicit sensitivity estimands rather than replacements for the historical analysis.",

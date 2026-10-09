@@ -1,0 +1,17 @@
+{
+  "status": "completed",
+  "review_item": "P2-P3",
+  "original_pairs": 617,
+  "assessed_pairs": 611,
+  "unreproduced_pairs": 6,
+  "ambiguous_pairs": 77,
+  "strict_original_pairs": 581,
+  "strict_excluded_pairs": 6,
+  "strict_retained_pairs": 575,
+  "raw_point_unchanged": true,
+  "bootstrap_draws": 5000,
+  "bootstrap_seed": 20261008,
+  "bootstrap_label": "mapping-exclusion:<rationale>",
+  "full_population_intervals": "Existing revision draws; historical principal raw interval remains unchanged in Table 1.",
+  "scope": "Frozen scores and labels; component-safe target bootstrap; no model refit; unreproduced does not mean invalid label."
+}

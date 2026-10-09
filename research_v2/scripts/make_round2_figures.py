@@ -15,6 +15,7 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[2]
 ROUND2 = ROOT / "research_v2/artifacts/analysis/xai_sanity_cliffs_round2_v1"
+REVIEW = ROOT / "research_v2/artifacts/analysis/xai_sanity_cliffs_review_20261008"
 MAJOR = ROOT / "research_v2/artifacts/analysis/xai_sanity_cliffs_major_revision_v1"
 FULL = ROOT / "research_v2/artifacts/analysis/xai_sanity_cliffs_full_v1"
 PERM = ROOT / "research_v2/artifacts/experiment/xai_sanity_cliffs_major_revision_v1/permutation_stability"
@@ -215,6 +216,14 @@ def figure2():
     config["configuration"] = [configuration_label(a, b) for a, b in zip(config.representation, config.predictor)]
     empirical = pd.read_csv(ROUND2 / "empirical_null_summary.csv")
     generator = empirical[empirical.source.eq("generator")].copy()
+    matched=pd.read_csv(REVIEW/'absolute_matched_summary.csv')
+    matched=matched[matched.rationale.eq('boundary_extended')&matched.metric.eq('endpoint_exact_nap')]
+    for variant in ['trained','permuted']:
+        values=matched[matched.denominator.eq('supported')&matched.source.eq(variant)].set_index(['representation','predictor']).estimate
+        config['target_balanced_median_null_adjusted_nap_'+variant]=[values.loc[(r.representation,r.predictor)] for r in config.itertuples()]
+    generator=matched[matched.denominator.eq('generator')].copy()
+    generator['baseline']=generator.source
+    generator['target_balanced_median_null_adjusted_nap']=generator.estimate
     support = pd.read_csv(MAJOR / "generator_changed_unchanged_summary.csv").iloc[0]
     controls = pd.read_csv(MAJOR / "positive_controls/positive_control_configuration_summary.csv")
     controls = controls[controls.explainer.eq("crem_mean")].copy()
@@ -238,24 +247,21 @@ def figure2():
     ax.scatter(order.target_balanced_median_null_adjusted_nap_permuted, y, color=ORANGE, marker="s", s=23, label="Permuted labels")
     ax.axvline(0, color="#888888", lw=0.8)
     ax.set_yticks(y, order.configuration)
-    ax.set_xlabel("Component-level null-adjusted nAP")
+    ax.set_xlabel("Endpoint-null-adjusted nAP")
     ax.set_title("Localization after seed averaging", loc="left")
     ax.legend(loc="lower center", bbox_to_anchor=(0.53, -0.44), ncol=2)
 
     ax = axes[0, 1]
     panel(ax, "b")
-    generator["label"] = generator.apply(
-        lambda r: ("Nearest-training similarity" if r.baseline == "selected_mean_nearest_train_tanimoto" else "Any perturbation support")
-        + ("\nBoundary extended" if r.rationale == "boundary_extended" else "\nStrict unmatched"),
-        axis=1,
-    )
+    generator['label']=generator.baseline.map({'support_any':'Any support','support_fraction':'Support fraction q',
+        'support_weighted_similarity':'Similarity / all masks','supported_similarity':'Similarity / supported masks'})
     generator = generator.sort_values(["baseline", "rationale"]).reset_index(drop=True)
     yy = np.arange(len(generator))[::-1]
-    ax.barh(yy, generator.target_balanced_median_null_adjusted_nap, color=[TEAL if "Nearest" in v else PURPLE for v in generator.label], height=0.58)
+    ax.barh(yy, generator.target_balanced_median_null_adjusted_nap, color=[TEAL if "Similarity" in v else PURPLE for v in generator.label], height=0.58)
     ax.axvline(0, color="#888888", lw=0.8)
     ax.set_yticks(yy, generator.label.str.replace("Nearest-training similarity", "Nearest-training\nsimilarity", regex=False).str.replace("Any perturbation support", "Any perturbation\nsupport", regex=False))
-    ax.set_xlabel("Row-level null-adjusted nAP")
-    ax.set_title("The generator predicts the proxy", loc="left")
+    ax.set_xlabel("Endpoint-null-adjusted nAP")
+    ax.set_title("Matched generator controls", loc="left")
 
     ax = axes[1, 0]
     panel(ax, "c")
@@ -286,7 +292,7 @@ def figure2():
     ax.legend(loc="upper left")
 
     order["aggregation"] = "seed-averaged within component; median within target; median across targets"
-    generator["aggregation"] = "row-level pair-specific null; median within target; median across targets"
+    generator["aggregation"] = "same pairs and endpoint null; component median within target; median across targets"
     order.to_csv(SOURCE / "figure2a_model_absolute.csv", index=False)
     generator.to_csv(SOURCE / "figure2b_generator_null_adjusted.csv", index=False)
     pd.DataFrame({"atom_class": ["structural_change", "unchanged"], "support_probability": vals}).to_csv(SOURCE / "figure2c_support.csv", index=False)
@@ -300,11 +306,11 @@ def estimand_rows():
     competence = json.loads((ROUND2 / "prediction_competence_summary.json").read_text(encoding="utf-8"))["eligible_primary"]
     specs = [
         ("Post-confirmation unadjusted", primary["unadjusted_boundary_extended"]),
-        ("Pair-null adjusted", primary["empirical_null_adjusted_boundary_extended"]),
-        ("Strict unmatched", primary["empirical_null_adjusted_strict_unmatched"]),
-        ("Prevalence ≤ 0.8", primary["empirical_null_adjusted_boundary_prevalence_le_0_8"]),
-        ("Calibration qualified", competence),
     ]
+    revised=pd.read_csv(REVIEW/'primary_summary.csv')
+    for rationale,metric,name in [('boundary_extended','pooled_exact_nap','Pooled exact null'),('boundary_extended','endpoint_exact_nap','Endpoint exact null'),('strict_unmatched','endpoint_exact_nap','Strict, endpoint null')]:
+        row=revised[revised.rationale.eq(rationale)&revised.denominator.eq('supported')&revised.metric.eq(metric)].iloc[0]
+        specs.append((name,{'estimate':row.estimate,'ci95':[row.ci_low,row.ci_high],'targets':row.datasets,'components':row.components}))
     return pd.DataFrame(
         [
             {
@@ -322,15 +328,15 @@ def estimand_rows():
 
 def figure3():
     estimands = estimand_rows()
-    cells = pd.read_csv(ROUND2 / "crem_mean_target_configuration_effects.csv")
+    components = pd.read_csv(REVIEW / "component_metrics.csv")
+    components = components[components.denominator.eq('supported')].rename(columns={'endpoint_exact_nap_delta':'delta_null_adjusted_nap'})
+    cells = components[components.rationale.eq('boundary_extended')].groupby(['dataset','representation','predictor'],as_index=False).delta_null_adjusted_nap.median().rename(columns={'delta_null_adjusted_nap':'median_delta_null_adjusted_nap'})
     cells["configuration"] = [configuration_label(a, b) for a, b in zip(cells.representation, cells.predictor)]
-    components = pd.read_csv(ROUND2 / "crem_mean_empirical_null_component_deltas.csv")
     target_rationale = (
-        components.groupby(["dataset", "rationale", "representation", "predictor"], as_index=False).delta_null_adjusted_nap.median()
-        .groupby(["dataset", "rationale"], as_index=False).delta_null_adjusted_nap.median()
+        components.groupby(["dataset", "rationale"], as_index=False).delta_null_adjusted_nap.median()
     )
     target_pair = target_rationale.pivot(index="dataset", columns="rationale", values="delta_null_adjusted_nap").dropna().reset_index()
-    mapping = pd.read_csv(ROUND2 / "mcs_mapping_nap_sensitivity.csv")
+    mapping = pd.read_csv(REVIEW / "mcs_mapping_nap_sensitivity.csv")
     mapping_pair = mapping.groupby(["dataset", "component_id"], as_index=False).mapping_nap_range.median()
 
     fig, axes = plt.subplots(2, 2, figsize=(6.69, 5.20), gridspec_kw={"hspace": 0.58, "wspace": 0.48})
@@ -496,7 +502,8 @@ def figure4():
 
     ax = fig.add_subplot(gs[:, 0])
     panel(ax, "a", -0.18, 1.01)
-    image = ax.imshow(matrix.to_numpy(), aspect="auto", cmap="RdBu_r", vmin=-0.12, vmax=0.12)
+    color_limit=float(np.max(np.abs(matrix.to_numpy())))
+    image = ax.imshow(matrix.to_numpy(), aspect="auto", cmap="RdBu_r", vmin=-color_limit, vmax=color_limit)
     ax.set_xticks(range(matrix.shape[1]), [v.replace(" · ", "\n") for v in matrix.columns], rotation=35, ha="right")
     ax.set_yticks(range(matrix.shape[0]), matrix.index.str.replace("CHEMBL", "", regex=False), fontsize=5.5)
     ax.set_xlabel("")
@@ -592,7 +599,9 @@ def main():
         ("model_analysis/prediction_competence_summary.json", ROUND2 / "prediction_competence_summary.json"),
         ("model_analysis/crem_mean_target_configuration_effects.csv", ROUND2 / "crem_mean_target_configuration_effects.csv"),
         ("model_analysis/crem_mean_empirical_null_component_deltas.csv", ROUND2 / "crem_mean_empirical_null_component_deltas.csv"),
-        ("structural_proxy/mcs_mapping_nap_sensitivity.csv", ROUND2 / "mcs_mapping_nap_sensitivity.csv"),
+        ("structural_proxy/mcs_mapping_nap_sensitivity.csv", REVIEW / "mcs_mapping_nap_sensitivity.csv"),
+        ("matched_controls/absolute_matched_summary.csv", REVIEW / "absolute_matched_summary.csv"),
+        ("matched_controls/primary_summary.csv", REVIEW / "primary_summary.csv"),
         ("heterogeneity/hierarchical_heterogeneity.json", ROUND2 / "hierarchical_heterogeneity.json"),
         ("prediction_control/prediction_overall_summary.csv", MAJOR / "prediction_overall_summary.csv"),
         ("generator_control/generator_changed_unchanged_summary.csv", MAJOR / "generator_changed_unchanged_summary.csv"),

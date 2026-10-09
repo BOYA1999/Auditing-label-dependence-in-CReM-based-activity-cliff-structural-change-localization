@@ -34,4 +34,4 @@ Full reruns may download public pretrained weights listed in `environment.md` an
 
 ## Reuse and licensing boundary
 
-The upstream MoleculeACE files remain governed by `external/MoleculeACE/LICENCE`. The study scripts and derived files do not yet carry an author-selected public software licence; `LICENSE_PENDING.txt` is an explicit release gate. Select and add a compatible licence before publishing the repository.
+The upstream MoleculeACE files remain governed by `external/MoleculeACE/LICENCE`. The study code retains the repository's existing MIT licence in `LICENSE`; this update does not select or change the licence. Upstream MoleculeACE files retain their own licence notice. Pretrained weights are not redistributed, and the existing data-provenance limits remain applicable.

@@ -1,0 +1,13 @@
+{
+  "status": "completed",
+  "question": "Do endpoint conditioning and matched denominators change the frozen localization audit?",
+  "comparison_baselines": [
+    "raw nAP",
+    "pooled exact null",
+    "endpoint-stratified exact null",
+    "predictor-free scores"
+  ],
+  "claim_update": "Use primary_summary.csv and absolute_matched_summary.csv; retain failed mapping recovery and positive controls.",
+  "comparability": "Same models, pairs, stored labels and neighborhoods; null and denominator variations explicit.",
+  "next_action": "Complete count-function diagnostic, update manuscript and package."
+}

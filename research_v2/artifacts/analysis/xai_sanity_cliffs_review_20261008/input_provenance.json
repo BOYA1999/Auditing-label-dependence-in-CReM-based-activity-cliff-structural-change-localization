@@ -1,0 +1,57 @@
+{
+  "runtime": "Python 3.12; RDKit 2026.03.3",
+  "inputs": {
+    "research_v2/artifacts/experiment/xai_sanity_cliffs_full_v1/full/sanity_explanations/atom_scores.csv.gz": {
+      "bytes": 57498330,
+      "sha256": "e716901d40a00fc90062c6529c5d8013b58e796260a65814f82813203a17344a"
+    },
+    "research_v2/artifacts/experiment/xai_sanity_cliffs_full_v1/full/sanity_heads/predictions.csv": {
+      "bytes": 188988140,
+      "sha256": "5bf36f7f3f789f954c52d68dd2d196b1537e0f56697d91a0f834defcb2068f56"
+    },
+    "artifacts/experiment/molcles_v1_main/cache/molecule_splits.csv": {
+      "bytes": 1476137,
+      "sha256": "6f709e728709621fb6f395e3f5dbcf92206d42caa616c436b69c426361df7a3e"
+    },
+    "artifacts/experiment/molcles_v1_main/cache/pairs.csv": {
+      "bytes": 3403626,
+      "sha256": "9d9fff7aac066a2a2856948e6cebb2e95088fc46e8ed01c42d7c8086aec65f85"
+    },
+    "research_v2/artifacts/experiment/xai_sanity_cliffs_full_v1/prepared/model_molecules.csv": {
+      "bytes": 8960725,
+      "sha256": "7d645a7eb6b88fa8e909501d92c46174f75000dfc8b01de643a0d78b14432320"
+    },
+    "research_v2/artifacts/experiment/xai_sanity_cliffs_full_v1/prepared/sentinel_pairs.csv": {
+      "bytes": 595568,
+      "sha256": "1c8c91381a5c80597a4ffb6a9ffa817b4298b5fc61bf905ebce9c4dc127b32a3"
+    },
+    "research_v2/artifacts/experiment/xai_sanity_cliffs_full_v1/full/counterfactuals/mask_coverage.csv": {
+      "bytes": 2491519,
+      "sha256": "7b646b00b3bf3f27d08c3531947fe89af749db16c4689095ed51a583782c2271"
+    },
+    "research_v2/artifacts/experiment/xai_sanity_cliffs_full_v1/full/counterfactuals/scored_mutants.csv": {
+      "bytes": 20254523,
+      "sha256": "62dac7d6a9d729ef82d2a21d91f7acf122ed13fcad0e698fa5511b86d73a076d"
+    },
+    "research_v2/artifacts/analysis/xai_sanity_cliffs_major_revision_v1/generator_atom_geometry.csv": {
+      "bytes": 4271453,
+      "sha256": "75253bbb9d2dbf677aa147c28819289bb9c11988f61ac8addd766afaf5649ce8"
+    },
+    "research_v2/scripts/analyze_review_revision.py": {
+      "bytes": 19994,
+      "sha256": "e38a56c505908d4600e8b2e044f066e1f0a78bd1e560688ab2d12eb268c3f4de"
+    },
+    "research_v2/scripts/analyze_round2_revision.py": {
+      "bytes": 46780,
+      "sha256": "d8012592dd14f740fd2ec352aac2faa6f4fadcca4465685bcb6605b6badc0df6"
+    },
+    "research_v2/configs/round2_revision_v1.json": {
+      "bytes": 1782,
+      "sha256": "9135fc4b3c955cae78cbacf1240a15d8d438cb88e9f649ae9b4349c25796e1ab"
+    },
+    "configs/molcles_v1.json": {
+      "bytes": 1060,
+      "sha256": "6565a5f61c4856b4256e776584906a26a281084694b09ccf54bfe76116072e25"
+    }
+  }
+}

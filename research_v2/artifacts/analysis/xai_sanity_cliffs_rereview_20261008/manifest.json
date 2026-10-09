@@ -1,0 +1,12 @@
+{
+  "evaluation_summary.json": "c6623b6786bb9369966e76778ce008f7a990c89980c20f566be2605ec10ffaf8",
+  "excluded_component_rows.csv": "2367f914cbc7311b79edc6a94e6acd60858a4ba65fd4c8ad40ad4d7d171bd82c",
+  "input_provenance.json": "8fdaf545669117b7dee8b9cf55b14329167fe9dbe46a9396a2f5468b9568d04a",
+  "mapping_atom_bond_evidence.csv": "f4851eb24d614136f72900d3026502b42a2182c659e44a849ec588284d774634",
+  "mapping_exclusion_absolute.csv": "ca56081d7a9fcbc3b3c55c6935bff2b011d845e60b61c15343141a8ced6252d5",
+  "mapping_exclusion_bootstrap.csv": "bddeddd5826ec3a65ea0937d3de6feca126d9b63c0cb30dc6be7bd3061356695",
+  "mapping_exclusion_by_dataset.csv": "9a7cc664086f12f4845da7aa18246dabc8630e6853973e977e9e05613671c856",
+  "mapping_exclusion_model_minus_generator.csv": "f2e675beaedad5a6357b8754d28eebc856d4a7449d0f879fabb5d8690f9f1d09",
+  "mapping_exclusion_primary_summary.csv": "2ab72aa0932f0a1fd2cac53514ea79064d3e22b31dba142aeb80b2ade57712cb",
+  "mapping_status_by_dataset.csv": "9f91f6627f2239788a4da3419235aecf632097f529532521b259c0e2aadeffb5"
+}

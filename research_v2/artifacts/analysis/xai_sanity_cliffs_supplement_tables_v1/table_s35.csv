@@ -1,0 +1,9 @@
+Population,Rationale,Metric,Estimate,Conditional 95% CI,Datasets,Pairs
+all_frozen,boundary_extended,raw_nap,-0.00523,"[-0.01416, -0.00035]",27,617
+reproduced_only,boundary_extended,raw_nap,-0.00523,"[-0.01425, 0.00000]",27,611
+all_frozen,boundary_extended,endpoint_exact_nap,-0.00699,"[-0.01550, -0.00221]",27,617
+reproduced_only,boundary_extended,endpoint_exact_nap,-0.00699,"[-0.01548, -0.00189]",27,611
+all_frozen,strict_unmatched,raw_nap,-0.00789,"[-0.01525, -0.00162]",27,581
+reproduced_only,strict_unmatched,raw_nap,-0.00789,"[-0.01550, -0.00164]",27,575
+all_frozen,strict_unmatched,endpoint_exact_nap,-0.01038,"[-0.01737, -0.00534]",27,581
+reproduced_only,strict_unmatched,endpoint_exact_nap,-0.01038,"[-0.01735, -0.00537]",27,575

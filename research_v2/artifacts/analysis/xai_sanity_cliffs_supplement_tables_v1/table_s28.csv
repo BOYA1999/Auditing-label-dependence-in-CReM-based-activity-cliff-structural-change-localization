@@ -1,0 +1,17 @@
+Representation,Predictor,Score source,nAP
+molformer,mlp,trained,0.03330
+molformer,mlp,permuted,0.06676
+molformer,xgboost,trained,0.04174
+molformer,xgboost,permuted,0.07327
+morgan,mlp,trained,0.05117
+morgan,mlp,permuted,0.10415
+morgan,xgboost,trained,0.03277
+morgan,xgboost,permuted,0.06794
+unimol,mlp,trained,0.05254
+unimol,mlp,permuted,0.08607
+unimol,xgboost,trained,0.07698
+unimol,xgboost,permuted,0.07357
+,,support_any,0.01952
+,,support_fraction,0.01952
+,,support_weighted_similarity,0.23299
+,,supported_similarity,0.23299
