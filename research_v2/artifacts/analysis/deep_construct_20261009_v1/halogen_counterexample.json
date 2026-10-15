@@ -1,0 +1,10 @@
+{
+  "status": "posthoc counterexample; primary gate unchanged",
+  "eligible_molecules": 110,
+  "retained_mutants": 3873,
+  "creation_only_mutants": 268,
+  "creation_response_mass_fraction": 0.30547550432276654,
+  "molecules_with_creation": 87,
+  "median_actual_nap_with_creation": 1.0,
+  "interpretation": "Creation alone is not sufficient for low localization; mask geometry, coverage and ranking also matter."
+}

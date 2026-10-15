@@ -1,0 +1,13 @@
+# Native replacement trace clarification
+
+Locked 2026-10-09 05:10 UTC, after development outcomes but before the external generation/outcome analysis. No scientific gate, response, molecule selection or original result is changed.
+
+Source inspection of CReM mutate_mol shows replace_ids protects atoms outside the allowed region; it does not require all allowed atoms to be deleted. R in the frozen protocol is therefore **allowed-region concept occupancy**, and I=delta+R is a **residual accounting quantity**, not an actual inserted-atom count. The original CSV fields removed, insertion_response, destroyed_only and cancelled retain their names for reproducibility, but must be read as region occupancy, residual response, zero-residual cases and zero-net-change positive-region cases. In particular, zero net change alone cannot distinguish turnover from an unchanged positive atom.
+
+The removal response is an artificial label-aligned occupancy probe, not measured deletion. The primary removal-minus-actual contrast diagnoses mismatch between a current-atom label and the response generated within an allowed mutation region. It does not establish the fraction of loss caused by atom turnover. A nonnegative I is necessary for the simple accounting identity but insufficient to establish locality or actual replacement.
+
+For every freshly generated external mutant, additionally retain CReM's native reaction SMARTS and product react_atom_idx provenance (return_rxn=True, return_mol=True). Identify retained parent atoms and actually removed parent atoms; count newly generated elemental-concept atoms. Record removed atoms outside the allowed region and retained atoms changing elemental identity, rather than assuming locality. Elemental identity must satisfy delta = true_inserted - true_removed + retained_elemental_change. Aromaticity is not subject to the same local elemental identity.
+
+Before external outcomes, freeze an additional trace diagnostic: actual creation-only, destruction-only and cancellation cases from native traces; frequency of partial-region replacement; and true-removal count passed through the same allowed-mask averaging. This is a secondary analysis motivated by development/source inspection, not the initially locked primary endpoint. It cannot retroactively identify the actual reaction path of old cached development mutants. Preserve every failing trace and do not select or replace molecules based on it.
+
+Equal-mask-size response permutations can be noninformative when all responses are constant within each size stratum. Report both eligible multi-mask strata and strata with actual response variation; a zero gain under a degenerate reference is not evidence of absent chemical specificity.

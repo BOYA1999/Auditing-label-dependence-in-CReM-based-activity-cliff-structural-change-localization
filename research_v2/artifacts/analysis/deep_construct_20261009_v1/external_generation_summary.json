@@ -1,0 +1,14 @@
+{
+  "status": "completed",
+  "selected": 256,
+  "completed": 256,
+  "retained_mutants": 8598,
+  "selection_sha256_before_generation": "f5e95ea82619f5283a3b605ec0a7a9089ad93fd2bb83750e3f6064e758c126a1",
+  "failures": 0,
+  "unsupported_molecules": 5,
+  "elapsed_seconds": 1044.1100000000151,
+  "native_trace": "CReM return_rxn/return_mol; RDKit react_atom_idx",
+  "original_generator_reference": "research_v2/scripts/generate_counterfactuals.py",
+  "script_sha256": "77fd4d82f6fb122fb2318880213169a834d82549be4723864e22799ca21123ba",
+  "interpretation_amendment_sha256": "e5eba0ade918eba5c847032863ef80f083da030fe1307653b21826b3256b304a"
+}

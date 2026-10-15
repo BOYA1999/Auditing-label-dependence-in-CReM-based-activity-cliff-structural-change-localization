@@ -1,0 +1,226 @@
+[
+  {
+    "row_id": "WOMBAT:0",
+    "mask_id": 6,
+    "method": "optimized",
+    "target_product_reproduced": true,
+    "target_removed_atoms": [
+      15
+    ],
+    "allowed_mask": [
+      16
+    ],
+    "generated_unique": 8
+  },
+  {
+    "row_id": "WOMBAT:0",
+    "mask_id": 6,
+    "method": "upstream",
+    "target_product_reproduced": true,
+    "target_removed_atoms": [
+      15
+    ],
+    "allowed_mask": [
+      16
+    ],
+    "generated_unique": 8,
+    "optimized_upstream_same_smiles": true,
+    "optimized_upstream_same_trace": true
+  },
+  {
+    "row_id": "WOMBAT:2",
+    "mask_id": 5,
+    "method": "optimized",
+    "target_product_reproduced": true,
+    "target_removed_atoms": [
+      18
+    ],
+    "allowed_mask": [
+      19
+    ],
+    "generated_unique": 8
+  },
+  {
+    "row_id": "WOMBAT:2",
+    "mask_id": 5,
+    "method": "upstream",
+    "target_product_reproduced": true,
+    "target_removed_atoms": [
+      18
+    ],
+    "allowed_mask": [
+      19
+    ],
+    "generated_unique": 8,
+    "optimized_upstream_same_smiles": true,
+    "optimized_upstream_same_trace": true
+  },
+  {
+    "row_id": "WOMBAT:6",
+    "mask_id": 2,
+    "method": "optimized",
+    "target_product_reproduced": true,
+    "target_removed_atoms": [
+      0
+    ],
+    "allowed_mask": [
+      2
+    ],
+    "generated_unique": 8
+  },
+  {
+    "row_id": "WOMBAT:6",
+    "mask_id": 2,
+    "method": "upstream",
+    "target_product_reproduced": true,
+    "target_removed_atoms": [
+      0
+    ],
+    "allowed_mask": [
+      2
+    ],
+    "generated_unique": 8,
+    "optimized_upstream_same_smiles": true,
+    "optimized_upstream_same_trace": true
+  },
+  {
+    "row_id": "WOMBAT:11",
+    "mask_id": 7,
+    "method": "optimized",
+    "target_product_reproduced": true,
+    "target_removed_atoms": [
+      19
+    ],
+    "allowed_mask": [
+      20
+    ],
+    "generated_unique": 8
+  },
+  {
+    "row_id": "WOMBAT:11",
+    "mask_id": 7,
+    "method": "upstream",
+    "target_product_reproduced": true,
+    "target_removed_atoms": [
+      19
+    ],
+    "allowed_mask": [
+      20
+    ],
+    "generated_unique": 8,
+    "optimized_upstream_same_smiles": true,
+    "optimized_upstream_same_trace": true
+  },
+  {
+    "row_id": "WOMBAT:15",
+    "mask_id": 3,
+    "method": "optimized",
+    "target_product_reproduced": true,
+    "target_removed_atoms": [
+      32
+    ],
+    "allowed_mask": [
+      33
+    ],
+    "generated_unique": 8
+  },
+  {
+    "row_id": "WOMBAT:15",
+    "mask_id": 3,
+    "method": "upstream",
+    "target_product_reproduced": true,
+    "target_removed_atoms": [
+      32
+    ],
+    "allowed_mask": [
+      33
+    ],
+    "generated_unique": 8,
+    "optimized_upstream_same_smiles": true,
+    "optimized_upstream_same_trace": true
+  },
+  {
+    "row_id": "WOMBAT:17",
+    "mask_id": 2,
+    "method": "optimized",
+    "target_product_reproduced": true,
+    "target_removed_atoms": [
+      0
+    ],
+    "allowed_mask": [
+      2
+    ],
+    "generated_unique": 8
+  },
+  {
+    "row_id": "WOMBAT:17",
+    "mask_id": 2,
+    "method": "upstream",
+    "target_product_reproduced": true,
+    "target_removed_atoms": [
+      0
+    ],
+    "allowed_mask": [
+      2
+    ],
+    "generated_unique": 8,
+    "optimized_upstream_same_smiles": true,
+    "optimized_upstream_same_trace": true
+  },
+  {
+    "row_id": "WOMBAT:21",
+    "mask_id": 11,
+    "method": "optimized",
+    "target_product_reproduced": true,
+    "target_removed_atoms": [
+      23
+    ],
+    "allowed_mask": [
+      24
+    ],
+    "generated_unique": 8
+  },
+  {
+    "row_id": "WOMBAT:21",
+    "mask_id": 11,
+    "method": "upstream",
+    "target_product_reproduced": true,
+    "target_removed_atoms": [
+      23
+    ],
+    "allowed_mask": [
+      24
+    ],
+    "generated_unique": 8,
+    "optimized_upstream_same_smiles": true,
+    "optimized_upstream_same_trace": true
+  },
+  {
+    "row_id": "WOMBAT:26",
+    "mask_id": 3,
+    "method": "optimized",
+    "target_product_reproduced": true,
+    "target_removed_atoms": [
+      11
+    ],
+    "allowed_mask": [
+      12
+    ],
+    "generated_unique": 8
+  },
+  {
+    "row_id": "WOMBAT:26",
+    "mask_id": 3,
+    "method": "upstream",
+    "target_product_reproduced": true,
+    "target_removed_atoms": [
+      11
+    ],
+    "allowed_mask": [
+      12
+    ],
+    "generated_unique": 8,
+    "optimized_upstream_same_smiles": true,
+    "optimized_upstream_same_trace": true
+  }
+]

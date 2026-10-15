@@ -1,0 +1,13 @@
+Cohort,Concept,Response,Eligible,Supported,Informative,Median gain
+development,Aromatic,Actual,308,307,139,0.00000
+development,Aromatic,Occupancy,308,307,77,0.00000
+development,Halogen,Actual,134,134,133,0.77194
+development,Halogen,Occupancy,134,134,134,0.85116
+development,Heteroatom,Actual,308,307,298,-0.02233
+development,Heteroatom,Occupancy,308,307,273,0.15951
+external,Aromatic,Actual,230,227,43,0.00000
+external,Aromatic,Occupancy,230,227,19,0.00000
+external,Halogen,Actual,110,110,109,0.65774
+external,Halogen,Occupancy,110,110,107,0.82816
+external,Heteroatom,Actual,256,251,240,-0.02193
+external,Heteroatom,Occupancy,256,251,215,0.22614

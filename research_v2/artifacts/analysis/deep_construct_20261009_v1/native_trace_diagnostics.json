@@ -1,0 +1,40 @@
+{
+  "native_retained_mutants": 8598,
+  "outside_allowed_region_rows": 536,
+  "retained_elemental_change_rows": 0,
+  "elemental_accounting_invalid_rows": 0,
+  "partial_region_replacement_rows": 15,
+  "outside_region_symmetry_cases": 134,
+  "outside_rows_with_automorphism_witness": 536,
+  "unresolved_outside_cases": 0,
+  "concepts": [
+    {
+      "concept": "halogen_count",
+      "retained_mutants": 8598,
+      "actual_creation_only": 669,
+      "actual_destruction_only": 700,
+      "actual_cancellation": 105,
+      "actual_both_zero": 7101,
+      "creation_absolute_response_mass_fraction_pooled": 0.5230870712401056,
+      "occupancy_count_mismatch_rows": 0,
+      "true_removal_nap_median": 1.0,
+      "paired_true_removal_contrast": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.0
+    },
+    {
+      "concept": "heteroatom_count",
+      "retained_mutants": 8598,
+      "actual_creation_only": 3428,
+      "actual_destruction_only": 884,
+      "actual_cancellation": 1403,
+      "actual_both_zero": 2158,
+      "creation_absolute_response_mass_fraction_pooled": 0.7016718065249148,
+      "occupancy_count_mismatch_rows": 15,
+      "true_removal_nap_median": 0.36666666666666664,
+      "paired_true_removal_contrast": 0.29362637362637356,
+      "ci_low": 0.2384531590413942,
+      "ci_high": 0.336111111111111
+    }
+  ]
+}

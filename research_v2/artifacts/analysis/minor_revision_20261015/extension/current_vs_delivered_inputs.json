@@ -1,0 +1,18 @@
+[
+  {
+    "file": "selected_external_molecules.csv",
+    "current_equals_delivered": true
+  },
+  {
+    "file": "external_scored_mutants.csv",
+    "current_equals_delivered": true
+  },
+  {
+    "file": "external_generation_molecules.csv",
+    "current_equals_delivered": true
+  },
+  {
+    "file": "external_mask_coverage.csv",
+    "current_equals_delivered": true
+  }
+]

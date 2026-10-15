@@ -1,0 +1,95 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "Frozen input research_v2\\artifacts\\experiment\\reprxai_cliffs_pilot_v1\\prepared\\molecules.csv",
+      "passed": true
+    },
+    {
+      "check": "Frozen input research_v2\\artifacts\\experiment\\reprxai_cliffs_pilot_v1\\prepared\\sentinel_pairs.csv",
+      "passed": true
+    },
+    {
+      "check": "Frozen input research_v2\\artifacts\\experiment\\reprxai_cliffs_pilot_v1\\full\\counterfactuals\\scored_mutants.csv",
+      "passed": true
+    },
+    {
+      "check": "Frozen input research_v2\\artifacts\\experiment\\reprxai_cliffs_pilot_v1\\full\\crem_db\\replacement_library.db",
+      "passed": true
+    },
+    {
+      "check": "Frozen input research_v2\\artifacts\\analysis\\deep_construct_20261009_v1\\protocol.md",
+      "passed": true
+    },
+    {
+      "check": "Frozen input research_v2\\artifacts\\analysis\\deep_construct_20261009_v1\\selected_external_molecules.csv",
+      "passed": true
+    },
+    {
+      "check": "Pinned external source hash",
+      "passed": true
+    },
+    {
+      "check": "256 fixed distinct external structures",
+      "passed": true
+    },
+    {
+      "check": "Selection unchanged since generation started",
+      "passed": true
+    },
+    {
+      "check": "All selected molecules have generation status",
+      "passed": true
+    },
+    {
+      "check": "Generated molecules stay within selected list",
+      "passed": true
+    },
+    {
+      "check": "Cache has no duplicate mask-mutant keys",
+      "passed": true
+    },
+    {
+      "check": "All retained mutants meet fixed local similarity",
+      "passed": true
+    },
+    {
+      "check": "At most four retained mutants per mask",
+      "passed": true
+    },
+    {
+      "check": "Native elemental identities reconstruct every net count",
+      "passed": true
+    },
+    {
+      "check": "No retained elemental identity changes",
+      "passed": true
+    },
+    {
+      "check": "development primary bootstrap replay",
+      "passed": true
+    },
+    {
+      "check": "external primary bootstrap replay",
+      "passed": true
+    },
+    {
+      "check": "Original exact oracle reproduced aromatic_atom_count",
+      "passed": true
+    },
+    {
+      "check": "Original exact oracle reproduced halogen_count",
+      "passed": true
+    },
+    {
+      "check": "Original exact oracle reproduced heteroatom_count",
+      "passed": true
+    },
+    {
+      "check": "Main submission Word preserved",
+      "passed": true
+    }
+  ],
+  "passed": 22,
+  "scientific_scope": "Local computational mechanism/estimand analysis; no bioactivity validation, model retraining, manuscript promotion, public upload or submission."
+}

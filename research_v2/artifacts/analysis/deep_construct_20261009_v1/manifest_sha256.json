@@ -1,0 +1,202 @@
+{
+  "research_v2/artifacts/analysis/deep_construct_20261009_v1/README.md": {
+    "bytes": 2197,
+    "sha256": "46490d5b0d3b5e73d6d577d0fe25765cc54edf4e84ab8403b1d23b74c53a21b6"
+  },
+  "research_v2/artifacts/analysis/deep_construct_20261009_v1/construct_diagnostics.pdf": {
+    "bytes": 16050,
+    "sha256": "75329f21de77ca836fb2f1dbdd8ed9f071340fa6f674eddbb71e46da2b96a4b7"
+  },
+  "research_v2/artifacts/analysis/deep_construct_20261009_v1/construct_diagnostics.png": {
+    "bytes": 201426,
+    "sha256": "ecce7e957068bf9ae2b07a2ff1c142f4d9db057dab482f5e467c038f7d547e2f"
+  },
+  "research_v2/artifacts/analysis/deep_construct_20261009_v1/construct_diagnostics.svg": {
+    "bytes": 29543,
+    "sha256": "d53ea2e7561041307c327cf7193d3b7b4497fbf456c5be7d572655d4006c7043"
+  },
+  "research_v2/artifacts/analysis/deep_construct_20261009_v1/development_mask_accounting.csv": {
+    "bytes": 680620,
+    "sha256": "bbb12834d69521086f549867181c13a49c30b95721edb8d89e6176522c2bae1a"
+  },
+  "research_v2/artifacts/analysis/deep_construct_20261009_v1/development_molecule_metrics.csv": {
+    "bytes": 182892,
+    "sha256": "b0cefc5f4a3812f9f2bdcc7a4233b95162e1446d5ef281bfa9800c67d37dfd1d"
+  },
+  "research_v2/artifacts/analysis/deep_construct_20261009_v1/development_operator_metrics.csv": {
+    "bytes": 14249,
+    "sha256": "fe305473e7c50fa7625b0a2c5873cb9de67e0639a6ce4c8e06b51bd6ed940db2"
+  },
+  "research_v2/artifacts/analysis/deep_construct_20261009_v1/development_summary.csv": {
+    "bytes": 999,
+    "sha256": "a0c028ed925e84211ad1a99acb931c3356ae5c7b3ed4c523f831be7051b17141"
+  },
+  "research_v2/artifacts/analysis/deep_construct_20261009_v1/evaluation_summary.json": {
+    "bytes": 766,
+    "sha256": "2b2a87cf01a211cc284ec694080915d7c77904b28ff1066e288535c3a98570a9"
+  },
+  "research_v2/artifacts/analysis/deep_construct_20261009_v1/evaluation_summary_development.json": {
+    "bytes": 1502,
+    "sha256": "a3f2d88a360ef15eeafe59f28bea0f3ae41a5d412659d3912717c45f8679e303"
+  },
+  "research_v2/artifacts/analysis/deep_construct_20261009_v1/evaluation_summary_external.json": {
+    "bytes": 1498,
+    "sha256": "791826c9c3b9b86c1fa3b7e0184f18742c6c698e2ebd025fe1dccdfcb1e6d670"
+  },
+  "research_v2/artifacts/analysis/deep_construct_20261009_v1/external_generation_molecules.csv": {
+    "bytes": 5676,
+    "sha256": "4be3d5e8669893e00445cacbd92e51e4acfafcb64d063170e83fcca676a350ad"
+  },
+  "research_v2/artifacts/analysis/deep_construct_20261009_v1/external_generation_summary.json": {
+    "bytes": 652,
+    "sha256": "23f74016d9e37d230dd6a65857e51024cc5419a308b03d3cfebbcaba7f192afa"
+  },
+  "research_v2/artifacts/analysis/deep_construct_20261009_v1/external_mask_accounting.csv": {
+    "bytes": 531429,
+    "sha256": "94fd344a973c9b4c12c1d124475ce86bda8f2aa6794f615515a325b683b793b7"
+  },
+  "research_v2/artifacts/analysis/deep_construct_20261009_v1/external_mask_coverage.csv": {
+    "bytes": 75558,
+    "sha256": "f11ad24aacf14892efd1271fb71acab6b06cd0d091deb2d19d1ba1e27486dff6"
+  },
+  "research_v2/artifacts/analysis/deep_construct_20261009_v1/external_molecule_metrics.csv": {
+    "bytes": 138242,
+    "sha256": "ed594271654c866c4be050658d50ff3e9a8b08d51c87018f4ac1335415f7028e"
+  },
+  "research_v2/artifacts/analysis/deep_construct_20261009_v1/external_native_removal_metrics.csv": {
+    "bytes": 39888,
+    "sha256": "94f646f3cf6af19a8b6a6dd36ab51a57eef86f79a5a1836f03e72dd222d8a82a"
+  },
+  "research_v2/artifacts/analysis/deep_construct_20261009_v1/external_native_trace_summary.csv": {
+    "bytes": 469,
+    "sha256": "71f9fbf5848a6fb24c5d0e45efec2451b8cc21682c3bf17ae970265ebf809f36"
+  },
+  "research_v2/artifacts/analysis/deep_construct_20261009_v1/external_operator_metrics.csv": {
+    "bytes": 12259,
+    "sha256": "c810c4e675256c2733b1e08725c56b05632fe6f3cfa6e238f4559ebd8bbcc89a"
+  },
+  "research_v2/artifacts/analysis/deep_construct_20261009_v1/external_scaffold_membership.csv": {
+    "bytes": 40629,
+    "sha256": "734103bb03c7166ffec1cc787d66286008b6f1e84596ee8d1e170cbd2a1ef0fe"
+  },
+  "research_v2/artifacts/analysis/deep_construct_20261009_v1/external_scaffold_sensitivity.json": {
+    "bytes": 423,
+    "sha256": "8c60e3bbd5ca37a9d89b955aa3d394d9cb40fc51cba5225e49d4baf7afd75202"
+  },
+  "research_v2/artifacts/analysis/deep_construct_20261009_v1/external_scored_mutants.csv": {
+    "bytes": 1930835,
+    "sha256": "a194a4e93c8b3502c49a5da4dd33666b41a0632fcb2a392d06d6fb3b6e8f9260"
+  },
+  "research_v2/artifacts/analysis/deep_construct_20261009_v1/external_source.parquet": {
+    "bytes": 157820200,
+    "sha256": "7b0f16cbb765d2fe598b48592e477c398fb66fab9eed09e3258f24d4f57c0bab"
+  },
+  "research_v2/artifacts/analysis/deep_construct_20261009_v1/external_summary.csv": {
+    "bytes": 955,
+    "sha256": "ae642691187d38c65737eb6528725528c7e8478d4f1abb728519f00fa6785109"
+  },
+  "research_v2/artifacts/analysis/deep_construct_20261009_v1/external_symmetry_witnesses.csv": {
+    "bytes": 4657,
+    "sha256": "01a82c173227cfa29f1bd9961934b51ebb5400eb9553785c86f51861d3292ea0"
+  },
+  "research_v2/artifacts/analysis/deep_construct_20261009_v1/figure_forced_ties.csv": {
+    "bytes": 384,
+    "sha256": "49695dad60653c55fd8a6ef9f87606e67606190b1ed74e3e52b71e3a09b6f7ef"
+  },
+  "research_v2/artifacts/analysis/deep_construct_20261009_v1/figure_molecule_source.csv": {
+    "bytes": 328193,
+    "sha256": "e58683ff5acae3087f4d4b2445aacbaf2f9f43139e20c9bf73e6e3d4091d7077"
+  },
+  "research_v2/artifacts/analysis/deep_construct_20261009_v1/figure_primary_contrast.csv": {
+    "bytes": 923,
+    "sha256": "86e31086fbd71da30c53abe4dd9d99941e241ad683debf951cfe5c428f74545c"
+  },
+  "research_v2/artifacts/analysis/deep_construct_20261009_v1/halogen_counterexample.json": {
+    "bytes": 424,
+    "sha256": "62453ffe6cec7404684eee935766fb858e0ef63a5523f6d2ba8b13bfbd1d8d45"
+  },
+  "research_v2/artifacts/analysis/deep_construct_20261009_v1/input_provenance.json": {
+    "bytes": 1843,
+    "sha256": "441d1938578967b2106ed610b84c72bdd462246d519ff3cc496bbc60af8bce51"
+  },
+  "research_v2/artifacts/analysis/deep_construct_20261009_v1/interpretation_amendment.md": {
+    "bytes": 3620,
+    "sha256": "e5eba0ade918eba5c847032863ef80f083da030fe1307653b21826b3256b304a"
+  },
+  "research_v2/artifacts/analysis/deep_construct_20261009_v1/interpretation_amendment_initial.md": {
+    "bytes": 2739,
+    "sha256": "796aa8e02a76cdc83b5e0add98028741eac477b1b32e836b222d2f5b98ce7588"
+  },
+  "research_v2/artifacts/analysis/deep_construct_20261009_v1/native_trace_diagnostics.json": {
+    "bytes": 1367,
+    "sha256": "0eb967f8f46666c51929b2c2cfade95b2bebf58b7c901bda3929bf21eb2a6128"
+  },
+  "research_v2/artifacts/analysis/deep_construct_20261009_v1/operator_support_separation.csv": {
+    "bytes": 80573,
+    "sha256": "77cdc8a5f814b803a86994a3c908a83e223f87f6777048ea0b53eefa33fcb9f8"
+  },
+  "research_v2/artifacts/analysis/deep_construct_20261009_v1/permutation_informativeness.csv": {
+    "bytes": 378562,
+    "sha256": "cda633a429d4c2d73cc87f02f0fb30682135c09d5760afa2b8f4578416540e97"
+  },
+  "research_v2/artifacts/analysis/deep_construct_20261009_v1/protocol.md": {
+    "bytes": 9662,
+    "sha256": "c4bc1c2c2c737e2a7ab6c44188062ddcb7af9ab3accd40c95fe0bcc923908e49"
+  },
+  "research_v2/artifacts/analysis/deep_construct_20261009_v1/protocol_original_0450UTC.md": {
+    "bytes": 8615,
+    "sha256": "98e37870de5bd2c02266f7aff25a39a59debb59be28428a94d942e33ca67a14a"
+  },
+  "research_v2/artifacts/analysis/deep_construct_20261009_v1/qa.json": {
+    "bytes": 2768,
+    "sha256": "d85d52b34f92f4a322a12faa872afa4342f9b5e26fdaea07d822d81262f170a2"
+  },
+  "research_v2/artifacts/analysis/deep_construct_20261009_v1/runtime.json": {
+    "bytes": 350,
+    "sha256": "00f52dabe75b1f67a3ee2efd1d5066b4fd39b2babdfd8283b2436d7583b2c8bb"
+  },
+  "research_v2/artifacts/analysis/deep_construct_20261009_v1/selected_external_molecules.csv": {
+    "bytes": 50240,
+    "sha256": "f5e95ea82619f5283a3b605ec0a7a9089ad93fd2bb83750e3f6064e758c126a1"
+  },
+  "research_v2/artifacts/analysis/deep_construct_20261009_v1/upstream_trace_check.json": {
+    "bytes": 4585,
+    "sha256": "befec7c62149ec79c82100c63f6267a02b6fdbcecffeeae5851ec994b6f7da80"
+  },
+  "research_v2/artifacts/analysis/deep_construct_20261009_v1/新增分析及创新性提升报告.md": {
+    "bytes": 10641,
+    "sha256": "d970ab5979e6d4cbca50bbf33048b81891bababa8a3e6744dbf1e923c93271fb"
+  },
+  "research_v2/artifacts/analysis/deep_construct_20261009_v1/稿件增补英文段落.md": {
+    "bytes": 8693,
+    "sha256": "be5c62c69aab718e82e27d34755e137901f7dc79889404feff949400fed04d3d"
+  },
+  "research_v2/scripts/analyze_deep_construct.py": {
+    "bytes": 9238,
+    "sha256": "d81fa8431f4160b24540c4abe2a74da549e68c89922e2583bb3cf0181cd32ae9"
+  },
+  "research_v2/scripts/check_deep_construct_native.py": {
+    "bytes": 1947,
+    "sha256": "4ea90a6bf3bb6a673a18d1cf442d96a04fc40d9d648304fe2ec59a7e5d7f1b40"
+  },
+  "research_v2/scripts/diagnose_deep_construct.py": {
+    "bytes": 9106,
+    "sha256": "5caf55f41dbaf3b897c049298e9a07eea17112545275217421c990188f983ef2"
+  },
+  "research_v2/scripts/generate_deep_construct_external.py": {
+    "bytes": 5937,
+    "sha256": "77fd4d82f6fb122fb2318880213169a834d82549be4723864e22799ca21123ba"
+  },
+  "research_v2/scripts/plot_deep_construct.py": {
+    "bytes": 3285,
+    "sha256": "ab8d06e43d42a0b9f31a25ac710b2ea89d9cb684fa03546421b1b7f212dff0e6"
+  },
+  "research_v2/scripts/prepare_deep_construct.py": {
+    "bytes": 4185,
+    "sha256": "b959ecca77424df2084bc1f518c0ce994481b126b4a5978d8c9c669c44ad7935"
+  },
+  "research_v2/scripts/verify_deep_construct.py": {
+    "bytes": 3612,
+    "sha256": "61c8542fa1698d98999dec3f863cd6101fb0f8f7ca5f498e93af14fe169752a9"
+  }
+}

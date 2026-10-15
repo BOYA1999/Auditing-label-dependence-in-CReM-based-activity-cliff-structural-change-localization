@@ -1,0 +1,19 @@
+{
+  "dingzhen.md": "f2f86111aa8aba5d080b45a6e326edffb3176d2a9f31d4c415f76f2e6f0b7d55",
+  "independent_csv_verification.json": "dc2a7d22d2e2a42f5c264c651e178443f05aaf16852037bdca217285badaa654",
+  "input_provenance.json": "3e17d85486ba5ed678815f6b69af8bd75ac2f3aef6d3ad020412d29416df5634",
+  "mapping_assignment_draws.csv": "6a4b5fe2a856fdac1986af6848a303f7cf0e6e7e0b6275bd9776dccd51f0b7d3",
+  "mapping_candidate_coverage.csv": "479249f5d6f133710d0913125c95e2734f1dd08063a1c7b260418d106d5b2ca8",
+  "mapping_candidate_paired_metrics.csv": "3dda51284836fe56ea560b19b4c897acc485267c4800ba8552572057c764e742",
+  "mapping_candidate_seed_metrics.csv": "1c1447fca617413be37e36250195990c16ff090fdeda6e8bef04288b3a045465",
+  "mapping_candidates.csv": "c73f210a6105b045837626b9c6114cdcaddd43e88078682c1e9642c11d86d19d",
+  "mapping_pair_config_ranges.csv": "004d448508c520d80e8de0ec247d43153a9ad770ab2dc05bfb9b3dd2236476a1",
+  "mapping_primary_sensitivity.csv": "c4fba0a9de35fc42844737122c7b042d5f293c3697179cad9f088a363b54b800",
+  "mapping_scenario_assignments.csv": "75853622123b7c23aa6e8d2f51790b83d102bb0d39387f22a1b4e441eee26cd5",
+  "nested_reference_draws.csv": "deadb06b9d1556e6fdb46dda9e541f1d606c8d7e44a9fc03fe1d9f552fc0cd2e",
+  "nested_reference_summary.csv": "98d9ba9b6a3f04a5ef4b04ca391f2f4531038fe2882cd1f35a05a53404dc968c",
+  "table_S43.csv": "f2ec867cf308972644ff9ad7862b111b6541ce02099949edef885783a380ff34",
+  "table_S44.csv": "f273c3c1b2a09d81ed99898a0548506e2abcaccaf2b6bb26734bd2cefb8a2d5c",
+  "validation.json": "5f94ab570aa40b6a2f9abafbd42427e6dfa4759fe233e559fb2ec136403f8738",
+  "\u8865\u5145\u5206\u6790\u4e0e\u590d\u6838\u8bf4\u660e.md": "1694686389cd9c19c69438d8448687ad3133ccef8fc445748e97f54b2a9fc589"
+}

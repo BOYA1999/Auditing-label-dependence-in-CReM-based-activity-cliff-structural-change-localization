@@ -1,6 +1,6 @@
 analysis,estimate,ci95_low,ci95_high,interval_available
 "Calibration-qualified
-26 datasets, 82 cells",-0.007433400566558312,-0.022146325383234106,-0.0009078350930107501,True
+26 datasets, 86 cells",-0.00743340056655825,-0.021652142465955874,-0.00135780131683565,True
 "Ten permutations
 27 datasets, randomized-model seed 42",-0.013502912477144299,,,False
 "Component-median sentinel

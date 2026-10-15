@@ -1,0 +1,5 @@
+dataset,representation,predictor,calibration_pairs,calibration_spearman,calibration_direction_accuracy,calibration_tie_fraction,eligible,eligible_old
+CHEMBL218_EC50,molformer,mlp,18.0,0.6037151702786379,0.6666666666666666,0.0,True,False
+CHEMBL238_Ki,morgan,mlp,18.0,0.413828689370485,0.6666666666666666,0.0,True,False
+CHEMBL238_Ki,morgan,xgboost,18.0,0.40763673890608876,0.6666666666666666,0.0,True,False
+CHEMBL244_Ki,molformer,mlp,51.0,0.4596380090497737,0.6666666666666666,0.0,True,False

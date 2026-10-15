@@ -1,0 +1,5 @@
+Analysis,Molecules,Paired contrast,95% lower,95% upper
+Development primary occupancy,308,0.21277,0.18258,0.28989
+External primary occupancy,256,0.28405,0.23125,0.33333
+External scaffold blocks,256,0.28405,0.21473,0.34484
+External native-removal response,251,0.29363,0.23845,0.33611

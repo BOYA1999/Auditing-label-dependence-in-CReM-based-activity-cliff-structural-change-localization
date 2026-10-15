@@ -1,0 +1,22 @@
+{
+  "dataset_revision": "e86ec35687b0c0ebd1ecc151610a08224d8cf851",
+  "source_url": "https://huggingface.co/datasets/dmtsh/wombat-smiles/resolve/e86ec35687b0c0ebd1ecc151610a08224d8cf851/validation_datasets/Pattern%201/validation_molecules.parquet",
+  "source_bytes": 157820200,
+  "source_sha256": "7b0f16cbb765d2fe598b48592e477c398fb66fab9eed09e3258f24d4f57c0bab",
+  "source_rows": 5475586,
+  "source_column": "SMILES",
+  "dataset_license": "cc0-1.0",
+  "excluded_benchmark_structures": 35633,
+  "selected": 256,
+  "canonicalization_changed_selected_strings": 0,
+  "selection_uses_localization": false,
+  "selection_rule": "First 256 eligible distinct current-canonical structures in global SHA256 rank of distinct source SMILES strings; eligibility checked within first 4096; no generation outcomes used.",
+  "files": {
+    "research_v2\\artifacts\\experiment\\reprxai_cliffs_pilot_v1\\prepared\\molecules.csv": "12460a63228a509ae8c335608101de6f825e72f511bd89292006f3d6af64a00c",
+    "research_v2\\artifacts\\experiment\\reprxai_cliffs_pilot_v1\\prepared\\sentinel_pairs.csv": "6d8d3651dfe7eb4048985f4e617a7703694765aad07a1f308c7abca0fbd145b5",
+    "research_v2\\artifacts\\experiment\\reprxai_cliffs_pilot_v1\\full\\counterfactuals\\scored_mutants.csv": "05a3e6326dad1e5f00c4737aee507307d115a04bc49be447d45bf97497e6d1e3",
+    "research_v2\\artifacts\\experiment\\reprxai_cliffs_pilot_v1\\full\\crem_db\\replacement_library.db": "e29de7e2891f92fafdcb2121dee8efd3d67ee7b9cc9cbaa5813e43ff18f4d484",
+    "research_v2\\artifacts\\analysis\\deep_construct_20261009_v1\\protocol.md": "c4bc1c2c2c737e2a7ab6c44188062ddcb7af9ab3accd40c95fe0bcc923908e49",
+    "research_v2\\artifacts\\analysis\\deep_construct_20261009_v1\\selected_external_molecules.csv": "f5e95ea82619f5283a3b605ec0a7a9089ad93fd2bb83750e3f6064e758c126a1"
+  }
+}

@@ -35,3 +35,9 @@ Full reruns may download public pretrained weights listed in `environment.md` an
 ## Reuse and licensing boundary
 
 The upstream MoleculeACE files remain governed by `external/MoleculeACE/LICENCE`. The study code retains the repository's existing MIT licence in `LICENSE`; this update does not select or change the licence. Upstream MoleculeACE files retain their own licence notice. Pretrained weights are not redistributed, and the existing data-provenance limits remain applicable.
+
+## Response-target extension
+
+The selected structures originate from the CC0-1.0 WOMBAT Pattern 1 source at dataset revision `e86ec35687b0c0ebd1ecc151610a08224d8cf851`: <https://huggingface.co/datasets/dmtsh/wombat-smiles>. The pinned source URL/hash, selection rules and benchmark exclusions are in `research_v2/artifacts/analysis/deep_construct_20261009_v1/input_provenance.json`. Only the selected 256 structures and compact source-origin records are included; source-selection replay downloads the full parquet separately.
+
+The included 60,592,128-byte CReM SQLite cache was derived from the original development training partition and already supplied in Additional file 3. Its SHA-256 is `e29de7e2891f92fafdcb2121dee8efd3d67ee7b9cc9cbaa5813e43ff18f4d484`, identical to that archive. It supports optional generation checks; the principal statistical replays use retained scored mutants. This is a study-derived cache, not a redistributed pretrained model or an independent chemical database release. Existing upstream benchmark notices continue to apply.

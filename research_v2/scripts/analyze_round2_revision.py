@@ -3,7 +3,9 @@ import hashlib
 import json
 import math
 import platform
+from fractions import Fraction
 from pathlib import Path
+from statistics import median
 
 import numpy as np
 import pandas as pd
@@ -299,10 +301,31 @@ def prediction_metrics(frame):
     defined = len(predicted) > 1 and np.ptp(predicted) > 0 and np.ptp(true) > 0
     return pd.Series({
         "pairs": len(frame),
+        "correct_direction_pairs": int(np.sum(np.sign(true) == np.sign(predicted))),
         "spearman": float(stats.spearmanr(true, predicted).statistic) if defined else np.nan,
         "direction_accuracy": float(np.mean(np.sign(true) == np.sign(predicted))),
-        "predicted_tie_fraction": float(np.mean(np.abs(predicted) <= 1e-12)),
+        "predicted_tie_fraction": float(np.mean(predicted == 0.0)),
     })
+
+
+def calibration_prediction_quality(calibration, gate):
+    keys = ["dataset", "representation", "predictor"]
+    seed = calibration.groupby(keys + ["seed"], sort=True).apply(prediction_metrics, include_groups=False).reset_index()
+    quality = seed.groupby(keys, as_index=False).agg(
+        calibration_pairs=("pairs", "max"), calibration_spearman=("spearman", "median"),
+        calibration_direction_accuracy=("direction_accuracy", "median"), calibration_tie_fraction=("predicted_tie_fraction", "median"),
+    )
+    threshold = Fraction(str(gate["minimum_direction_accuracy"]))
+    exact_pass = seed.groupby(keys, sort=True).apply(
+        lambda group: median(Fraction(int(row.correct_direction_pairs), int(row.pairs)) for row in group.itertuples()) >= threshold,
+        include_groups=False,
+    )
+    quality["eligible"] = (
+        (quality.calibration_pairs >= int(gate["minimum_pairs"]))
+        & (quality.calibration_spearman >= float(gate["minimum_spearman"]))
+        & pd.MultiIndex.from_frame(quality[keys]).map(exact_pass).to_numpy(dtype=bool)
+    )
+    return seed, quality
 
 
 def clustered_slope(frame, x, y, draws, seed, label):
@@ -614,17 +637,8 @@ def main():
     pair_predictions = pd.read_csv(paths["pair_predictions"])
     pair_predictions = pair_predictions[pair_predictions.dataset.isin(targets)].copy()
     calibration = pair_predictions[(pair_predictions.component_split == "calibration") & (pair_predictions.variant == "trained")]
-    calibration_seed = calibration.groupby(["dataset", "representation", "predictor", "seed"], sort=True).apply(prediction_metrics, include_groups=False).reset_index()
-    calibration_quality = calibration_seed.groupby(["dataset", "representation", "predictor"], as_index=False).agg(
-        calibration_pairs=("pairs", "max"), calibration_spearman=("spearman", "median"),
-        calibration_direction_accuracy=("direction_accuracy", "median"), calibration_tie_fraction=("predicted_tie_fraction", "median"),
-    )
     gate = cfg["calibration_gate"]
-    calibration_quality["eligible"] = (
-        (calibration_quality.calibration_pairs >= int(gate["minimum_pairs"]))
-        & (calibration_quality.calibration_spearman >= float(gate["minimum_spearman"]))
-        & (calibration_quality.calibration_direction_accuracy >= float(gate["minimum_direction_accuracy"]))
-    )
+    calibration_seed, calibration_quality = calibration_prediction_quality(calibration, gate)
     calibration_quality.to_csv(output / "calibration_prediction_quality.csv", index=False)
     competence = cell.merge(calibration_quality, on=["dataset", "representation", "predictor"], validate="one_to_one")
     competence.to_csv(output / "prediction_competence_localization_cells.csv", index=False)
@@ -652,7 +666,7 @@ def main():
     for key, group in test_permuted.groupby(["dataset", "representation", "predictor", "seed"], sort=True):
         true = group.true_delta.to_numpy(float)
         predicted = group.predicted_delta.to_numpy(float)
-        tied = np.abs(predicted) <= 1e-12
+        tied = predicted == 0.0
         non_tied = ~tied
         tie_rows.append({
             "dataset": key[0], "representation": key[1], "predictor": key[2], "seed": int(key[3]),

@@ -1,0 +1,16 @@
+{
+  "python": "3.12.0",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "rdkit": "2026.3.3",
+    "crem": "0.2.14",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.8.0",
+    "pyarrow": "17.0.0",
+    "matplotlib": "3.10.8"
+  },
+  "model_training": false,
+  "gpu_used": false
+}

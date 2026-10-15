@@ -1,0 +1,55 @@
+{
+  "status": "PASS",
+  "old_result_reproduced": true,
+  "old_bootstrap_draws_reproduced": 5000,
+  "corrected_gate": {
+    "minimum_pairs": 5,
+    "minimum_spearman": 0.3,
+    "minimum_direction_accuracy": "2/3"
+  },
+  "boundary_cases": 4,
+  "eligible_cells_old": 82,
+  "eligible_cells_corrected": 86,
+  "total_cells": 162,
+  "results": {
+    "old": {
+      "estimate": -0.00743340056655825,
+      "ci90": [
+        -0.01930721114694071,
+        -0.002374072384577205
+      ],
+      "ci95": [
+        -0.02214632538323407,
+        -0.0009078350930107019
+      ],
+      "targets": 26,
+      "components": 606,
+      "configurations": 6
+    },
+    "corrected": {
+      "estimate": -0.00743340056655825,
+      "ci90": [
+        -0.019571234573714996,
+        -0.0026842578447285577
+      ],
+      "ci95": [
+        -0.021652142465955874,
+        -0.00135780131683565
+      ],
+      "targets": 26,
+      "components": 606,
+      "configurations": 6
+    }
+  },
+  "seed_aggregation": "Median of exact correct-direction count / pair count across the same three seeds; Spearman median and maximum pair count unchanged",
+  "near_zero_source_files": 6,
+  "near_zero_rows_checked": 169212,
+  "nonzero_within_1e_12": 0,
+  "unchanged_checks": [
+    "all calibration metrics apart from eligibility",
+    "all 162 continuous-association inputs",
+    "permuted direction tie diagnostics",
+    "all model-cell predictive metrics"
+  ],
+  "analysis_boundary": "Frozen-prediction and saved component-score statistical replay; no model retraining or neighborhood regeneration"
+}

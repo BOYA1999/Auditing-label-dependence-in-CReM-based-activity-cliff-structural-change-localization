@@ -409,10 +409,11 @@ def figure3():
 
 def robustness_rows():
     rows = []
-    competence = json.loads((ROUND2 / "prediction_competence_summary.json").read_text(encoding="utf-8"))["eligible_primary"]
+    competence_summary = json.loads((ROUND2 / "prediction_competence_summary.json").read_text(encoding="utf-8"))
+    competence = competence_summary["eligible_primary"]
     rows.append(
         {
-            "analysis": "Calibration-qualified\n26 datasets, 82 cells",
+            "analysis": f"Calibration-qualified\n{competence_summary['eligible_targets']} datasets, {competence_summary['eligible_target_configuration_cells']} cells",
             "estimate": competence["estimate"],
             "ci95_low": competence["ci95"][0],
             "ci95_high": competence["ci95"][1],
@@ -535,7 +536,7 @@ def figure4():
             ax.plot([row.ci95_low, row.ci95_high], [yv, yv], color=TEAL, lw=1.7)
         ax.scatter(row.estimate, yv, color=TEAL, marker="D" if not row.interval_available else "o", s=25)
     ax.set_yticks(y, [
-        "Calibration-qualified\n26 datasets, 82 cells",
+        robustness.iloc[0].analysis,
         "Ten permutations\n27 datasets,\nrandomized-model\nseed 42",
         "Component-median\nsentinel: 27 datasets,\n618 comps, seed 42",
     ])

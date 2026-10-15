@@ -1,0 +1,13 @@
+{
+  "status": "posthoc uncertainty sensitivity; primary gate unchanged",
+  "selected_scaffolds": 221,
+  "eligible_heteroatom_scaffolds": 221,
+  "largest_eligible_block": 26,
+  "selected_with_benchmark_scaffold": 72,
+  "point_molecule_median": 0.2840461181185164,
+  "ci_low": 0.21473363643845336,
+  "ci_high": 0.3448412698412698,
+  "bootstrap_draws": 5000,
+  "seed": 20261009,
+  "all_acyclic_one_block": true
+}

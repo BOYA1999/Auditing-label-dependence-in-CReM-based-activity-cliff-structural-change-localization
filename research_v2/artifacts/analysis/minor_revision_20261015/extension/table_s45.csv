@@ -1,0 +1,13 @@
+Concept,Supported structures,Quantity,Estimate,95% lower,95% upper
+Halogen,110,Net response: marginal median nAP,1.00000,1.00000,1.00000
+Halogen,110,Region occupancy: marginal median nAP,1.00000,1.00000,1.00000
+Halogen,110,Native removal: marginal median nAP,1.00000,1.00000,1.00000
+Halogen,110,Paired occupancy minus net,0.00000,0.00000,0.00000
+Halogen,110,Paired native removal minus net,0.00000,0.00000,0.00000
+Halogen,110,Paired native removal minus occupancy,0.00000,0.00000,0.00000
+Heteroatom,251,Net response: marginal median nAP,0.01429,0.00000,0.02597
+Heteroatom,251,Region occupancy: marginal median nAP,0.35625,0.30000,0.40000
+Heteroatom,251,Native removal: marginal median nAP,0.36667,0.31818,0.40000
+Heteroatom,251,Paired occupancy minus net,0.29167,0.23845,0.33611
+Heteroatom,251,Paired native removal minus net,0.29363,0.23845,0.33611
+Heteroatom,251,Paired native removal minus occupancy,0.00000,0.00000,0.00000

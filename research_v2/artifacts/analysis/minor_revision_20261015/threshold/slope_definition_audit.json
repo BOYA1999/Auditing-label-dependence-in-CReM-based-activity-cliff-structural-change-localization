@@ -1,0 +1,10 @@
+{
+  "formula": "predicted_delta = intercept + slope * observed_delta + error",
+  "implementation": "numpy.polyfit(true_delta, predicted_delta, 1)",
+  "aggregation": "median over model configurations and seeds within each dataset, then median over datasets",
+  "target_balanced_median_slope": {
+    "label_permuted": -0.00022186971199412268,
+    "trained": 0.12985211004449276
+  },
+  "saved_model_metrics_reproduced": true
+}

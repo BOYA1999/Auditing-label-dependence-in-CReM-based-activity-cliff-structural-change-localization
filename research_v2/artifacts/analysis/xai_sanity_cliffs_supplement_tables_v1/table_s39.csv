@@ -1,0 +1,7 @@
+Cohort,Concept,Eligible,Positive unsupported,Supported cross-label tie,Any cross-label tie,Median AUROC ceiling
+development,Aromatic,308,206,6,150,1.00000
+development,Halogen,134,0,0,0,1.00000
+development,Heteroatom,308,227,231,299,0.93140
+external,Aromatic,230,159,2,91,1.00000
+external,Halogen,110,1,0,1,1.00000
+external,Heteroatom,256,179,172,243,0.93581

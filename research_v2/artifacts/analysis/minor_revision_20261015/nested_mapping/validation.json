@@ -1,0 +1,28 @@
+{
+  "status": "completed",
+  "row_metric_max_absolute_error": 2.587014803767662e-15,
+  "row_checks": 66790,
+  "boundary_pairs": 617,
+  "strict_pairs": 581,
+  "mapping_assessed_pairs": 611,
+  "mapping_ambiguous_pairs": 77,
+  "mapping_candidates": 227,
+  "invalid_candidates": 0,
+  "distinct_candidate_label_vectors": {
+    "boundary_extended": 147,
+    "strict_unmatched": 191
+  },
+  "same_candidate_shared_across_conditions_seeds_configurations": true,
+  "boundary_invariance_by_matched_atom_set": false,
+  "mapping_enumeration": "All query embeddings in the existing 77 atom-set-ambiguous pairs; unique localization labels within each rationale.",
+  "unreproduced_mappings_retained": 6,
+  "monte_carlo_draws": 2000,
+  "seed": 20261015,
+  "no_refit": true,
+  "scope": "Post-confirmation frozen-score conditional reference and mapping sensitivity; not population intervals or a label-exchangeability test.",
+  "python": "3.12.0",
+  "numpy": "1.26.4",
+  "pandas": "2.3.3",
+  "rdkit": "2026.03.3",
+  "seconds": 43.68999528884888
+}

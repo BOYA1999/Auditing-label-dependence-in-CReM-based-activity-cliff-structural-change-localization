@@ -1,0 +1,17 @@
+{
+  "status": "completed",
+  "primary_gates": {
+    "development": true,
+    "external": true
+  },
+  "independent_structure_support": true,
+  "qa_checks_passed": 22,
+  "main_manuscript_updated": false,
+  "public_repository_updated": false,
+  "new_model_training": false,
+  "new_bioactivity_validation": false,
+  "claim_boundary": "CReM heteroatom response-target mismatch and assignment constraints; other concepts do not show the same paired benefit. Native provenance and unsupported molecules retained.",
+  "report": "新增分析及创新性提升报告.md",
+  "proposed_manuscript_additions": "稿件增补英文段落.md",
+  "figure_visual_inspection": "PNG checked after legend spacing repair; vector PDF/SVG exported from the same figure"
+}

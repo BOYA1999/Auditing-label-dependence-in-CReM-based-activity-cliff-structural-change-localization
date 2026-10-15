@@ -1,36 +1,45 @@
-# Activity-cliff localization rereview revision 2026-10-08
+# Auditing label dependence in CReM structural-change localization
 
-Code and frozen statistical records corresponding to the 2026-10-08 rereview manuscript and Tables S1-S36, published on 9 October 2026. The fixed code snapshot is release tag `rereview-20261009`; its unchanged frozen-input archive is attached to `rereview-20261008`. Commit `3322b470e5537bd14bbaf661f148683f53bf78e9` remains in the history and predates these revisions. No DOI or journal submission is claimed.
+This checkout contains the 15 October 2026 minor revision: an exact two-thirds calibration gate; a shared-endpoint conditional reference for the complete nested statistic; seed-level paired mapping sensitivity; and the response-target extension with common-population native-removal comparisons and traceable molecular examples. Tables S1–S46 and their scientific source records are supplied. The previous fixed code snapshot remains at tag `rereview-20261009`; its unchanged frozen inputs remain attached to `rereview-20261008`.
 
-## Restore and replay
+## Restore and verify
 
-Clone this repository at tag `rereview-20261009`, or download the source archive for that release. Use Python 3.12 and the pinned requirements. Run the following commands from the repository root. The first command downloads the companion frozen inputs, verifies its SHA-256 and restores the four original input paths:
+Use Python 3.12 and the pinned packages in `requirements_minor_revision.txt`, which includes the original dependency files. CairoSVG also requires the Cairo rendering runtime. Run from the repository root:
 
 ```
 python -B fetch_core_inputs.py
 python -B verify_package.py
-python -B research_v2/scripts/replay_review_core.py
-python -B research_v2/scripts/replay_rereview.py
-python -B research_v2/scripts/analyze_count_oracle_revision.py --oracle-only
-python -B verify_package.py
+python -B verify_archive.py
 ```
 
-The validator checks inventory, file hashes, path boundaries, 16 figure-source CSVs, 36 supplementary-table CSVs and the four restored inputs. The core replay recomputes exact-null statistics, generator controls and mapping assessment from restored atom scores, pairs, masks and scored mutants. The rereview replay filters the six unreproduced mapping keys, recomputes 5000-draw intervals and matched model/generator summaries, and compares every rereview output hash. Exact-count localization is replayed on the original development mutants without training. Learned-model mutant errors are supplied as frozen outputs; redoing those requires the omitted saved models and representation arrays.
+The first command restores four large frozen inputs and checks their exact hashes. The package validator checks current inventory and hashes, supplementary CSVs, figure sources and explicitly permitted scientific figures. The archive validator checks the 88 original response-target payload files preserved from Additional file 3. That extension's original README and protocols describe its historical package state; the current checkout now includes its code and caches.
 
-## Result and provenance layers
+## Replay the new analyses
 
-The raw principal point remains -0.00523271980315315. The full-panel exact endpoint contrast is -0.0069910516781531915. The corrected mapping audit assesses 611/617 pairs and finds 77 ambiguous pairs; six failures remain explicit. Rereview exclusion leaves the raw and endpoint point estimates unchanged. The endpoint exclusion interval is [-0.0154841863219514, -0.0018927868361068067]. All six failures also belong to the strict-unmatched population, so its exclusion population contains 575 pairs.
+```
+python -B research_v2/scripts/recompute_minor_threshold_20261015.py
+python -B research_v2/scripts/analyze_minor_nested_mapping.py
+python -B research_v2/scripts/verify_minor_nested_mapping.py
+python -B research_v2/scripts/analyze_minor_extension.py
+python -B research_v2/scripts/plot_minor_extension.py
+```
 
-The revision analysis directory contains frozen model/generator metrics and exact-null, map-stability and oracle results. The rereview directory adds mapping_status_by_dataset.csv, explicit stored/reproduced atom and bond records, deleted rows, per-dataset results, primary/bootstrap summaries, matched absolute values and paired trained-minus-generator differences. Atom indices are zero based; each common-bond row is [left_bond_id, right_bond_id, left_begin, left_end, right_begin, right_end]. Unreproduced common-atom/bond fields are empty lists and are never supplied as successful mappings.
+These commands recompute frozen-prediction and frozen-score statistics without fitting models. The gate replay retains the original seed aggregation and checks four actual boundary cases and all 5,000 historical bootstrap draws. Mapping sensitivity shares each candidate across label conditions, seeds and configurations. The endpoint-label reference recomputes the nested statistic for 2,000 assignments; it is a conditional reference, not a population interval or a training-label exchangeability test. The extension replays native reaction origins for all 8,598 retained mutants and recomputes 5,000-draw common-population summaries. Two small source-origin inputs support this replay without downloading the full source parquet.
 
-Tables S1-S10 and S12-S26 retain historical diagnostics; adjusted values there use the historical 500-assignment pooled null. S11 uses assessed mapping denominators. S27-S34 contain the exact-null and matched-control revision. S35-S36 contain six-case exclusion results. Full and exclusion intervals use distinct bootstrap realizations; the original raw interval remains historical. See the manuscript for estimand-specific interpretation.
+Run inventory/hash validation before replay. Analyses regenerate derived files in dedicated minor-revision directories. Numerical CSVs and scientific assertions provide replay checks; runtime fields, environment records, nested manifests and rendered-figure metadata can change and are not scientific discrepancy tests. Original frozen result directories remain. Current S7/S8 replace the former 82-cell presentation, preserved in Git history.
 
-## Limits and public access
+## Results and scope
 
-This is frozen-statistics replay, not a complete model refit or independent biological validation. Full refitting still requires documented pretrained assets, representation arrays, CReM databases and fitted-model resources. The companion restores the previously missing atom scores (57498330 bytes), predictions (188988140 bytes) and initial prepared caches. Input provenance files, companion input hashes and MANIFEST.sha256 identify exact bytes. Original MIT code licence and upstream MoleculeACE terms are preserved.
+The exact gate retains 86/162 cells: historical pooled-null contrast −0.00743340, 95% interval [−0.02165214, −0.00135780]. The principal 617-pair raw point (−0.00523272) and endpoint-exact point (−0.00699105) are unchanged. The complete-statistic conditional reference has a nonzero center: row-level expectation centering alone does not center nested medians. Six unreproduced mappings remain explicit. S43/S44 report the conditional reference and paired mapping sensitivity; S45/S46 report the common-population response comparison and source/example identities.
 
-No manuscript or author declarations are included. HISTORICAL_README.md and historical_scripts document the older package. The fixed public revision and companion input archive are available without repository authentication. Author-supplied declarations and journal submission remain separate author tasks.
+S1–S10 and S12–S26 retain historical diagnostics, with corrected S7/S8 eligibility; adjusted quantities there use the historical 500-assignment pooled null. S11 uses assessed mapping denominators. S27–S34 contain exact-null and matched controls, and S35/S36 contain six-case exclusion. S37–S42 are the original response-target extension. Distinct estimands and populations must not be substituted for one another.
 
-## Frozen input download
+The extension retains 256 selected structures, 251 supported structures, 536 outside-index traces and 15 partial-region replacements. The selected WOMBAT source panel comprises 237 ordinary negatives and 19 similarity-selected negatives; none matches the source or validation Pattern 1 SMARTS. This is a source-conditioned panel, not a motif-positive sample, and it has no independent bioactivity labels. Occupancy is an intentionally label-aligned diagnostic. Findings concern this CReM replacement/assignment setting and do not establish general failure of molecular XAI.
 
-[Core-input archive](https://github.com/BOYA1999/Auditing-label-dependence-in-CReM-based-activity-cliff-structural-change-localization/releases/download/rereview-20261008/xai_sanity_cliffs_core_inputs_20261008.zip) (91554490 bytes). SHA-256: `f113d4f5a55f4dcd0ffd5a5f31cf9667071b7d9b7950cc8a8fb688e4ef63d5ec`. See `CORE_INPUTS_MANIFEST.json` for the four extracted file hashes. The large inputs are release assets rather than Git-tracked CSVs.
+## Earlier replays and source rebuild
+
+Earlier commands remain: `replay_review_core.py`, `replay_rereview.py`, and `analyze_count_oracle_revision.py --oracle-only` under `research_v2/scripts`. `README_REPLAY.md` gives original extension replays and optional source-selection/native-generation commands. Use a separate extraction for selection or generation because they replace caches. The roughly 158 MB pinned WOMBAT parquet is downloaded separately; the exact frozen training-derived CReM database is included.
+
+This is frozen-statistics analysis, not a complete model refit or independent biological validation. Full refitting still requires documented pretrained assets, representations and fitted-model resources. No manuscript, author declarations, DOI or journal submission is included or claimed. The existing MIT license and upstream MoleculeACE notices remain unchanged; see `DATABASE_PROVENANCE.md`.
+
+The [core-input archive](https://github.com/BOYA1999/Auditing-label-dependence-in-CReM-based-activity-cliff-structural-change-localization/releases/download/rereview-20261008/xai_sanity_cliffs_core_inputs_20261008.zip) contains 91,554,490 bytes. `CORE_INPUTS_MANIFEST.json` records extracted hashes; `package_manifest.json` records the archive hash.

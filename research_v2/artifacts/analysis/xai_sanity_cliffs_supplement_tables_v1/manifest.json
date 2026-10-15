@@ -48,14 +48,14 @@
       "file": "table_s07.csv",
       "columns": 7,
       "rows": 6,
-      "sha256": "eaae01630d55397416764eff46a0ad770a3ae3d3eb8107892995b3c99f8f7f37"
+      "sha256": "9b8307984191120eda079c3927fecb5cc13ab68237f40454d508172c72c451c2"
     },
     {
       "table": "S8",
       "file": "table_s08.csv",
       "columns": 5,
       "rows": 3,
-      "sha256": "d935a97a5f13c4422a7756709a9a2f50007636a96805047f69a07eabb99b4772"
+      "sha256": "0ce713307b2076ecfedecfc944c67bbbb3d5d9e15b50dc63de24d27616331ba8"
     },
     {
       "table": "S9",
@@ -252,6 +252,76 @@
       "columns": 5,
       "rows": 16,
       "sha256": "321e98e1f36814d029ac186b500cd27c7e2c937e6698e67e6396cab4f2159811"
+    },
+    {
+      "table": "S37",
+      "file": "table_s37.csv",
+      "columns": 7,
+      "rows": 6,
+      "sha256": "821e1f6293163d39da269f37b23cf06f1752512afcb44d76534748032d8e3202"
+    },
+    {
+      "table": "S38",
+      "file": "table_s38.csv",
+      "columns": 7,
+      "rows": 2,
+      "sha256": "b14c1af25e9915e596a69aa97c96b8937cb6b7f1946a139789e30bfd60a58425"
+    },
+    {
+      "table": "S39",
+      "file": "table_s39.csv",
+      "columns": 7,
+      "rows": 6,
+      "sha256": "e423f5138a650019e1e054f77586b4c26812f4f2f5ab36b901cbc2393e536586"
+    },
+    {
+      "table": "S40",
+      "file": "table_s40.csv",
+      "columns": 7,
+      "rows": 12,
+      "sha256": "91b41de53cbeb6e38b60e6e9a40102ca1530cb187f7348d61927ec6836a296b2"
+    },
+    {
+      "table": "S41",
+      "file": "table_s41.csv",
+      "columns": 5,
+      "rows": 4,
+      "sha256": "af1b0c45435b711e351d98f7370d988f9404823e3e8316120e3a9abd8b8ff746"
+    },
+    {
+      "table": "S42",
+      "file": "table_s42.csv",
+      "columns": 2,
+      "rows": 18,
+      "sha256": "5a459eeddc034f6157b0038a55577744dc333992fc4fc2d22c1fecf77deb48d9"
+    },
+    {
+      "table": "S43",
+      "file": "table_s43.csv",
+      "columns": 11,
+      "rows": 2,
+      "sha256": "f2ec867cf308972644ff9ad7862b111b6541ce02099949edef885783a380ff34"
+    },
+    {
+      "table": "S44",
+      "file": "table_s44.csv",
+      "columns": 9,
+      "rows": 4,
+      "sha256": "f273c3c1b2a09d81ed99898a0548506e2abcaccaf2b6bb26734bd2cefb8a2d5c"
+    },
+    {
+      "table": "S45",
+      "file": "table_s45.csv",
+      "columns": 6,
+      "rows": 12,
+      "sha256": "1f1739c359f66bcf799455d7c6d28ea99bc8782866698c33f81021f7a2494df7"
+    },
+    {
+      "table": "S46",
+      "file": "table_s46.csv",
+      "columns": 5,
+      "rows": 6,
+      "sha256": "22ab7ee7a98a7e0e9ccf1fa6a6f33ae918f2d8ef4482a4ed0b79877cd34fdc3a"
     }
   ]
 }

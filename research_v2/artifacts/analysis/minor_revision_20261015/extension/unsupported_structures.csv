@@ -1,0 +1,6 @@
+row_id,dataset,molecule_index,canonical_smiles,source_smiles,component_id,component_split,selection_hash
+WOMBAT:14,WOMBAT_Pattern1_source,14,CCNCCNCCNN=CC(C(N)=O)(C(C)NC(=O)C(Cc1cnc[nH]1)NC(=O)C(N)CS)C(C)NC(=O)C(Cc1cnc[nH]1)NC(=O)C(N)CS,CCNCCNCCNN=CC(C(N)=O)(C(C)NC(=O)C(Cc1cnc[nH]1)NC(=O)C(N)CS)C(C)NC(=O)C(Cc1cnc[nH]1)NC(=O)C(N)CS,14,test,0000277a45623c2f65ea0b6c06064e654bed115aa9cd069756eb8a8eb6a44606
+WOMBAT:162,WOMBAT_Pattern1_source,162,COC(=O)C1(NC(=O)OC(C)(C)C)CCN(C(=O)C(CCCN=C(C)N)NC(=O)C2CCCN2C(=O)C(Cc2ccccc2)NC(=O)C(C)Cc2ccccc2)C1,COC(=O)C1(NC(=O)OC(C)(C)C)CCN(C(=O)C(CCCN=C(C)N)NC(=O)C2CCCN2C(=O)C(Cc2ccccc2)NC(=O)C(C)Cc2ccccc2)C1,162,test,00027ecc5f83f46514c2f50bccfd17914d133fd45374461117bf9f4e80a7be98
+WOMBAT:177,WOMBAT_Pattern1_source,177,O=S1CSCS(=O)C1,O=S1CSCS(=O)C1,177,test,0002cbded67de4a6ec035835a453eede5564d1395a26a1233b75db4ba728831d
+WOMBAT:184,WOMBAT_Pattern1_source,184,O=c1ccc2c(ccc3[nH]c4c(ccc5c6c(c(=O)oc54)CCC6)c32)o1,O=c1ccc2c(ccc3[nH]c4c(ccc5c6c(c(=O)oc54)CCC6)c32)o1,184,test,0002e9d89cee7b491a82b8923d037cbbee678ae059319621672a2bc884cc0cf9
+WOMBAT:221,WOMBAT_Pattern1_source,221,C1CSC(C2CS2)CS1,C1CSC(C2CS2)CS1,221,test,00036b2e7b4fa242aec45881b1e4b39f525b2b52b5ef97c6884e0053be3b23de

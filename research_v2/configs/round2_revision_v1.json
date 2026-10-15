@@ -24,7 +24,7 @@
   "calibration_gate": {
     "minimum_pairs": 5,
     "minimum_spearman": 0.30,
-    "minimum_direction_accuracy": 0.6666666667
+    "minimum_direction_accuracy": "2/3"
   },
   "mcs_mapping_max_matches_per_endpoint": 256,
   "mcs_mapping_max_combinations": 4096

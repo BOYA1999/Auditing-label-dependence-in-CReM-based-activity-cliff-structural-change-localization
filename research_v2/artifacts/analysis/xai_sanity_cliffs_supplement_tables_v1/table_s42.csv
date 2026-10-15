@@ -1,0 +1,19 @@
+Check,Value
+External source rows,5475586
+Selected structures,256
+Canonical overlaps with MoleculeACE,0
+Distinct benchmark structures excluded,35633
+Completed generation / failures,256 / 0
+Supported / unsupported structures,251 / 5
+Retained mutants,8598
+Selected Murcko scaffolds,221
+Structures sharing a benchmark scaffold,72
+Partial-region replacements / affected molecules,15 / 3
+Outside-index mutants / unique cases,536 / 134
+Outside-index mutants with symmetry witnesses,536
+Unresolved outside-index cases,0
+Elemental accounting failures,0
+Retained elemental identity changes,0
+Upstream comparison molecules / matches,8 / 8
+Halogen-eligible structures with creation,87
+Actual median nAP in those 87 structures,1.00000

@@ -1,0 +1,8 @@
+{
+  "halogen_eligible_molecules": 110,
+  "mutants_in_eligible_molecules": 3873,
+  "creation_only_mutants": 268,
+  "creation_absolute_mass_fraction": 0.30547550432276654,
+  "molecules_with_creation": 87,
+  "median_actual_nap_with_creation": 1.0
+}

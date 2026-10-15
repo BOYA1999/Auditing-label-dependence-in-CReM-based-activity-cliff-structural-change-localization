@@ -1,0 +1,4 @@
+cohort,concept,molecules,supported_molecules,paired_contrast,ci_low,ci_high,negative_insertions,actual_molecule_median,actual_response_gain_median,removal_molecule_median,removal_response_gain_median,insertion_molecule_median,insertion_response_gain_median,turnover_molecule_median,turnover_response_gain_median,creation_mass_fraction_median,removal_leakage_median
+external,aromatic_atom_count,230,227,0.0,0.0,0.0,0,0.0,0.0,0.49999999999999994,0.0,0.39551282051282044,0.0,0.49999999999999994,0.0,0.0,0.0
+external,halogen_count,110,110,0.0,0.0,0.0,0,1.0,0.6577435661764706,1.0,0.8281598772321429,0.05212842712842712,0.0,1.0,0.7112117946708464,0.30625,0.0
+external,heteroatom_count,256,251,0.2840461181185164,0.23125413767278494,0.33333333333333326,0,0.010736562819896111,-0.021927300786521567,0.3399456521739131,0.22613932291666664,0.08116785175608707,0.00011936592818954928,0.3162130819060167,0.12786212055517038,0.7142857142857143,0.2857142857142857

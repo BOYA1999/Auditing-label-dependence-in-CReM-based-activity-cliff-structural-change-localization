@@ -1,0 +1,7 @@
+Cohort,Concept,Eligible / supported,Actual nAP,Occupancy nAP,Paired contrast,95% interval
+development,Aromatic,308 / 307,0.28571,0.50000,0.13393,"[0.00000, 0.18754]"
+development,Halogen,134 / 134,1.00000,1.00000,0.00000,"[0.00000, 0.00000]"
+development,Heteroatom,308 / 307,0.00383,0.32420,0.21277,"[0.18258, 0.28989]"
+external,Aromatic,230 / 227,0.00000,0.50000,0.00000,"[0.00000, 0.00000]"
+external,Halogen,110 / 110,1.00000,1.00000,0.00000,"[0.00000, 0.00000]"
+external,Heteroatom,256 / 251,0.01074,0.33995,0.28405,"[0.23125, 0.33333]"

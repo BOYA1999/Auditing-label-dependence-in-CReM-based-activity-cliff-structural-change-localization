@@ -1,0 +1,11 @@
+{
+  "saved_mapping_rows_and_scenario_recalculation_max_error": 2.220446049250313e-16,
+  "saved_reference_summary_recomputed": true,
+  "distinct_pair_label_vectors_by_rationale": {
+    "boundary_extended": 147,
+    "strict_unmatched": 191
+  },
+  "all_candidates_evaluable": true,
+  "all_77_pairs_have_stored_candidate": true,
+  "status": "PASS"
+}

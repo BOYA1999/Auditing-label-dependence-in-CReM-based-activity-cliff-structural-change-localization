@@ -256,3 +256,18 @@ secrets.*
 /core_replay_result.json
 /rereview_replay_result.json
 /research_v2/artifacts/analysis/xai_sanity_cliffs_review_20261008/count_oracle_matched_summary.csv
+
+# Explicit scientific assets for the 2026-10-15 revision
+!/research_v2/artifacts/analysis/deep_construct_20261009_v1/construct_diagnostics.pdf
+!/research_v2/artifacts/analysis/deep_construct_20261009_v1/construct_diagnostics.png
+!/research_v2/artifacts/analysis/deep_construct_20261009_v1/construct_diagnostics.svg
+!/research_v2/artifacts/analysis/minor_revision_20261015/threshold/figures/figure4_robustness_fidelity.pdf
+!/research_v2/artifacts/analysis/minor_revision_20261015/threshold/figures/figure4_robustness_fidelity.png
+!/research_v2/artifacts/analysis/minor_revision_20261015/threshold/figures/figure4_robustness_fidelity.svg
+!/research_v2/artifacts/analysis/minor_revision_20261015/threshold/figures/figure4_robustness_fidelity.tiff
+!/research_v2/artifacts/analysis/minor_revision_20261015/threshold/latex_figures/figure4_robustness_fidelity.pdf
+!/research_v2/artifacts/analysis/minor_revision_20261015/extension/figure5_revised.pdf
+!/research_v2/artifacts/analysis/minor_revision_20261015/extension/figure5_revised.png
+!/research_v2/artifacts/analysis/minor_revision_20261015/extension/figure5_revised.svg
+!/research_v2/artifacts/analysis/minor_revision_20261015/extension/figure5_revised.tiff
+!/research_v2/artifacts/experiment/reprxai_cliffs_pilot_v1/full/crem_db/replacement_library.db

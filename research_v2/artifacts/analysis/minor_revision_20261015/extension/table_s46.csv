@@ -1,0 +1,7 @@
+Panel,Item,Source pool,Selected panel,Detail
+Source composition,Pattern-positive,7674,0,Upstream ORIGIN category; source pool construction precedes this study.
+Source composition,Tversky-selected negative,491447,19,Upstream ORIGIN category; source pool construction precedes this study.
+Source composition,Ordinary negative,4976465,237,Upstream ORIGIN category; source pool construction precedes this study.
+Source composition,Total,5475586,256,Current pre- and post-SMARTS matches among selected structures: 0 / 256.
+Illustrative saved event,Creation,,WOMBAT:132,Region 1; parent atoms [3]; deleted heteroatoms 0; inserted heteroatoms 1; absolute net change 1; region mean 1.00000 across 1 retained mutant(s).
+Illustrative saved event,Cancellation,,WOMBAT:107,Region 3; parent atoms [9]; deleted heteroatoms 1; inserted heteroatoms 1; absolute net change 0; region mean 0.66667 across 3 retained mutant(s).

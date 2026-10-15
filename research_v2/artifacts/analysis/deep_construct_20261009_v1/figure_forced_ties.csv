@@ -1,0 +1,7 @@
+cohort,concept,eligible_molecules,molecules_with_forced_cross_label_ties,percent
+development,halogen_count,134,0,0.0
+development,heteroatom_count,308,299,97.07792207792208
+development,aromatic_atom_count,308,150,48.701298701298704
+external,halogen_count,110,1,0.9090909090909091
+external,heteroatom_count,256,243,94.921875
+external,aromatic_atom_count,230,91,39.56521739130435

@@ -1,0 +1,80 @@
+{
+  "unadjusted": {
+    "model": "balanced two-way random-intercept method-of-moments on target-configuration cell medians; residual includes target-by-configuration interaction and cell sampling error",
+    "grand_mean": -0.007457595126994467,
+    "target_variance": 0.0,
+    "configuration_variance": 6.782977070014589e-05,
+    "residual_interaction_sampling_variance": 0.0014268841881313196,
+    "new_target_configuration_prediction_interval_approx95": [
+      -0.08323419536906759,
+      0.06831900511507866
+    ],
+    "normal_model_probability_absolute_effect_exceeds_margin": 0.20420024858250707,
+    "margin": 0.05,
+    "empirical_cell_quantiles_2_5_50_97_5": [
+      -0.08776408725551925,
+      -0.005575379649810375,
+      0.05190717826442681
+    ],
+    "empirical_fraction_absolute_effect_exceeds_margin": 0.1111111111111111,
+    "targets": 27,
+    "configurations": 6,
+    "bootstrap_ci95": {
+      "grand_mean": [
+        -0.01814784225934449,
+        0.003312847152606086
+      ],
+      "target_variance": [
+        0.0,
+        0.0007439364938244509
+      ],
+      "configuration_variance": [
+        0.0,
+        0.00038262977689901425
+      ],
+      "residual_interaction_sampling_variance": [
+        0.0003847210573893655,
+        0.0025959256756248046
+      ]
+    }
+  },
+  "empirical_null_adjusted": {
+    "model": "balanced two-way random-intercept method-of-moments on target-configuration cell medians; residual includes target-by-configuration interaction and cell sampling error",
+    "grand_mean": -0.008614467361705765,
+    "target_variance": 0.0,
+    "configuration_variance": 6.206345341358121e-05,
+    "residual_interaction_sampling_variance": 0.0013157626388248765,
+    "new_target_configuration_prediction_interval_approx95": [
+      -0.08136786395556424,
+      0.06413892923215271
+    ],
+    "normal_model_probability_absolute_effect_exceeds_margin": 0.18959554980827265,
+    "margin": 0.05,
+    "empirical_cell_quantiles_2_5_50_97_5": [
+      -0.08368841690940686,
+      -0.008176123621520103,
+      0.047073977172352434
+    ],
+    "empirical_fraction_absolute_effect_exceeds_margin": 0.09876543209876543,
+    "targets": 27,
+    "configurations": 6,
+    "bootstrap_ci95": {
+      "grand_mean": [
+        -0.018757535979420748,
+        0.002298379791216432
+      ],
+      "target_variance": [
+        0.0,
+        0.0007181669229156468
+      ],
+      "configuration_variance": [
+        0.0,
+        0.0004230158414729401
+      ],
+      "residual_interaction_sampling_variance": [
+        0.0003497195453969869,
+        0.002528061549092111
+      ]
+    }
+  }
+}

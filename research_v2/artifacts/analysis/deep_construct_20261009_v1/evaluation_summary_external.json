@@ -1,0 +1,39 @@
+{
+  "status": "completed",
+  "cohort": "external",
+  "oracle_reproduction": false,
+  "primary_gate_passed": true,
+  "primary": {
+    "cohort": "external",
+    "molecules": 256,
+    "supported_molecules": 251,
+    "paired_contrast": 0.2840461181185164,
+    "ci_low": 0.23125413767278494,
+    "ci_high": 0.33333333333333326,
+    "negative_insertions": 0,
+    "actual_molecule_median": 0.010736562819896111,
+    "actual_response_gain_median": -0.021927300786521567,
+    "removal_molecule_median": 0.3399456521739131,
+    "removal_response_gain_median": 0.22613932291666664,
+    "insertion_molecule_median": 0.08116785175608707,
+    "insertion_response_gain_median": 0.00011936592818954928,
+    "turnover_molecule_median": 0.3162130819060167,
+    "turnover_response_gain_median": 0.12786212055517038,
+    "creation_mass_fraction_median": 0.7142857142857143,
+    "removal_leakage_median": 0.2857142857142857
+  },
+  "molecules_evaluated": 256,
+  "bootstrap_draws": 5000,
+  "mask_response_permutations": 256,
+  "new_model_training": false,
+  "independent_bioactivity_validation": false,
+  "elapsed_seconds": 2.6089999999967404,
+  "claim_update": "Removal-accounting contrast is supported in this cohort",
+  "comparison_baselines": [
+    "actual",
+    "removal",
+    "insertion",
+    "turnover"
+  ],
+  "comparability": "Fixed masks, molecules, labels and averaging; only mask responses differ. Removal is a synthetic label-aligned response, not chemical deletion."
+}

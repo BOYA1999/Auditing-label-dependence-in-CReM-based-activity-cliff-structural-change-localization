@@ -1,0 +1,24 @@
+{
+  "source_rows": 5475586,
+  "source_origin_counts": {
+    "NEGATIVE": 4976465,
+    "TVERSKY": 491447,
+    "POSITIVE": 7674
+  },
+  "selected": 256,
+  "selected_origin_counts": {
+    "NEGATIVE": 237,
+    "TVERSKY": 19
+  },
+  "selected_pre_smarts_positive": 0,
+  "selected_post_smarts_positive": 0,
+  "pre_smarts": "[!#1][CH]([NH]C(=O)[!#1])C(Cl)(Cl)Cl",
+  "post_smarts": "[CHD3]([NH][CD3](=O))C(Cl)(Cl)Cl",
+  "motif": "A trichloromethyl group attached to an amide-substituted methine; pre/post SMARTS differ in how heavy-atom neighbourhood constraints are encoded.",
+  "official_model_url": "https://raw.githubusercontent.com/gmum/wombat/40a46639713eba3bc4fa175f5035392c0791fd8d/krfp_models.py",
+  "official_sampling_url": "https://raw.githubusercontent.com/gmum/wombat/40a46639713eba3bc4fa175f5035392c0791fd8d/dataset/pubchem_processed_smiles_dataset.py",
+  "interpretation": "Selected from a motif-specific validation-source pool containing positives, random negatives and similarity-selected negatives; selected molecules are not motif-positive.",
+  "source_sha256": "7b0f16cbb765d2fe598b48592e477c398fb66fab9eed09e3258f24d4f57c0bab",
+  "source_bytes": 157820200,
+  "membership_sha256": "bb8727849bacf20322f768831110f28e9fc0684f2071f16482f74bbb0622db63"
+}

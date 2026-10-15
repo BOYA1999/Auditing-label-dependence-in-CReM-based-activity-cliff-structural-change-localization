@@ -1,0 +1,1269 @@
+{
+  "status": "PASS",
+  "checks": 160,
+  "failed": [],
+  "details": [
+    {
+      "table": 37,
+      "kind": "Word_vs_source_csv",
+      "match": true
+    },
+    {
+      "table": 38,
+      "kind": "Word_vs_source_csv",
+      "match": true
+    },
+    {
+      "table": 39,
+      "kind": "Word_vs_source_csv",
+      "match": true
+    },
+    {
+      "table": 40,
+      "kind": "Word_vs_source_csv",
+      "match": true
+    },
+    {
+      "table": 41,
+      "kind": "Word_vs_source_csv",
+      "match": true
+    },
+    {
+      "table": 42,
+      "kind": "Word_vs_source_csv",
+      "match": true
+    },
+    {
+      "table": 37,
+      "row": 0,
+      "column": "Eligible / supported",
+      "actual": "308 / 307",
+      "expected": "308 / 307",
+      "match": true
+    },
+    {
+      "table": 37,
+      "row": 0,
+      "column": "Actual nAP",
+      "actual": "0.28571",
+      "expected": "0.28571",
+      "match": true
+    },
+    {
+      "table": 37,
+      "row": 0,
+      "column": "Occupancy nAP",
+      "actual": "0.50000",
+      "expected": "0.50000",
+      "match": true
+    },
+    {
+      "table": 37,
+      "row": 0,
+      "column": "Paired contrast",
+      "actual": "0.13393",
+      "expected": "0.13393",
+      "match": true
+    },
+    {
+      "table": 37,
+      "row": 0,
+      "column": "95% interval",
+      "actual": "[0.00000, 0.18754]",
+      "expected": "[0.00000, 0.18754]",
+      "match": true
+    },
+    {
+      "table": 37,
+      "row": 1,
+      "column": "Eligible / supported",
+      "actual": "134 / 134",
+      "expected": "134 / 134",
+      "match": true
+    },
+    {
+      "table": 37,
+      "row": 1,
+      "column": "Actual nAP",
+      "actual": "1.00000",
+      "expected": "1.00000",
+      "match": true
+    },
+    {
+      "table": 37,
+      "row": 1,
+      "column": "Occupancy nAP",
+      "actual": "1.00000",
+      "expected": "1.00000",
+      "match": true
+    },
+    {
+      "table": 37,
+      "row": 1,
+      "column": "Paired contrast",
+      "actual": "0.00000",
+      "expected": "0.00000",
+      "match": true
+    },
+    {
+      "table": 37,
+      "row": 1,
+      "column": "95% interval",
+      "actual": "[0.00000, 0.00000]",
+      "expected": "[0.00000, 0.00000]",
+      "match": true
+    },
+    {
+      "table": 37,
+      "row": 2,
+      "column": "Eligible / supported",
+      "actual": "308 / 307",
+      "expected": "308 / 307",
+      "match": true
+    },
+    {
+      "table": 37,
+      "row": 2,
+      "column": "Actual nAP",
+      "actual": "0.00383",
+      "expected": "0.00383",
+      "match": true
+    },
+    {
+      "table": 37,
+      "row": 2,
+      "column": "Occupancy nAP",
+      "actual": "0.32420",
+      "expected": "0.32420",
+      "match": true
+    },
+    {
+      "table": 37,
+      "row": 2,
+      "column": "Paired contrast",
+      "actual": "0.21277",
+      "expected": "0.21277",
+      "match": true
+    },
+    {
+      "table": 37,
+      "row": 2,
+      "column": "95% interval",
+      "actual": "[0.18258, 0.28989]",
+      "expected": "[0.18258, 0.28989]",
+      "match": true
+    },
+    {
+      "table": 37,
+      "row": 3,
+      "column": "Eligible / supported",
+      "actual": "230 / 227",
+      "expected": "230 / 227",
+      "match": true
+    },
+    {
+      "table": 37,
+      "row": 3,
+      "column": "Actual nAP",
+      "actual": "0.00000",
+      "expected": "0.00000",
+      "match": true
+    },
+    {
+      "table": 37,
+      "row": 3,
+      "column": "Occupancy nAP",
+      "actual": "0.50000",
+      "expected": "0.50000",
+      "match": true
+    },
+    {
+      "table": 37,
+      "row": 3,
+      "column": "Paired contrast",
+      "actual": "0.00000",
+      "expected": "0.00000",
+      "match": true
+    },
+    {
+      "table": 37,
+      "row": 3,
+      "column": "95% interval",
+      "actual": "[0.00000, 0.00000]",
+      "expected": "[0.00000, 0.00000]",
+      "match": true
+    },
+    {
+      "table": 37,
+      "row": 4,
+      "column": "Eligible / supported",
+      "actual": "110 / 110",
+      "expected": "110 / 110",
+      "match": true
+    },
+    {
+      "table": 37,
+      "row": 4,
+      "column": "Actual nAP",
+      "actual": "1.00000",
+      "expected": "1.00000",
+      "match": true
+    },
+    {
+      "table": 37,
+      "row": 4,
+      "column": "Occupancy nAP",
+      "actual": "1.00000",
+      "expected": "1.00000",
+      "match": true
+    },
+    {
+      "table": 37,
+      "row": 4,
+      "column": "Paired contrast",
+      "actual": "0.00000",
+      "expected": "0.00000",
+      "match": true
+    },
+    {
+      "table": 37,
+      "row": 4,
+      "column": "95% interval",
+      "actual": "[0.00000, 0.00000]",
+      "expected": "[0.00000, 0.00000]",
+      "match": true
+    },
+    {
+      "table": 37,
+      "row": 5,
+      "column": "Eligible / supported",
+      "actual": "256 / 251",
+      "expected": "256 / 251",
+      "match": true
+    },
+    {
+      "table": 37,
+      "row": 5,
+      "column": "Actual nAP",
+      "actual": "0.01074",
+      "expected": "0.01074",
+      "match": true
+    },
+    {
+      "table": 37,
+      "row": 5,
+      "column": "Occupancy nAP",
+      "actual": "0.33995",
+      "expected": "0.33995",
+      "match": true
+    },
+    {
+      "table": 37,
+      "row": 5,
+      "column": "Paired contrast",
+      "actual": "0.28405",
+      "expected": "0.28405",
+      "match": true
+    },
+    {
+      "table": 37,
+      "row": 5,
+      "column": "95% interval",
+      "actual": "[0.23125, 0.33333]",
+      "expected": "[0.23125, 0.33333]",
+      "match": true
+    },
+    {
+      "table": 38,
+      "row": 0,
+      "column": "Creation only",
+      "actual": "669",
+      "expected": "669",
+      "match": true
+    },
+    {
+      "table": 38,
+      "row": 0,
+      "column": "Destruction only",
+      "actual": "700",
+      "expected": "700",
+      "match": true
+    },
+    {
+      "table": 38,
+      "row": 0,
+      "column": "Cancellation",
+      "actual": "105",
+      "expected": "105",
+      "match": true
+    },
+    {
+      "table": 38,
+      "row": 0,
+      "column": "Both zero",
+      "actual": "7101",
+      "expected": "7101",
+      "match": true
+    },
+    {
+      "table": 38,
+      "row": 0,
+      "column": "Other turnover",
+      "actual": "23",
+      "expected": "23",
+      "match": true
+    },
+    {
+      "table": 38,
+      "row": 0,
+      "column": "Creation mass",
+      "actual": "0.52309",
+      "expected": "0.52309",
+      "match": true
+    },
+    {
+      "table": 38,
+      "row": 1,
+      "column": "Creation only",
+      "actual": "3428",
+      "expected": "3428",
+      "match": true
+    },
+    {
+      "table": 38,
+      "row": 1,
+      "column": "Destruction only",
+      "actual": "884",
+      "expected": "884",
+      "match": true
+    },
+    {
+      "table": 38,
+      "row": 1,
+      "column": "Cancellation",
+      "actual": "1403",
+      "expected": "1403",
+      "match": true
+    },
+    {
+      "table": 38,
+      "row": 1,
+      "column": "Both zero",
+      "actual": "2158",
+      "expected": "2158",
+      "match": true
+    },
+    {
+      "table": 38,
+      "row": 1,
+      "column": "Other turnover",
+      "actual": "725",
+      "expected": "725",
+      "match": true
+    },
+    {
+      "table": 38,
+      "row": 1,
+      "column": "Creation mass",
+      "actual": "0.70167",
+      "expected": "0.70167",
+      "match": true
+    },
+    {
+      "table": 39,
+      "row": 0,
+      "column": "Eligible",
+      "actual": "308",
+      "expected": "308",
+      "match": true
+    },
+    {
+      "table": 39,
+      "row": 0,
+      "column": "Positive unsupported",
+      "actual": "206",
+      "expected": "206",
+      "match": true
+    },
+    {
+      "table": 39,
+      "row": 0,
+      "column": "Supported cross-label tie",
+      "actual": "6",
+      "expected": "6",
+      "match": true
+    },
+    {
+      "table": 39,
+      "row": 0,
+      "column": "Any cross-label tie",
+      "actual": "150",
+      "expected": "150",
+      "match": true
+    },
+    {
+      "table": 39,
+      "row": 0,
+      "column": "Median AUROC ceiling",
+      "actual": "1.00000",
+      "expected": "1.00000",
+      "match": true
+    },
+    {
+      "table": 39,
+      "row": 1,
+      "column": "Eligible",
+      "actual": "134",
+      "expected": "134",
+      "match": true
+    },
+    {
+      "table": 39,
+      "row": 1,
+      "column": "Positive unsupported",
+      "actual": "0",
+      "expected": "0",
+      "match": true
+    },
+    {
+      "table": 39,
+      "row": 1,
+      "column": "Supported cross-label tie",
+      "actual": "0",
+      "expected": "0",
+      "match": true
+    },
+    {
+      "table": 39,
+      "row": 1,
+      "column": "Any cross-label tie",
+      "actual": "0",
+      "expected": "0",
+      "match": true
+    },
+    {
+      "table": 39,
+      "row": 1,
+      "column": "Median AUROC ceiling",
+      "actual": "1.00000",
+      "expected": "1.00000",
+      "match": true
+    },
+    {
+      "table": 39,
+      "row": 2,
+      "column": "Eligible",
+      "actual": "308",
+      "expected": "308",
+      "match": true
+    },
+    {
+      "table": 39,
+      "row": 2,
+      "column": "Positive unsupported",
+      "actual": "227",
+      "expected": "227",
+      "match": true
+    },
+    {
+      "table": 39,
+      "row": 2,
+      "column": "Supported cross-label tie",
+      "actual": "231",
+      "expected": "231",
+      "match": true
+    },
+    {
+      "table": 39,
+      "row": 2,
+      "column": "Any cross-label tie",
+      "actual": "299",
+      "expected": "299",
+      "match": true
+    },
+    {
+      "table": 39,
+      "row": 2,
+      "column": "Median AUROC ceiling",
+      "actual": "0.93140",
+      "expected": "0.93140",
+      "match": true
+    },
+    {
+      "table": 39,
+      "row": 3,
+      "column": "Eligible",
+      "actual": "230",
+      "expected": "230",
+      "match": true
+    },
+    {
+      "table": 39,
+      "row": 3,
+      "column": "Positive unsupported",
+      "actual": "159",
+      "expected": "159",
+      "match": true
+    },
+    {
+      "table": 39,
+      "row": 3,
+      "column": "Supported cross-label tie",
+      "actual": "2",
+      "expected": "2",
+      "match": true
+    },
+    {
+      "table": 39,
+      "row": 3,
+      "column": "Any cross-label tie",
+      "actual": "91",
+      "expected": "91",
+      "match": true
+    },
+    {
+      "table": 39,
+      "row": 3,
+      "column": "Median AUROC ceiling",
+      "actual": "1.00000",
+      "expected": "1.00000",
+      "match": true
+    },
+    {
+      "table": 39,
+      "row": 4,
+      "column": "Eligible",
+      "actual": "110",
+      "expected": "110",
+      "match": true
+    },
+    {
+      "table": 39,
+      "row": 4,
+      "column": "Positive unsupported",
+      "actual": "1",
+      "expected": "1",
+      "match": true
+    },
+    {
+      "table": 39,
+      "row": 4,
+      "column": "Supported cross-label tie",
+      "actual": "0",
+      "expected": "0",
+      "match": true
+    },
+    {
+      "table": 39,
+      "row": 4,
+      "column": "Any cross-label tie",
+      "actual": "1",
+      "expected": "1",
+      "match": true
+    },
+    {
+      "table": 39,
+      "row": 4,
+      "column": "Median AUROC ceiling",
+      "actual": "1.00000",
+      "expected": "1.00000",
+      "match": true
+    },
+    {
+      "table": 39,
+      "row": 5,
+      "column": "Eligible",
+      "actual": "256",
+      "expected": "256",
+      "match": true
+    },
+    {
+      "table": 39,
+      "row": 5,
+      "column": "Positive unsupported",
+      "actual": "179",
+      "expected": "179",
+      "match": true
+    },
+    {
+      "table": 39,
+      "row": 5,
+      "column": "Supported cross-label tie",
+      "actual": "172",
+      "expected": "172",
+      "match": true
+    },
+    {
+      "table": 39,
+      "row": 5,
+      "column": "Any cross-label tie",
+      "actual": "243",
+      "expected": "243",
+      "match": true
+    },
+    {
+      "table": 39,
+      "row": 5,
+      "column": "Median AUROC ceiling",
+      "actual": "0.93581",
+      "expected": "0.93581",
+      "match": true
+    },
+    {
+      "table": 40,
+      "row": 0,
+      "column": "Eligible",
+      "actual": "308",
+      "expected": "308",
+      "match": true
+    },
+    {
+      "table": 40,
+      "row": 0,
+      "column": "Supported",
+      "actual": "307",
+      "expected": "307",
+      "match": true
+    },
+    {
+      "table": 40,
+      "row": 0,
+      "column": "Informative",
+      "actual": "139",
+      "expected": "139",
+      "match": true
+    },
+    {
+      "table": 40,
+      "row": 0,
+      "column": "Median gain",
+      "actual": "0.00000",
+      "expected": "0.00000",
+      "match": true
+    },
+    {
+      "table": 40,
+      "row": 1,
+      "column": "Eligible",
+      "actual": "308",
+      "expected": "308",
+      "match": true
+    },
+    {
+      "table": 40,
+      "row": 1,
+      "column": "Supported",
+      "actual": "307",
+      "expected": "307",
+      "match": true
+    },
+    {
+      "table": 40,
+      "row": 1,
+      "column": "Informative",
+      "actual": "77",
+      "expected": "77",
+      "match": true
+    },
+    {
+      "table": 40,
+      "row": 1,
+      "column": "Median gain",
+      "actual": "0.00000",
+      "expected": "0.00000",
+      "match": true
+    },
+    {
+      "table": 40,
+      "row": 2,
+      "column": "Eligible",
+      "actual": "134",
+      "expected": "134",
+      "match": true
+    },
+    {
+      "table": 40,
+      "row": 2,
+      "column": "Supported",
+      "actual": "134",
+      "expected": "134",
+      "match": true
+    },
+    {
+      "table": 40,
+      "row": 2,
+      "column": "Informative",
+      "actual": "133",
+      "expected": "133",
+      "match": true
+    },
+    {
+      "table": 40,
+      "row": 2,
+      "column": "Median gain",
+      "actual": "0.77194",
+      "expected": "0.77194",
+      "match": true
+    },
+    {
+      "table": 40,
+      "row": 3,
+      "column": "Eligible",
+      "actual": "134",
+      "expected": "134",
+      "match": true
+    },
+    {
+      "table": 40,
+      "row": 3,
+      "column": "Supported",
+      "actual": "134",
+      "expected": "134",
+      "match": true
+    },
+    {
+      "table": 40,
+      "row": 3,
+      "column": "Informative",
+      "actual": "134",
+      "expected": "134",
+      "match": true
+    },
+    {
+      "table": 40,
+      "row": 3,
+      "column": "Median gain",
+      "actual": "0.85116",
+      "expected": "0.85116",
+      "match": true
+    },
+    {
+      "table": 40,
+      "row": 4,
+      "column": "Eligible",
+      "actual": "308",
+      "expected": "308",
+      "match": true
+    },
+    {
+      "table": 40,
+      "row": 4,
+      "column": "Supported",
+      "actual": "307",
+      "expected": "307",
+      "match": true
+    },
+    {
+      "table": 40,
+      "row": 4,
+      "column": "Informative",
+      "actual": "298",
+      "expected": "298",
+      "match": true
+    },
+    {
+      "table": 40,
+      "row": 4,
+      "column": "Median gain",
+      "actual": "-0.02233",
+      "expected": "-0.02233",
+      "match": true
+    },
+    {
+      "table": 40,
+      "row": 5,
+      "column": "Eligible",
+      "actual": "308",
+      "expected": "308",
+      "match": true
+    },
+    {
+      "table": 40,
+      "row": 5,
+      "column": "Supported",
+      "actual": "307",
+      "expected": "307",
+      "match": true
+    },
+    {
+      "table": 40,
+      "row": 5,
+      "column": "Informative",
+      "actual": "273",
+      "expected": "273",
+      "match": true
+    },
+    {
+      "table": 40,
+      "row": 5,
+      "column": "Median gain",
+      "actual": "0.15951",
+      "expected": "0.15951",
+      "match": true
+    },
+    {
+      "table": 40,
+      "row": 6,
+      "column": "Eligible",
+      "actual": "230",
+      "expected": "230",
+      "match": true
+    },
+    {
+      "table": 40,
+      "row": 6,
+      "column": "Supported",
+      "actual": "227",
+      "expected": "227",
+      "match": true
+    },
+    {
+      "table": 40,
+      "row": 6,
+      "column": "Informative",
+      "actual": "43",
+      "expected": "43",
+      "match": true
+    },
+    {
+      "table": 40,
+      "row": 6,
+      "column": "Median gain",
+      "actual": "0.00000",
+      "expected": "0.00000",
+      "match": true
+    },
+    {
+      "table": 40,
+      "row": 7,
+      "column": "Eligible",
+      "actual": "230",
+      "expected": "230",
+      "match": true
+    },
+    {
+      "table": 40,
+      "row": 7,
+      "column": "Supported",
+      "actual": "227",
+      "expected": "227",
+      "match": true
+    },
+    {
+      "table": 40,
+      "row": 7,
+      "column": "Informative",
+      "actual": "19",
+      "expected": "19",
+      "match": true
+    },
+    {
+      "table": 40,
+      "row": 7,
+      "column": "Median gain",
+      "actual": "0.00000",
+      "expected": "0.00000",
+      "match": true
+    },
+    {
+      "table": 40,
+      "row": 8,
+      "column": "Eligible",
+      "actual": "110",
+      "expected": "110",
+      "match": true
+    },
+    {
+      "table": 40,
+      "row": 8,
+      "column": "Supported",
+      "actual": "110",
+      "expected": "110",
+      "match": true
+    },
+    {
+      "table": 40,
+      "row": 8,
+      "column": "Informative",
+      "actual": "109",
+      "expected": "109",
+      "match": true
+    },
+    {
+      "table": 40,
+      "row": 8,
+      "column": "Median gain",
+      "actual": "0.65774",
+      "expected": "0.65774",
+      "match": true
+    },
+    {
+      "table": 40,
+      "row": 9,
+      "column": "Eligible",
+      "actual": "110",
+      "expected": "110",
+      "match": true
+    },
+    {
+      "table": 40,
+      "row": 9,
+      "column": "Supported",
+      "actual": "110",
+      "expected": "110",
+      "match": true
+    },
+    {
+      "table": 40,
+      "row": 9,
+      "column": "Informative",
+      "actual": "107",
+      "expected": "107",
+      "match": true
+    },
+    {
+      "table": 40,
+      "row": 9,
+      "column": "Median gain",
+      "actual": "0.82816",
+      "expected": "0.82816",
+      "match": true
+    },
+    {
+      "table": 40,
+      "row": 10,
+      "column": "Eligible",
+      "actual": "256",
+      "expected": "256",
+      "match": true
+    },
+    {
+      "table": 40,
+      "row": 10,
+      "column": "Supported",
+      "actual": "251",
+      "expected": "251",
+      "match": true
+    },
+    {
+      "table": 40,
+      "row": 10,
+      "column": "Informative",
+      "actual": "240",
+      "expected": "240",
+      "match": true
+    },
+    {
+      "table": 40,
+      "row": 10,
+      "column": "Median gain",
+      "actual": "-0.02193",
+      "expected": "-0.02193",
+      "match": true
+    },
+    {
+      "table": 40,
+      "row": 11,
+      "column": "Eligible",
+      "actual": "256",
+      "expected": "256",
+      "match": true
+    },
+    {
+      "table": 40,
+      "row": 11,
+      "column": "Supported",
+      "actual": "251",
+      "expected": "251",
+      "match": true
+    },
+    {
+      "table": 40,
+      "row": 11,
+      "column": "Informative",
+      "actual": "215",
+      "expected": "215",
+      "match": true
+    },
+    {
+      "table": 40,
+      "row": 11,
+      "column": "Median gain",
+      "actual": "0.22614",
+      "expected": "0.22614",
+      "match": true
+    },
+    {
+      "table": 41,
+      "row": 0,
+      "column": "Molecules",
+      "actual": "308",
+      "expected": "308",
+      "match": true
+    },
+    {
+      "table": 41,
+      "row": 0,
+      "column": "Paired contrast",
+      "actual": "0.21277",
+      "expected": "0.21277",
+      "match": true
+    },
+    {
+      "table": 41,
+      "row": 0,
+      "column": "95% lower",
+      "actual": "0.18258",
+      "expected": "0.18258",
+      "match": true
+    },
+    {
+      "table": 41,
+      "row": 0,
+      "column": "95% upper",
+      "actual": "0.28989",
+      "expected": "0.28989",
+      "match": true
+    },
+    {
+      "table": 41,
+      "row": 1,
+      "column": "Molecules",
+      "actual": "256",
+      "expected": "256",
+      "match": true
+    },
+    {
+      "table": 41,
+      "row": 1,
+      "column": "Paired contrast",
+      "actual": "0.28405",
+      "expected": "0.28405",
+      "match": true
+    },
+    {
+      "table": 41,
+      "row": 1,
+      "column": "95% lower",
+      "actual": "0.23125",
+      "expected": "0.23125",
+      "match": true
+    },
+    {
+      "table": 41,
+      "row": 1,
+      "column": "95% upper",
+      "actual": "0.33333",
+      "expected": "0.33333",
+      "match": true
+    },
+    {
+      "table": 41,
+      "row": 2,
+      "column": "Molecules",
+      "actual": "256",
+      "expected": "256",
+      "match": true
+    },
+    {
+      "table": 41,
+      "row": 2,
+      "column": "Paired contrast",
+      "actual": "0.28405",
+      "expected": "0.28405",
+      "match": true
+    },
+    {
+      "table": 41,
+      "row": 2,
+      "column": "95% lower",
+      "actual": "0.21473",
+      "expected": "0.21473",
+      "match": true
+    },
+    {
+      "table": 41,
+      "row": 2,
+      "column": "95% upper",
+      "actual": "0.34484",
+      "expected": "0.34484",
+      "match": true
+    },
+    {
+      "table": 41,
+      "row": 3,
+      "column": "Molecules",
+      "actual": "251",
+      "expected": "251",
+      "match": true
+    },
+    {
+      "table": 41,
+      "row": 3,
+      "column": "Paired contrast",
+      "actual": "0.29363",
+      "expected": "0.29363",
+      "match": true
+    },
+    {
+      "table": 41,
+      "row": 3,
+      "column": "95% lower",
+      "actual": "0.23845",
+      "expected": "0.23845",
+      "match": true
+    },
+    {
+      "table": 41,
+      "row": 3,
+      "column": "95% upper",
+      "actual": "0.33611",
+      "expected": "0.33611",
+      "match": true
+    },
+    {
+      "table": 42,
+      "row": 0,
+      "column": "Value",
+      "actual": "5475586",
+      "expected": "5475586",
+      "match": true
+    },
+    {
+      "table": 42,
+      "row": 1,
+      "column": "Value",
+      "actual": "256",
+      "expected": "256",
+      "match": true
+    },
+    {
+      "table": 42,
+      "row": 2,
+      "column": "Value",
+      "actual": "0",
+      "expected": "0",
+      "match": true
+    },
+    {
+      "table": 42,
+      "row": 3,
+      "column": "Value",
+      "actual": "35633",
+      "expected": "35633",
+      "match": true
+    },
+    {
+      "table": 42,
+      "row": 4,
+      "column": "Value",
+      "actual": "256 / 0",
+      "expected": "256 / 0",
+      "match": true
+    },
+    {
+      "table": 42,
+      "row": 5,
+      "column": "Value",
+      "actual": "251 / 5",
+      "expected": "251 / 5",
+      "match": true
+    },
+    {
+      "table": 42,
+      "row": 6,
+      "column": "Value",
+      "actual": "8598",
+      "expected": "8598",
+      "match": true
+    },
+    {
+      "table": 42,
+      "row": 7,
+      "column": "Value",
+      "actual": "221",
+      "expected": "221",
+      "match": true
+    },
+    {
+      "table": 42,
+      "row": 8,
+      "column": "Value",
+      "actual": "72",
+      "expected": "72",
+      "match": true
+    },
+    {
+      "table": 42,
+      "row": 9,
+      "column": "Value",
+      "actual": "15 / 3",
+      "expected": "15 / 3",
+      "match": true
+    },
+    {
+      "table": 42,
+      "row": 10,
+      "column": "Value",
+      "actual": "536 / 134",
+      "expected": "536 / 134",
+      "match": true
+    },
+    {
+      "table": 42,
+      "row": 11,
+      "column": "Value",
+      "actual": "536",
+      "expected": "536",
+      "match": true
+    },
+    {
+      "table": 42,
+      "row": 12,
+      "column": "Value",
+      "actual": "0",
+      "expected": "0",
+      "match": true
+    },
+    {
+      "table": 42,
+      "row": 13,
+      "column": "Value",
+      "actual": "0",
+      "expected": "0",
+      "match": true
+    },
+    {
+      "table": 42,
+      "row": 14,
+      "column": "Value",
+      "actual": "0",
+      "expected": "0",
+      "match": true
+    },
+    {
+      "table": 42,
+      "row": 15,
+      "column": "Value",
+      "actual": "8 / 8",
+      "expected": "8 / 8",
+      "match": true
+    },
+    {
+      "table": 42,
+      "row": 16,
+      "column": "Value",
+      "actual": "87",
+      "expected": "87",
+      "match": true
+    },
+    {
+      "table": 42,
+      "row": 17,
+      "column": "Value",
+      "actual": "1.00000",
+      "expected": "1.00000",
+      "match": true
+    }
+  ]
+}
