@@ -2,7 +2,7 @@ Item,Contract
 Atom convention,RDKit heavy-atom graph for labels and scores; Uni-Mol explicit hydrogens are representation inputs only.
 Boundary extension,"Unmatched atoms and endpoints of unmatched bonds, then one adjacent matched-atom layer."
 RASCAL,Similarity threshold 0.10; ring bonds match ring bonds; complete aromatic rings; complete-smallest-rings false; timeout 20 s.
-Mapping enumeration,Reproduce stored RASCAL atom and bond evidence before query; maximum 256 matches per endpoint and 4096 combinations; no fallback; no truncation observed.
+Historical atom-set enumeration,Reproduce stored RASCAL atom and bond evidence before query; maximum 256 matches per endpoint and 4096 combinations; no fallback; no truncation observed.
 Mask selection,Radius-1 candidate masks sorted by size and atom tuple; smallest containing mask chosen for each atom; duplicate masks removed; at most eight replaced atoms.
 Mutant selection,At most eight unique connected proposals per mask; parent Morgan Tanimoto at least 0.60; retain at most four by deterministic SHA-256 order.
 Historical null and bootstrap,500 pooled assignments; 5000 primary bootstrap draws; base seed 20260904; per-analysis labels add little-endian first-four-byte SHA-256 offsets modulo 2^32.
