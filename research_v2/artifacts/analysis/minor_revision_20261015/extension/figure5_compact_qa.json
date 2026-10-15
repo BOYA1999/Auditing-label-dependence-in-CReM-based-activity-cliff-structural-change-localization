@@ -1,0 +1,11 @@
+{
+  "size_mm": [
+    170.00000237358938,
+    184.99999118381075
+  ],
+  "pdf_text_min_pt": 9.492353439331055,
+  "minimum_pt_at_word_5_7_inch": 8.084134887919706,
+  "embedded_raster_images": 0,
+  "visual_review": "PASS: all panels, molecule structures, labels and footer inspected at full-page render.",
+  "scientific_panels_unchanged": true
+}

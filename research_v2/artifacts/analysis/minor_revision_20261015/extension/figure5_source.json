@@ -250,7 +250,8 @@
   ],
   "dimensions_mm": [
     170,
-    216
+    185
   ],
+  "minimum_text_pt_at_5_7_inch_width": 8.1,
   "scope": "Panels A and B have different explicitly labelled populations; C and D illustrate saved events. Single-mutant net effects and region means are distinct."
 }

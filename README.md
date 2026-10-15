@@ -26,7 +26,7 @@ python -B research_v2/scripts/plot_minor_extension.py
 
 These commands recompute frozen-prediction and frozen-score statistics without fitting models. The gate replay retains the original seed aggregation and checks four actual boundary cases and all 5,000 historical bootstrap draws. Mapping sensitivity shares each candidate across label conditions, seeds and configurations. The endpoint-label reference recomputes the nested statistic for 2,000 assignments; it is a conditional reference, not a population interval or a training-label exchangeability test. The extension replays native reaction origins for all 8,598 retained mutants and recomputes 5,000-draw common-population summaries. Two small source-origin inputs support this replay without downloading the full source parquet.
 
-Run inventory/hash validation before replay. Analyses regenerate derived files in dedicated minor-revision directories. Numerical CSVs and scientific assertions provide replay checks; runtime fields, environment records, nested manifests and rendered-figure metadata can change and are not scientific discrepancy tests. Original frozen result directories remain. Current S7/S8 replace the former 82-cell presentation, preserved in Git history.
+Run inventory/hash validation before replay. Analyses regenerate derived files in dedicated minor-revision directories. Numerical CSVs and scientific assertions provide replay checks; runtime fields, environment records, nested manifests and renderer antialiasing and figure metadata can change and are not scientific discrepancy tests. Original frozen result directories remain. Current S7/S8 replace the former 82-cell presentation, preserved in Git history.
 
 ## Results and scope
 
