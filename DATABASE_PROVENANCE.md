@@ -41,3 +41,12 @@ The upstream MoleculeACE files remain governed by `external/MoleculeACE/LICENCE`
 The selected structures originate from the CC0-1.0 WOMBAT Pattern 1 source at dataset revision `e86ec35687b0c0ebd1ecc151610a08224d8cf851`: <https://huggingface.co/datasets/dmtsh/wombat-smiles>. The pinned source URL/hash, selection rules and benchmark exclusions are in `research_v2/artifacts/analysis/deep_construct_20261009_v1/input_provenance.json`. Only the selected 256 structures and compact source-origin records are included; source-selection replay downloads the full parquet separately.
 
 The included 60,592,128-byte CReM SQLite cache was derived from the original development training partition and already supplied in Additional file 3. Its SHA-256 is `e29de7e2891f92fafdcb2121dee8efd3d67ee7b9cc9cbaa5813e43ff18f4d484`, identical to that archive. It supports optional generation checks; the principal statistical replays use retained scored mutants. This is a study-derived cache, not a redistributed pretrained model or an independent chemical database release. Existing upstream benchmark notices continue to apply.
+
+
+## Clarification of software and upstream database terms
+
+The project software is offered under the MIT licence. The bundled MoleculeACE MIT notice is retained for the upstream software and its accompanying materials. This notice should not be read as replacing the terms of the underlying ChEMBL database or as applying a blanket MIT licence to this entire data package.
+
+The ChEMBL team's official licensing FAQ states that the ChEMBL database uses Creative Commons Attribution-Share Alike 3.0 Unported (CC BY-SA 3.0): https://chembl.gitbook.io/chembl-interface-documentation/frequently-asked-questions/general-questions#can-you-provide-more-details-on-licensing . Checked 16 October 2026. The licence text is available at https://creativecommons.org/licenses/by-sa/3.0/ . The FAQ also distinguishes certain commercial-software-derived calculations; no broader rights to third-party material are asserted here.
+
+Third-party data retain their applicable original terms and attribution requirements. WOMBAT structures retain their source CC0-1.0 declaration. This clarification records provenance and the source-reported terms; it does not provide a legal compatibility guarantee or alter upstream rights. The unmodified prior provenance document is retained at historical/DATABASE_PROVENANCE_20261015.md.
