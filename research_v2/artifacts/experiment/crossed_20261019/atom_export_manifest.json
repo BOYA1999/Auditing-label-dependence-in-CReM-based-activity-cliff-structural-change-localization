@@ -1,0 +1,25 @@
+{
+  "status": "pass",
+  "files": 162,
+  "permuted_models": 2430,
+  "observed_models": 486,
+  "elapsed_seconds": 193.65872025489807,
+  "backend_primary": "XGBoost CPU for all observed and permuted models; MLP original GPU backend for all models",
+  "source_compatible_sensitive_fields": [
+    "scores_source",
+    "observed_scores_source"
+  ],
+  "source_validation": "atom_export_validation_source.csv; historical source-compatible per-pair nAP checks preserved",
+  "script_sha256": "96f3aafce803df92cb0a8bd3a588d21c85257ebd5ec1a90fdbd6a822f4b72156",
+  "raw_aggregate_comparison": [
+    {
+      "backend": "source",
+      "raw_nap_contrast": -0.012205241131258511
+    },
+    {
+      "backend": "uniform",
+      "raw_nap_contrast": -0.012205241131258511
+    }
+  ],
+  "retraining": false
+}

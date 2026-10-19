@@ -1,0 +1,13 @@
+population,metric,effect,point,ci_low,ci_high,datasets,pairs
+common270_exclude_fallback,raw_nap,crem,0.0,0.0,0.0,26,270
+common270_exclude_fallback,raw_nap,brics,0.0,0.0,0.0,26,270
+common270_exclude_fallback,raw_nap,brics_minus_crem,0.0,0.0,0.0,26,270
+full611_exclude_fallback,raw_nap,crem,0.0,0.0,0.0,27,611
+full611_exclude_fallback,raw_nap,brics,0.0,0.0,0.0,27,611
+full611_exclude_fallback,raw_nap,brics_minus_crem,0.0,0.0,0.0,27,611
+common270_exclude_fallback,endpoint_exact_nap,crem,0.0,0.0,0.0,26,270
+common270_exclude_fallback,endpoint_exact_nap,brics,0.0,0.0,0.0,26,270
+common270_exclude_fallback,endpoint_exact_nap,brics_minus_crem,0.0,0.0,0.0,26,270
+full611_exclude_fallback,endpoint_exact_nap,crem,0.0,0.0,0.0,27,611
+full611_exclude_fallback,endpoint_exact_nap,brics,0.0,0.0,0.0,27,611
+full611_exclude_fallback,endpoint_exact_nap,brics_minus_crem,0.0,0.0,0.0,27,611

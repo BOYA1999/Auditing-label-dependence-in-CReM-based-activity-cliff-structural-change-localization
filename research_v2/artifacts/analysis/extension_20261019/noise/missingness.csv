@@ -1,0 +1,11 @@
+scenario,domain,rows,matched_defined,observed_ratio_defined,permuted_ratio_defined,observed_zero_denominator,permuted_zero_denominator,observed_reference_undefined,permuted_reference_undefined
+full,all_atoms,111060,107216,102135,101475,5081,2574,720,7011
+full,supported,111060,106153,102067,101271,4086,1776,1890,8013
+leave_seed_11,all_atoms,74040,71532,65964,67068,5568,3234,480,3738
+leave_seed_11,supported,74040,70819,65935,66884,4884,2726,1260,4430
+leave_seed_23,all_atoms,74040,71470,65872,66874,5598,3400,480,3766
+leave_seed_23,supported,74040,70760,65831,66684,4929,2906,1260,4450
+leave_seed_42,all_atoms,74040,71430,66025,66954,5405,3224,480,3862
+leave_seed_42,supported,74040,70727,65979,66784,4748,2716,1260,4540
+source_compatible,all_atoms,111060,107216,102135,101475,5081,2574,720,7011
+source_compatible,supported,111060,106153,102067,101271,4086,1776,1890,8013

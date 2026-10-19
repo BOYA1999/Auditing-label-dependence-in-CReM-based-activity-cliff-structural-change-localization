@@ -1,0 +1,17 @@
+{
+  "common_masks": 764,
+  "budget_per_generator": 2866,
+  "unique_brics_mutants": 2861,
+  "count_distribution": {
+    "1": 37,
+    "2": 29,
+    "3": 21,
+    "4": 677
+  },
+  "sha256": {
+    "matched_scored_products.csv": "08c7e82a9feeef86f0424e05384beb4a6d8c043b4f583c0af9f4b3829b305ddb",
+    "frozen_pair_population.csv": "b0b617f20b5ba63fb9b3dc356844b62583de315b4e47f66eeeb0dde630d7d725",
+    "matched_budgets.csv": "9dc167091908da00efa1cbde2926bb06adf94e6819b420a5e27c68c0d4f00379",
+    "unique_brics_mutants.csv": "78e92f7800483adf6fa70e9f1040a2922258fe4148161d97b541da568a9ae221"
+  }
+}

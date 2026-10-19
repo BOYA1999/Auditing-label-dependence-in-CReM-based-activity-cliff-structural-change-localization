@@ -1,0 +1,14 @@
+panel,historical_label,display_label
+figure1_design_intervention,"Prespecified asymmetric audit
+3 development + 27
+result-blind datasets","Prespecified asymmetric audit
+3 development datasets
+27 originally held-out datasets"
+figure1_design_intervention,"Post-confirmation corrected audit
+CReM mean · empirical null
+proxy controls","Post-confirmation corrected audit
+CReM-mean · exact nulls
+structural-proxy controls"
+figure1_design_intervention,"Same frozen cliff pairs, splits and neighborhoods; inferential status changed","Original-study evidence: fixed cliff pairs, splits and CReM neighborhoods"
+figure3_generator_controls,Matched estimand hierarchy,Post-confirmation estimands
+figure3_generator_controls,Post-confirmation unadjusted,"CReM-mean, unadjusted"

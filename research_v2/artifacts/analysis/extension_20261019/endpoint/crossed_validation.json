@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "seconds": 66.65393209457397,
+  "realization_rows": 66636,
+  "independent_endpoint_expectation_checks": 1404,
+  "independent_endpoint_expectation_max_error": 2.220446049250313e-16,
+  "conditional_bootstrap_first100_matches_established_component_safe_function": true,
+  "seed": 20261019,
+  "structural_reference_draws": 2000,
+  "bootstrap_draws": 5000,
+  "scope": "Original frozen 617 pairs, fixed six configurations; cross initialization x permutation sensitivity is post-confirmation.",
+  "backend": "Primary: all XGBoost CPU inference and existing MLP GPU contract, including freshly reconstructed observed scores. Source-compatible historical inference and original observed CSV scores are a separate point sensitivity. No score rounding or tie merging.",
+  "aggregation": "AP per realization; paired matched-initialization difference; mean initializations/permutations per component/configuration; median over components and configurations jointly within dataset; median across datasets.",
+  "resampling": "Dataset and component resampling keeps six configuration rows together. Stochastic draws resample 3 initialization and 5 permutation IDs separately, shared globally across datasets/configurations and metrics; observed and permuted initializations remain paired. Joint draws reuse conditional population indices.",
+  "reference": "Frozen atom scores, endpoint positive counts, shared structural labels across all models. Reference center need not be zero; reference quantiles are not population confidence intervals and tails are not model-label exchangeability p-values.",
+  "limitation": "Three initializations and five permutations provide bounded stochastic sensitivity, not convergence or independent validation."
+}

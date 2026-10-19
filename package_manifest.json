@@ -1,12 +1,12 @@
 {
-  "status": "minor_revision_20261015",
+  "status": "extension_20261019",
   "historical_public_commit": "3322b470e5537bd14bbaf661f148683f53bf78e9",
-  "supplementary_tables": 46,
-  "figure_sources": 18,
+  "supplementary_tables": 52,
+  "figure_sources": 19,
   "core_input_url": "https://github.com/BOYA1999/Auditing-label-dependence-in-CReM-based-activity-cliff-structural-change-localization/releases/download/rereview-20261008/xai_sanity_cliffs_core_inputs_20261008.zip",
   "core_input_archive_sha256": "f113d4f5a55f4dcd0ffd5a5f31cf9667071b7d9b7950cc8a8fb688e4ef63d5ec",
   "core_input_archive_bytes": 91554490,
-  "revision_date": "2026-10-15",
+  "revision_date": "2026-10-19",
   "previous_release_tag": "rereview-20261009",
   "scientific_figures": [
     "research_v2/artifacts/analysis/deep_construct_20261009_v1/construct_diagnostics.pdf",
@@ -20,12 +20,25 @@
     "research_v2/artifacts/analysis/minor_revision_20261015/threshold/figures/figure4_robustness_fidelity.png",
     "research_v2/artifacts/analysis/minor_revision_20261015/threshold/figures/figure4_robustness_fidelity.svg",
     "research_v2/artifacts/analysis/minor_revision_20261015/threshold/figures/figure4_robustness_fidelity.tiff",
-    "research_v2/artifacts/analysis/minor_revision_20261015/threshold/latex_figures/figure4_robustness_fidelity.pdf"
+    "research_v2/artifacts/analysis/minor_revision_20261015/threshold/latex_figures/figure4_robustness_fidelity.pdf",
+    "research_v2/artifacts/analysis/extension_20261019/figures/figure1_design_intervention.pdf",
+    "research_v2/artifacts/analysis/extension_20261019/figures/figure1_design_intervention.png",
+    "research_v2/artifacts/analysis/extension_20261019/figures/figure1_design_intervention.svg",
+    "research_v2/artifacts/analysis/extension_20261019/figures/figure1_design_intervention.tiff",
+    "research_v2/artifacts/analysis/extension_20261019/figures/figure3_generator_controls.pdf",
+    "research_v2/artifacts/analysis/extension_20261019/figures/figure3_generator_controls.png",
+    "research_v2/artifacts/analysis/extension_20261019/figures/figure3_generator_controls.svg",
+    "research_v2/artifacts/analysis/extension_20261019/figures/figure3_generator_controls.tiff"
   ],
   "new_analysis_directories": [
     "threshold",
     "nested_mapping",
     "extension"
   ],
-  "analysis_scope": "Frozen-prediction, frozen-score and retained native-reaction replay; no model refit or full candidate-neighborhood regeneration"
+  "analysis_scope": "Crossed 3 x 5 initialization/permutation saved-score replay, two noise references, endpoint-exact reference, and matched BRICS sensitivity; 720 missing MLP fits were completed in the original run; no retraining is performed by the public CPU replay.",
+  "extension_input_url": "https://github.com/BOYA1999/Auditing-label-dependence-in-CReM-based-activity-cliff-structural-change-localization/releases/download/extension-20261019/crem_crossed_extension_inputs_20261019.zip",
+  "extension_input_archive_sha256": "a7829250fc03d11a14aeff3b2d56fa98508bfe533b39dc35b197c0ab12ca1ecf",
+  "extension_input_archive_bytes": 79328629,
+  "extension_inputs": 350,
+  "extension_atom_score_files": 324
 }

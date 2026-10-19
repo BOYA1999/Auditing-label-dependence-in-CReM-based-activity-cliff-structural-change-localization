@@ -322,6 +322,48 @@
       "columns": 5,
       "rows": 6,
       "sha256": "22ab7ee7a98a7e0e9ccf1fa6a6f33ae918f2d8ef4482a4ed0b79877cd34fdc3a"
+    },
+    {
+      "table": "S47",
+      "file": "table_s47.csv",
+      "columns": 12,
+      "rows": 2,
+      "sha256": "f7efd6840be91ceddd97ca3a4f1af185a7f4d89477462f33c3f5ec4aeb0569dc"
+    },
+    {
+      "table": "S48",
+      "file": "table_s48.csv",
+      "columns": 16,
+      "rows": 16,
+      "sha256": "3d5244bdef7d072a7077fb4fc0ef1d755cf62f26c4542dbbea8cc71c37312f0f"
+    },
+    {
+      "table": "S49",
+      "file": "table_s49.csv",
+      "columns": 11,
+      "rows": 2,
+      "sha256": "50e68698301bef18f6478f2d60b421e3811420b33ebdb3ff0c43006779a2eb43"
+    },
+    {
+      "table": "S50",
+      "file": "table_s50.csv",
+      "columns": 2,
+      "rows": 15,
+      "sha256": "6c16de5e899aa76b880df8150fb1fc89f87e806be2cd51e94fea105eb17c3da6"
+    },
+    {
+      "table": "S51",
+      "file": "table_s51.csv",
+      "columns": 7,
+      "rows": 8,
+      "sha256": "4fbc286ecdb250891a1c4adbf41db26a915ba05edb21a1fad1195397f47a15cc"
+    },
+    {
+      "table": "S52",
+      "file": "table_s52.csv",
+      "columns": 6,
+      "rows": 4,
+      "sha256": "39d105d8b03034d079ff2ca6b446c1af49da5ff2b0bfbedaec7ab47bfa78bfa2"
     }
   ]
 }

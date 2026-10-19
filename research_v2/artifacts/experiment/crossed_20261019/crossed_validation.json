@@ -1,0 +1,14 @@
+{
+  "status": "pass",
+  "unit_manifests_checked": 2430,
+  "unit_output_hashes_checked": 14580,
+  "full_2430_model_grid": true,
+  "test_pair_rows": 55530,
+  "test_components": 617,
+  "new_model_fits": 720,
+  "smoke_replay_fits": 1,
+  "cached_model_reuses": 1710,
+  "model_domain_nonconstant": true,
+  "elapsed_seconds": 1.920933485031128,
+  "native_summary_caveat": "Original runner new_models counts stored source=new_fit rows, including copied historical fits; this run used resume-skip for 900 additional-init units and reused 810 init42 units."
+}

@@ -1,0 +1,27 @@
+{
+  "predictions.csv": {
+    "rows": 794,
+    "maximum_absolute_difference": 0.0,
+    "bytes_exact": true
+  },
+  "prediction_metrics.csv": {
+    "rows": 2,
+    "maximum_absolute_difference": 0.0,
+    "bytes_exact": true
+  },
+  "pair_predictions.csv": {
+    "rows": 15,
+    "maximum_absolute_difference": 0.0,
+    "bytes_exact": true
+  },
+  "pair_explanations.csv": {
+    "rows": 30,
+    "maximum_absolute_difference": 0.0,
+    "bytes_exact": true
+  },
+  "model_output_audit.csv": {
+    "rows": 1,
+    "maximum_absolute_difference": 0.0,
+    "bytes_exact": true
+  }
+}

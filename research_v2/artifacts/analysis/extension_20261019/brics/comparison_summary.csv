@@ -1,0 +1,13 @@
+population,metric,effect,point,ci_low,ci_high,datasets,pairs
+full617,raw_nap,crem,0.0,0.0,0.0,27,617
+full617,raw_nap,brics,0.0,0.0,0.0,27,617
+full617,raw_nap,brics_minus_crem,0.0,0.0,0.0,27,617
+common272,raw_nap,crem,0.0,0.0,0.0,26,272
+common272,raw_nap,brics,0.0,0.0,0.0,26,272
+common272,raw_nap,brics_minus_crem,0.0,0.0,0.0,26,272
+full617,endpoint_exact_nap,crem,0.0,0.0,0.0,27,617
+full617,endpoint_exact_nap,brics,0.0,0.0,0.0,27,617
+full617,endpoint_exact_nap,brics_minus_crem,0.0,0.0,0.0,27,617
+common272,endpoint_exact_nap,crem,0.0,0.0,0.0,26,272
+common272,endpoint_exact_nap,brics,0.0,0.0,0.0,26,272
+common272,endpoint_exact_nap,brics_minus_crem,0.0,0.0,0.0,26,272

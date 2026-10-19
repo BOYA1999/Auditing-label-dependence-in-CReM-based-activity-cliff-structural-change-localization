@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "synthetic_only": true,
+  "conditional_bootstrap_vs_established_max_error": 0.0,
+  "joint_component_configuration_aggregation_matches_direct": true,
+  "draws": 100
+}

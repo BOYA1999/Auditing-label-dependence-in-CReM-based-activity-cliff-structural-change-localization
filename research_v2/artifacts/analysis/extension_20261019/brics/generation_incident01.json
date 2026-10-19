@@ -1,0 +1,7 @@
+{
+  "failure": "Parent self-reconstruction inverted a retained stereocentre for CHEMBL1871_Ki:597 at BRICS bond(7,6).",
+  "cause": "Installed RDKit BRICS.BreakBRICSBonds(bonds=...) uses EditableMol RemoveBond/AddBond without chiral-neighbor-order correction.",
+  "repair": "Keep identical BRICS cut/type definitions; use Chem.FragmentOnBonds to preserve stereo, then assign original BRICS dummy labels by neighbor identity. Regenerate donor library with this cut implementation.",
+  "scientific_outcomes_used": false,
+  "discarded_evidence": "No generator comparison computed; first-attempt library retained separately as brics_library.csv."
+}

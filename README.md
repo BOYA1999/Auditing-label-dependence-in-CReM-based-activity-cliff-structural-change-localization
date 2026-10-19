@@ -1,6 +1,42 @@
 # Auditing label dependence in CReM structural-change localization
 
-This checkout contains the 15 October 2026 minor revision: an exact two-thirds calibration gate; a shared-endpoint conditional reference for the complete nested statistic; seed-level paired mapping sensitivity; and the response-target extension with common-population native-removal comparisons and traceable molecular examples. Tables S1–S46 and their scientific source records are supplied. The previous fixed code snapshot remains at tag `rereview-20261009`; its unchanged frozen inputs remain attached to `rereview-20261008`.
+The `extension-20261019` release adds the completed 3 × 5 initialization-by-label-permutation grid, separate observed-label and fixed-permutation initialization-noise references, endpoint-exact localization and structural-reference checks, and a matched BRICS replacement sensitivity. Tables S1–S46 and their historical estimates remain available; S47–S52 contain the new analyses. Scientific Figure 1/3 labels now identify the historical populations explicitly.
+
+## October 2026 extension: saved-score CPU replay
+
+Use Python 3.12 and `requirements_extension_replay.txt` (NumPy, pandas, SciPy and RDKit). From the repository root:
+
+```
+python -B fetch_extension_inputs.py
+python -B research_v2/scripts/noise_crossed_20261019.py
+python -B research_v2/scripts/validate_crossed_noise_20261019.py
+python -B research_v2/scripts/report_crossed_noise_20261019.py
+python -B research_v2/scripts/analyze_crossed_endpoint_20261019.py
+python -B research_v2/scripts/verify_crossed_endpoint_20261019.py
+python -B research_v2/scripts/verify_brics_20261019.py
+python -B verify_extension_replay.py
+```
+
+The public extension archive contains 350 frozen inputs and derived scientific records, including 162 crossed and 162 BRICS atom-score archives. Each crossed archive includes both primary and source-compatible arrays. The downloader verifies the ZIP and every extracted file against `EXTENSION_INPUTS_MANIFEST.json`. All six analysis commands run on CPU without Torch, XGBoost, model checkpoints or representation weights. They recompute saved-score statistics; BRICS verification does not generate new molecules. `verify_extension_replay.py` checks 27 frozen scientific outputs, comparing decompressed CSV content where gzip timestamps vary. Measured runtimes are not scientific equivalence tests. Run whole-package hash verification before replay because analyses regenerate derived results and provenance.
+
+The original run completed 720 missing MLP heads and reused 1,710 verified randomized checkpoints, plus a separate smoke fit. New crossed XGBoost scores use uniform CPU inference; the source-compatible variant is a separate sensitivity. The historical endpoint is preserved. Two initialization-noise references are kept separate, undefined correlations and zero denominators remain missing, and descriptive ratios are formed within paired records before nested aggregation. The crossed raw localization contrast is −0.0122052411. The noise result shows a conditional response to label intervention and does not establish biochemical attribution accuracy. Three initializations and five permutations bound the stochastic sensitivity. The matched BRICS comparison covers 272 of 617 pairs; zero nested medians do not demonstrate generator equivalence. The mapping, correlation-eligibility and representation-fallback 611-pair subsets are distinct.
+
+Full retraining, representation extraction and fresh generation additionally need original fitted models, feature/neighborhood caches, pretrained MoLFormer/Uni-Mol weights and their dependencies. These are not all redistributed. The training/generation scripts document the completed run but are outside the supported six-command CPU replay. `verify_endpoint_20261019.py` is imported as an analytical helper; its standalone historical audit is outside this route. Historical manifest paths to non-bundled training assets describe provenance, not replay dependencies. No new licence is selected: the existing MIT and upstream notices remain unchanged.
+
+`PUBLIC_EXTENSION_PROVENANCE.csv` records original and public hashes. All supplied numerical CSV/NPZ source files retain their original bytes. The public `PLAN.md` omits only document-production/internal-workflow instructions; its scientific design is preserved. The public report helper omits manuscript-draft and internal-note emission while retaining numerical reporting. The 174-entry crossed input contract records the public protocol hash. Manuscripts, author declarations, language-editing tools, private review materials and model weights are excluded.
+
+## Whole checkout and earlier analyses
+
+To restore the four unchanged inputs used by older replays and verify the entire checkout before running analyses:
+
+```
+python -B fetch_core_inputs.py
+python -B fetch_extension_inputs.py
+python -B verify_package.py
+python -B verify_archive.py
+```
+
+The previous fixed code snapshot remains `rereview-20261009`; the unchanged core asset remains attached to `rereview-20261008`. This release publishes code and derived scientific data, not a journal submission or independent biological validation. The remaining sections describe the preceding minor revision.
 
 ## Restore and verify
 

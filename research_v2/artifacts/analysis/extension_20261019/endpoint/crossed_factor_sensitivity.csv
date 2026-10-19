@@ -1,0 +1,17 @@
+factor,value,metric,estimate
+initialization,11,raw_nap,-0.0121139108469428
+initialization,11,endpoint_exact_nap,-0.014249164648214959
+initialization,23,raw_nap,-0.016020915322051722
+initialization,23,endpoint_exact_nap,-0.016198182814360744
+initialization,42,raw_nap,-0.00965690021523451
+initialization,42,endpoint_exact_nap,-0.01423912069388348
+permutation,42,raw_nap,-0.0023118951751035163
+permutation,42,endpoint_exact_nap,-0.005752670935638008
+permutation,43,raw_nap,-0.001222532545726707
+permutation,43,endpoint_exact_nap,-0.004657124894196445
+permutation,44,raw_nap,-0.005511577047261816
+permutation,44,endpoint_exact_nap,-0.003817234107096696
+permutation,45,raw_nap,-0.002692065439659487
+permutation,45,endpoint_exact_nap,-0.0033844504767110654
+permutation,46,raw_nap,-0.004206790462848682
+permutation,46,endpoint_exact_nap,-0.004229185426838699

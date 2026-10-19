@@ -1,0 +1,16 @@
+quantity,count
+Original eligible pairs,617
+Original eligible endpoints,1234
+Compatible allowed regions,829
+Common supported allowed regions,764
+Common supported endpoints,606
+Endpoints with one common region,452
+Endpoints with two common regions,150
+Endpoints with three common regions,4
+Pairs supported at both endpoints,272
+Datasets with common pairs,26
+Scored product records per generator,2866
+Unique new BRICS products,2861
+New BRICS products using UniMol 2D fallback,7
+Common pairs with any parent/product fallback,2
+Single-cut parent reconstructions verified,6125

@@ -1,0 +1,8 @@
+{
+  "status": "pass",
+  "files": 162,
+  "permuted_models": 2430,
+  "elapsed_seconds": 215.17975783348083,
+  "method": "saved model inference; no refit",
+  "script_sha256": "b4b03ed2d1319d69c33d83bcbda352e68fd35cb3bd3a85cfce4006507e618f73"
+}

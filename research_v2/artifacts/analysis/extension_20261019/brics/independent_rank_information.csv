@@ -1,0 +1,5 @@
+population,generator,pair_seed_configuration_rows,observed_all_zero,permuted_all_zero,pair_rank_changed,left_rank_changed,right_rank_changed,amplitudes_changed,raw_nap_nonzero_seed_delta,endpoint_exact_nap_nonzero_seed_delta
+full617,brics,11106,5098,5404,3371,1030,1100,6010,1106,2858
+full617,crem,11106,5097,5404,3394,1070,1070,6011,1108,2863
+common272,brics,4896,1,210,3252,973,1038,4896,1034,2751
+common272,crem,4896,0,212,3272,1009,1009,4896,1030,2755

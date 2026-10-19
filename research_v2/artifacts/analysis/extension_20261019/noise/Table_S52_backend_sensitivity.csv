@@ -1,0 +1,5 @@
+predictor,variant,pair_realizations,rank_changed,ap_changed,maximum_atom_difference
+mlp,observed,5553,0,0,4.440892098500626e-16
+mlp,permuted,27765,0,0,0.0
+xgboost,observed,5553,0,0,4.440892098500626e-16
+xgboost,permuted,27765,326,105,3.5762786865234375e-06

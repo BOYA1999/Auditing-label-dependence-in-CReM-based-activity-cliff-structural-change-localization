@@ -1,0 +1,30 @@
+{
+  "status": "PASS_COMPUTATION",
+  "scored_model_heads": 972,
+  "pair_realizations": 44424,
+  "elapsed_seconds": 89.98217296600342,
+  "backend": {
+    "xgboost": "cpu",
+    "mlp": "cuda"
+  },
+  "model_fitting": "none; frozen original seeds11,23,42; their label permutation IDs remain matched to seed",
+  "claim_boundary": "Matched terminal single-bond regions and product budgets; post-confirmation generator sensitivity, not independent bioactivity validation. Original primary617 result unchanged.",
+  "output_sha256": {
+    "brics_library.csv": "6b9612ace4d7d192c16b4c33506ef8c5b43ddabc199076a49138667afbdf87c4",
+    "brics_library_single_bond.csv": "eccf743502bf13b5c20551bfcf709d751c59413f75e1cd7184baf548c5a9e286",
+    "brics_library_stereo.csv": "c51b9f01316e5675952db0abccef5986c24858b13212d993589c33f961919f30",
+    "comparison_summary.csv": "cbc2d317fbee15aaf5427d20fb570b1a2d1e35ade7be8a0e8e0d4536531cb98a",
+    "fallback_pair_sensitivity.csv": "ca57673685ef7907f665801101bb49de0082dd683036370fa1e6196f7ea8fd69",
+    "frozen_pair_population.csv": "b0b617f20b5ba63fb9b3dc356844b62583de315b4e47f66eeeb0dde630d7d725",
+    "generation_failures.csv": "3ef9d193c7fc324d88ec9625b8f7b7cf33447ef0a448698d228f51b2d5ac3dac",
+    "mask_coverage.csv": "9969743cf53e7a3494b8c935fe93a9ed92a2ebff7e543b0e3377df58480dac48",
+    "matched_budgets.csv": "9dc167091908da00efa1cbde2926bb06adf94e6819b420a5e27c68c0d4f00379",
+    "matched_scored_products.csv": "08c7e82a9feeef86f0424e05384beb4a6d8c043b4f583c0af9f4b3829b305ddb",
+    "paired_label_effects.csv": "ffa6df32cdc28617ca0e59eda8dfb36845427f5ac183a1b74bdb44cb08147cc3",
+    "pair_coverage_by_target.csv": "cbc387c2279953cb63305c770602c10adf9c1741171e3b3e4f43dc0dca56706d",
+    "pair_metrics.csv": "68c81bcd9f231c3176b78f99aae87a8cf875948ac2d6ade80c063aaab70b4d66",
+    "products.csv": "90d39a274b1fbb71f518e370cead1a63aedccc06de8ddb463cf2be9bb8d63655",
+    "scoring_models.csv": "ce1cff114a48539ab8a3cbb51cf35a85f4e1e0ef2d046c2b1032679249cbe40a",
+    "unique_brics_mutants.csv": "78e92f7800483adf6fa70e9f1040a2922258fe4148161d97b541da568a9ae221"
+  }
+}

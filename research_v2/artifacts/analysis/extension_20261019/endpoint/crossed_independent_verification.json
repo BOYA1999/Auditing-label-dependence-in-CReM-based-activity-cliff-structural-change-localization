@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "seconds": 13.72735857963562,
+  "realization_rows": 66636,
+  "saved_seed_permutation_pairing_aggregation_and_bootstrap_quantile_max_error": 2.7755575615628914e-16,
+  "independent_threshold_AP_full_statistic_draws": [
+    0,
+    499,
+    999,
+    1499,
+    1999
+  ],
+  "independent_threshold_AP_full_statistic_max_error": 1.3010426069826053e-16,
+  "all_recorded_input_hashes_match": true,
+  "scope": "Independent threshold-based AP on five complete structural-reference draws, plus saved-row reaggregation; no new training or validation cohort."
+}

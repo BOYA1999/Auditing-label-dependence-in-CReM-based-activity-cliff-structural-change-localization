@@ -1,0 +1,10 @@
+{
+  "status": "pass",
+  "independent_scipy_anchor_rows": 100,
+  "max_independent_derived_metric_error": 6.034497346263379e-10,
+  "max_independent_relative_error": 2.43761435735275e-13,
+  "reaggregated_full_supported_points_equal": true,
+  "backend_pair_realizations": 66636,
+  "backend_ap_changes": 105,
+  "comparison_scope": "Frozen complete crossed grid; conditional noise analysis; no manuscript validation claimed"
+}

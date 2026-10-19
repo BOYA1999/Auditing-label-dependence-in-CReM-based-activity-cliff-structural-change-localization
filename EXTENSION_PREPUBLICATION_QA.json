@@ -1,0 +1,60 @@
+{
+  "status": "PASS",
+  "kind": "fresh local extraction of public projection, saved-score CPU replay",
+  "scientific_outputs_exact": 27,
+  "crossed_input_contract_entries": 174,
+  "crossed_atom_archives": 162,
+  "brics_atom_archives": 162,
+  "numerical_source_bytes_preserved": true,
+  "runtime_and_gzip_container_timestamps_are_not_scientific_checks": true,
+  "tested_python": "3.12.0",
+  "tested_platform": "Windows",
+  "commands": [
+    {
+      "command": "verify_package.py",
+      "returncode": 0,
+      "seconds": 2.947888500000772
+    },
+    {
+      "command": "verify_archive.py",
+      "returncode": 0,
+      "seconds": 0.10812210000040068
+    },
+    {
+      "command": "research_v2/scripts/noise_crossed_20261019.py",
+      "returncode": 0,
+      "seconds": 77.45618399999967
+    },
+    {
+      "command": "research_v2/scripts/validate_crossed_noise_20261019.py",
+      "returncode": 0,
+      "seconds": 2.602460400000382
+    },
+    {
+      "command": "research_v2/scripts/report_crossed_noise_20261019.py",
+      "returncode": 0,
+      "seconds": 6.505884899999728
+    },
+    {
+      "command": "research_v2/scripts/analyze_crossed_endpoint_20261019.py",
+      "returncode": 0,
+      "seconds": 52.75559450000037
+    },
+    {
+      "command": "research_v2/scripts/verify_crossed_endpoint_20261019.py",
+      "returncode": 0,
+      "seconds": 13.903688700000203
+    },
+    {
+      "command": "research_v2/scripts/verify_brics_20261019.py",
+      "returncode": 0,
+      "seconds": 20.608028399999966
+    },
+    {
+      "command": "verify_extension_replay.py",
+      "returncode": 0,
+      "seconds": 0.6141431999994893
+    }
+  ],
+  "total_seconds": 177.50199470000098
+}

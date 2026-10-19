@@ -1,0 +1,13 @@
+{
+  "status": "pass",
+  "independent_scipy_rank_distance_max_error": 2.220446049250313e-16,
+  "constant_vectors_undefined": true,
+  "identical_rank_distance_exact_zero": true,
+  "insufficient_atoms_undefined": true,
+  "distance_bounds": [
+    0,
+    2
+  ],
+  "npz_files": 162,
+  "components": 617
+}

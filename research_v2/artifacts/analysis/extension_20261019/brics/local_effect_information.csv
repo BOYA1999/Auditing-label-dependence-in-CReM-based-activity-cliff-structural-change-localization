@@ -1,0 +1,9 @@
+population,generator,metric,component_configuration_rows,nonzero_rows_gt_1e12,maximum_absolute_paired_effect
+full617,brics,raw_nap,3702,508,0.5434782608695651
+full617,brics,endpoint_exact_nap,3702,1299,0.5071954492710569
+full617,crem,raw_nap,3702,515,0.5217391304347826
+full617,crem,endpoint_exact_nap,3702,1273,0.5031919189228173
+common272,brics,raw_nap,1632,458,0.5230566534914362
+common272,brics,endpoint_exact_nap,1632,1226,0.5071954492710569
+common272,crem,raw_nap,1632,469,0.5217391304347826
+common272,crem,endpoint_exact_nap,1632,1208,0.5031919189228173

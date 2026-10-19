@@ -1,0 +1,25 @@
+{
+  "status": "PASS_FEASIBILITY",
+  "baseline_pairs": 617,
+  "baseline_parents": 1234,
+  "library_source_molecules": 27045,
+  "library_fragments_frequency_ge_2": 3825,
+  "compatible_masks": 829,
+  "common_supported_masks": 764,
+  "common_supported_parents": 606,
+  "both_supported_pairs": 272,
+  "targets_with_5_pairs": 16,
+  "products": 6632,
+  "unexpected_failures": 0,
+  "parent_cut_reassembly_checks": 6125,
+  "rdkit": "2026.03.3",
+  "elapsed_seconds": 64.07112574577332,
+  "scientific_outcomes_accessed": false,
+  "source_sha256": {
+    "research_v2\\artifacts\\experiment\\xai_sanity_cliffs_full_v1\\prepared\\replacement_library.smi": "7e5552219e6de241ddec4495460b75de0ab88a02d6ec00947ad0b51f389bc043",
+    "research_v2\\scripts\\generate_brics_extension_20261019.py": "2188544c1aa164af5037f25b2e082f8ac1fa46f599f9caf42183554edfff2b98",
+    "research_v2\\artifacts\\experiment\\xai_sanity_cliffs_full_v1\\prepared\\model_molecules.csv": "7d645a7eb6b88fa8e909501d92c46174f75000dfc8b01de643a0d78b14432320",
+    "research_v2\\artifacts\\experiment\\xai_sanity_cliffs_full_v1\\prepared\\sentinel_pairs.csv": "1c8c91381a5c80597a4ffb6a9ffa817b4298b5fc61bf905ebce9c4dc127b32a3",
+    "research_v2\\artifacts\\experiment\\xai_sanity_cliffs_full_v1\\full\\counterfactuals\\mask_coverage.csv": "7b646b00b3bf3f27d08c3531947fe89af749db16c4689095ed51a583782c2271"
+  }
+}
